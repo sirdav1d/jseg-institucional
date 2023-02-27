@@ -1,6 +1,7 @@
 import { Flex, Link, UnorderedList, ListItem } from '@chakra-ui/react';
 import React from 'react';
-import ButtonHeader from '../Button';
+import ButtonHeader from '../ButtonHeader';
+import Switcher from '../Switcher';
 
 export default function NavTag(props: { page: string }) {
 	return (
@@ -17,6 +18,7 @@ export default function NavTag(props: { page: string }) {
 						gap={'24px'}>
 						<ListItem>
 							<Link
+								href='#home'
 								fontSize={['small', 'small', 'small', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
@@ -29,6 +31,7 @@ export default function NavTag(props: { page: string }) {
 						</ListItem>
 						<ListItem>
 							<Link
+								href='#benefits'
 								fontSize={['small', 'small', 'small', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
@@ -77,6 +80,9 @@ export default function NavTag(props: { page: string }) {
 						</ListItem>
 						<ListItem>
 							<ButtonHeader />
+						</ListItem>
+						<ListItem>
+							<Switcher />
 						</ListItem>
 					</UnorderedList>
 				</Flex>

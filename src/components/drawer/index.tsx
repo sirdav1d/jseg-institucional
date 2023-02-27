@@ -11,18 +11,26 @@ import {
 	Link,
 	ListItem,
 	UnorderedList,
+	useColorModeValue,
 	useDisclosure,
 } from '@chakra-ui/react';
 
 import { AiOutlineMenuFold } from 'react-icons/ai';
-import ButtonHeader from '../Button';
+import ButtonHeader from '../ButtonHeader';
 import NavTag from '../Navigation';
+import Switcher from '../Switcher';
 export function DrawerMenu() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
+	const DrawerBg = useColorModeValue('brand.branco', 'brand.cinza.900');
+
 	return (
 		<>
-			<Button onClick={onOpen}>
+			<Button
+				transition={'all .3s ease'}
+				bgColor={'transparent'}
+				_hover={{ bgColor: 'transparent', color: 'brand.verde.primary' }}
+				onClick={onOpen}>
 				<AiOutlineMenuFold size={'32px'} />
 			</Button>
 			<Drawer
@@ -30,10 +38,10 @@ export function DrawerMenu() {
 				placement='right'
 				onClose={onClose}>
 				<DrawerOverlay />
-				<DrawerContent>
+				<DrawerContent zIndex={99}>
 					<DrawerCloseButton />
 
-					<DrawerBody>
+					<DrawerBody bgColor={DrawerBg}>
 						<Flex
 							align={'center'}
 							justify='center'
@@ -45,7 +53,11 @@ export function DrawerMenu() {
 								alignItems='center'
 								gap={'24px'}>
 								<ListItem>
+									<Switcher />
+								</ListItem>
+								<ListItem>
 									<Link
+										href='#home'
 										fontSize={'md'}
 										transition={'all .4s ease'}
 										_hover={{
@@ -58,6 +70,7 @@ export function DrawerMenu() {
 								</ListItem>
 								<ListItem>
 									<Link
+										href='#benefits'
 										fontSize={'md'}
 										transition={'all .4s ease'}
 										_hover={{

@@ -19,6 +19,7 @@ const colors = {
 			100: '#F3F3F3',
 			300: '#D4D4D4',
 			500: '#909090',
+			600: '#5e6573',
 			700: '#636363',
 			900: '#262626',
 		},
@@ -38,7 +39,10 @@ export const theme = extendTheme({
 			li: {
 				listStyle: 'none',
 			},
-
+			'*': {
+				scrollBehavior: 'smooth',
+				scrollMarginBlockStart: '100px',
+			},
 			'::-webkit-scrollbar': {
 				width: '8px',
 				backgroundColor: colors.brand.cinza[700],
