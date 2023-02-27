@@ -11,7 +11,7 @@ export default function SectionBenefit() {
 		content: '',
 	});
 
-	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.700');
+	const bgColor = useColorModeValue('brand.branco', '#111');
 	return (
 		<Flex
 			flexDir={'column'}
@@ -24,12 +24,15 @@ export default function SectionBenefit() {
 			</Heading>
 			<Flex
 				bgColor={bgColor}
-				m={['20px', '20px', '20px', '20px 100px', '20px 160px', '20px 260px']}
+				m={['20px', '20px', '20px', '20px', '20px 40px']}
 				p='20px'
 				gap='40px'
-				borderRadius={'20px'}
+				justify={['center', 'center', 'center', 'space-between']}
+				align='center'
+				borderRadius={'4px'}
+				flexWrap='wrap'
 				shadow='2xl'
-				flexDir={'column'}>
+				flexDir={['column', 'column', 'row', 'row']}>
 				{GeneralData.institucional.beneficios.map((b) => {
 					return (
 						<CardItem

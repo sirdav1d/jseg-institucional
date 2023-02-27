@@ -6,7 +6,7 @@ export default function ButtonHeader() {
 		<Box
 			bg={'brand.verde.700'}
 			p='12px'
-			borderRadius={'8px'}
+			borderRadius={'4px'}
 			fontWeight={'semibold'}
 			fontSize={['small']}
 			color={'brand.branco'}

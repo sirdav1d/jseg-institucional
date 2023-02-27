@@ -11,26 +11,27 @@ interface CardProps {
 export default function CardItem(props: { data: CardProps }) {
 	return (
 		<Flex
-			justify={'center'}
-			flexDir={['column', 'column', props.data.direction, props.data.direction]}
-			align='center'
-			gap={['8px', '8px', '24px', '40px']}>
+			justify={'start'}
+			flexDir={['column', 'column']}
+			align='start'
+			w='280px'
+			height={'340px'}
+			gap={['8px', '8px', '24px']}>
 			<Image
+				w='280px'
+				h='140px'
 				objectFit='cover'
 				src={props.data.img}
-				borderRadius='16px'
 			/>
 			<Flex
 				flexWrap='wrap'
 				flexDir={'column'}>
 				<Heading
-					fontSize={'2xl'}
-					mb='12px'>
+					fontSize={'xl'}
+					mb='8px'>
 					{props.data.title}
 				</Heading>
-				<Text fontSize={['md', 'md', 'md', 'md', 'lg']}>
-					{props.data.content}
-				</Text>
+				<Text fontSize={'sm'}>{props.data.content}</Text>
 			</Flex>
 		</Flex>
 	);

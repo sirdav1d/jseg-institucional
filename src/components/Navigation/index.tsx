@@ -19,7 +19,7 @@ export default function NavTag(props: { page: string }) {
 						<ListItem>
 							<Link
 								href='#home'
-								fontSize={['small', 'small', 'small', 'md']}
+								fontSize={['small', 'small', 'small', 'sm', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
 									textDecor: 'none',
@@ -32,7 +32,7 @@ export default function NavTag(props: { page: string }) {
 						<ListItem>
 							<Link
 								href='#benefits'
-								fontSize={['small', 'small', 'small', 'md']}
+								fontSize={['small', 'small', 'small', 'sm', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
 									textDecor: 'none',
@@ -44,7 +44,7 @@ export default function NavTag(props: { page: string }) {
 						</ListItem>
 						<ListItem>
 							<Link
-								fontSize={['small', 'small', 'small', 'md']}
+								fontSize={['small', 'small', 'small', 'sm', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
 									textDecor: 'none',
@@ -56,7 +56,7 @@ export default function NavTag(props: { page: string }) {
 						</ListItem>
 						<ListItem>
 							<Link
-								fontSize={['small', 'small', 'small', 'md']}
+								fontSize={['small', 'small', 'small', 'sm', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
 									textDecor: 'none',
@@ -68,7 +68,7 @@ export default function NavTag(props: { page: string }) {
 						</ListItem>
 						<ListItem>
 							<Link
-								fontSize={['small', 'small', 'small', 'md']}
+								fontSize={['small', 'small', 'small', 'sm', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
 									textDecor: 'none',

@@ -11,7 +11,7 @@ export default function SectionForm() {
 			flexDir={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
 			color={textColor}>
 			<Flex
-				mt='180px'
+				mt='80px'
 				flexDir={'column'}
 				gap='24px'
 				align={['center', 'center', 'center', 'start']}
