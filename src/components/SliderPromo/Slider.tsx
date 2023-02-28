@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import promo1 from '../../assets/institucional-imgs/promo/promo1.svg';
 import promo2 from '../../assets/institucional-imgs/promo/promo2.svg';
 import promo3 from '../../assets/institucional-imgs/promo/promo3.svg';
-
 import './Slider.css';
 
 export default function SliderPromo() {

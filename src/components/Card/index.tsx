@@ -15,12 +15,12 @@ export default function CardItem(props: { data: CardProps }) {
 			flexDir={['column', 'column']}
 			align='start'
 			w='280px'
-			height={'340px'}
-			gap={['8px', '8px', '24px']}>
+			h='100%'
+			gap={['8px', '8px', '12px']}>
 			<Image
-				w='280px'
-				h='140px'
-				objectFit='cover'
+				w='100%'
+				h='100%'
+				objectFit='contain'
 				src={props.data.img}
 			/>
 			<Flex
@@ -31,7 +31,17 @@ export default function CardItem(props: { data: CardProps }) {
 					mb='8px'>
 					{props.data.title}
 				</Heading>
-				<Text fontSize={'sm'}>{props.data.content}</Text>
+				<Text
+					display={[
+						'inline-block',
+						'inline-block',
+						'inline-block',
+						'none',
+						'inline-block',
+					]}
+					fontSize={'sm'}>
+					{props.data.content}
+				</Text>
 			</Flex>
 		</Flex>
 	);

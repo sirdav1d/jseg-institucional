@@ -1,4 +1,8 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
+
+const config: ThemeConfig = {
+	initialColorMode: 'system',
+};
 
 const colors = {
 	brand: {
@@ -27,6 +31,7 @@ const colors = {
 };
 
 export const theme = extendTheme({
+	config,
 	colors,
 	styles: {
 		global: {
@@ -40,8 +45,9 @@ export const theme = extendTheme({
 				listStyle: 'none',
 			},
 			'*': {
+				fontFamily: 'Montserrat',
 				scrollBehavior: 'smooth',
-				scrollMarginBlockStart: '100px',
+				scrollMarginBlockStart: '88px',
 			},
 			'::-webkit-scrollbar': {
 				width: '8px',

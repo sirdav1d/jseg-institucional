@@ -1,22 +1,27 @@
 import { Button, Link, Text } from '@chakra-ui/react';
 
-export default function ButtonGeneral(props: { text: string }) {
+export default function ButtonGeneral(props: {
+	text: string;
+	size: string | string[];
+	bgColor?: string;
+}) {
 	return (
 		<Button
-			bg={'brand.verde.500'}
-			p='12px'
-			w='max-content'
+			bg={props.bgColor ? props.bgColor : 'brand.verde.500'}
+			p='28px 40px'
 			borderRadius={'4px'}
 			fontWeight={'semibold'}
-			fontSize={'xl'}
 			color={'brand.branco'}
+			w={props.bgColor ? '100%' : 'auto'}
 			textAlign='center'
 			shadow={'lg'}
 			cursor={'pointer'}
 			transition={'all .3s ease'}
-			_hover={{ bg: 'brand.verde.primary' }}>
+			_hover={{
+				bg: props.bgColor ? 'brand.dourado.300' : 'brand.verde.primary',
+			}}>
 			<Link _hover={{ textDecor: 'none' }}>
-				<Text>{props.text}</Text>
+				<Text fontSize={props.size}>{props.text}</Text>
 			</Link>
 		</Button>
 	);

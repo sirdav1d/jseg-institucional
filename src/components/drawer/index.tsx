@@ -95,6 +95,7 @@ export function DrawerMenu() {
 								</ListItem>
 								<ListItem>
 									<Link
+										href='#who'
 										fontSize={'md'}
 										transition={'all .4s ease'}
 										_hover={{

@@ -56,6 +56,7 @@ export default function NavTag(props: { page: string }) {
 						</ListItem>
 						<ListItem>
 							<Link
+								href='#who'
 								fontSize={['small', 'small', 'small', 'sm', 'md']}
 								transition={'all .3s ease'}
 								_hover={{
