@@ -58,7 +58,6 @@ export default function WhoSection() {
 					flexDir={['column', 'column', 'row']}
 					m='20px auto'>
 					<Flex
-						bgColor={bgColor}
 						borderRadius='4px'
 						m='0px 0px 16px'
 						p='0px 20px 20px'
@@ -75,7 +74,6 @@ export default function WhoSection() {
 						</Text>
 					</Flex>
 					<Flex
-						bgColor={bgColor}
 						m='0px 0px 16px'
 						borderRadius='4px'
 						p='0px 20px 20px'
@@ -92,7 +90,6 @@ export default function WhoSection() {
 						</Text>
 					</Flex>
 					<Flex
-						bgColor={bgColor}
 						m='0px 0px 16px'
 						borderRadius='4px'
 						shadow={'lg'}

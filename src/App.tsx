@@ -9,6 +9,7 @@ import promo1 from './assets/institucional-imgs/promo/promo1.svg';
 import promo2 from './assets/institucional-imgs/promo/promo2.svg';
 import promo3 from './assets/institucional-imgs/promo/promo3.svg';
 import WhoSection from './components/Who';
+import RatingsSection from './components/ratings';
 
 function App() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
@@ -24,9 +25,16 @@ function App() {
 				</Box>
 				<SectionForm />
 				<SectionBenefit />
-				<SectionCTA />
+				<SectionCTA
+					text={
+						'Procurando uma empresa parceira e de confiança?' +
+						' Clique aqui e faça seu orçamento'
+					}
+					btnText={'Fazer orçamento'}
+				/>
 				<Solutions />
-				<WhoSection/>
+				<WhoSection />
+				<RatingsSection />
 			</Flex>
 		</>
 	);
