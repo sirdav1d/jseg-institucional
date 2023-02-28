@@ -36,6 +36,7 @@ export const theme = extendTheme({
 	styles: {
 		global: {
 			body: {
+				overflowX: 'hidden',
 				scrollBehavior: 'smooth',
 				fontFamily: 'Montserrat',
 				height: '100%',

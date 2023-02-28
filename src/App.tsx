@@ -17,6 +17,7 @@ function App() {
 		<>
 			<Header />
 			<Flex
+				overflowX={'hidden'}
 				gap={['40px', '60px', '60px', '80px']}
 				flexDir={'column'}
 				bgColor={bgColor}>
