@@ -1,5 +1,4 @@
-import { Flex, Link, UnorderedList, ListItem } from '@chakra-ui/react';
-import React from 'react';
+import { Flex, Link, ListItem, UnorderedList } from '@chakra-ui/react';
 import ButtonHeader from '../ButtonHeader';
 import Switcher from '../Switcher';
 
@@ -69,6 +68,7 @@ export default function NavTag(props: { page: string }) {
 						</ListItem>
 						<ListItem>
 							<Link
+								href='#findUs'
 								fontSize={['small', 'small', 'small', 'sm', 'md']}
 								transition={'all .3s ease'}
 								_hover={{

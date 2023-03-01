@@ -1,4 +1,4 @@
-import { Flex, Image, useColorModeValue } from '@chakra-ui/react';
+import { Flex, Image } from '@chakra-ui/react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';

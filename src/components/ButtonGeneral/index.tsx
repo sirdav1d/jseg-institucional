@@ -10,7 +10,7 @@ export default function ButtonGeneral(props: {
 			bg={props.bgColor ? props.bgColor : 'brand.verde.500'}
 			p='28px 40px'
 			borderRadius={'4px'}
-			fontWeight={'semibold'}
+			fontWeight={'bold'}
 			color={'brand.branco'}
 			w={props.bgColor ? '100%' : 'auto'}
 			textAlign='center'

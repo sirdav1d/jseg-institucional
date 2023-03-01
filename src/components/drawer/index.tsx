@@ -4,10 +4,8 @@ import {
 	DrawerBody,
 	DrawerCloseButton,
 	DrawerContent,
-	DrawerHeader,
 	DrawerOverlay,
 	Flex,
-	Input,
 	Link,
 	ListItem,
 	UnorderedList,
@@ -17,7 +15,6 @@ import {
 
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import ButtonHeader from '../ButtonHeader';
-import NavTag from '../Navigation';
 import Switcher from '../Switcher';
 export function DrawerMenu() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -108,6 +105,7 @@ export function DrawerMenu() {
 								</ListItem>
 								<ListItem>
 									<Link
+									href='#findUs'
 										fontSize={'md'}
 										transition={'all .4s ease'}
 										_hover={{

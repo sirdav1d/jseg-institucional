@@ -1,5 +1,4 @@
-import { Box, Button, Link, Text } from '@chakra-ui/react';
-import React from 'react';
+import { Box, Link, Text } from '@chakra-ui/react';
 
 export default function ButtonHeader() {
 	return (

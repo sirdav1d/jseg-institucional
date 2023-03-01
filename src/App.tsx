@@ -1,27 +1,42 @@
-import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, useColorModeValue, Image } from '@chakra-ui/react';
 import Header from './components/Header';
+import RatingsSection from './components/ratings';
 import SectionBenefit from './components/SectionBenefit';
 import SectionCTA from './components/SectionCTA';
 import SectionForm from './components/SectionForm';
 import SliderPromo from './components/SliderPromo/Slider';
 import Solutions from './components/Solutions';
-import promo1 from './assets/institucional-imgs/promo/promo1.svg';
-import promo2 from './assets/institucional-imgs/promo/promo2.svg';
-import promo3 from './assets/institucional-imgs/promo/promo3.svg';
 import WhoSection from './components/Who';
-import RatingsSection from './components/ratings';
+import FindUs from './components/SectionFindUs';
+import Footer from './components/Footer';
+import wppImage from './assets/institucional-imgs/wpp.svg';
 
-function App() {
+export function App() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
+
 	return (
 		<>
 			<Header />
+			<Box
+				pos='fixed'
+				transition={'all .3s ease'}
+				cursor={'pointer'}
+				bottom='20px'
+				opacity={0.8}
+				zIndex={99999}
+				_hover={{ opacity: 1 }}
+				left={['0px', '8px', '8px', '20px']}>
+				<Image
+					w={['40px', '48px', '60px', '100%']}
+					src={wppImage}
+				/>
+			</Box>
 			<Flex
 				overflowX={'hidden'}
 				gap={['40px', '60px', '60px', '80px']}
 				flexDir={'column'}
 				bgColor={bgColor}>
-				<Box mt={['40px', '60px', '20px', '80px']}>
+				<Box mt={['60px', '60px', '20px', '80px']}>
 					<SliderPromo />
 				</Box>
 				<SectionForm />
@@ -36,6 +51,8 @@ function App() {
 				<Solutions />
 				<WhoSection />
 				<RatingsSection />
+				<FindUs />
+				<Footer />
 			</Flex>
 		</>
 	);

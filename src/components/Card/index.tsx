@@ -1,5 +1,11 @@
-import { Flex, Heading, Text, Image, ResponsiveValue } from '@chakra-ui/react';
-import React from 'react';
+import {
+	Flex,
+	Heading,
+	Image,
+	ResponsiveValue,
+	Text,
+	useColorModeValue,
+} from '@chakra-ui/react';
 
 interface CardProps {
 	img: string;
@@ -8,7 +14,9 @@ interface CardProps {
 	direction: ResponsiveValue<any> | undefined;
 }
 
+
 export default function CardItem(props: { data: CardProps }) {
+	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<Flex
 			justify={'start'}
@@ -27,6 +35,7 @@ export default function CardItem(props: { data: CardProps }) {
 				flexWrap='wrap'
 				flexDir={'column'}>
 				<Heading
+					color={HeadingColor}
 					fontSize={'xl'}
 					mb='8px'>
 					{props.data.title}

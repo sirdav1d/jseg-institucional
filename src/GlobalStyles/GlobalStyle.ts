@@ -33,6 +33,7 @@ const colors = {
 export const theme = extendTheme({
 	config,
 	colors,
+
 	styles: {
 		global: {
 			body: {
@@ -51,7 +52,7 @@ export const theme = extendTheme({
 				scrollMarginBlockStart: '88px',
 			},
 			'::-webkit-scrollbar': {
-				width: '8px',
+				width: '12px',
 				backgroundColor: colors.brand.cinza[700],
 			},
 

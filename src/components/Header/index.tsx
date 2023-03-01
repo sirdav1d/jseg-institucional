@@ -10,18 +10,17 @@ export default function Header() {
 			bg={headerBg}
 			justify={'space-between'}
 			color={'brand.verde.900'}
-			p={['8px', '8px', '8px', '12px 40px']}
+			p={['12px', '12px', '12px 20px', '12px 40px']}
 			shadow='lg'
 			w='100vw'
 			transform={'auto'}
 			position={'fixed'}
 			zIndex={9}
-			
 			align={'center'}>
 			<Link href='/'>
 				<Image
 					src={logo}
-					width={['180px', '220px', '220px', '220px', '300px', '300px']}
+					width={['200px', '220px', '220px', '220px', '300px', '300px']}
 				/>
 			</Link>
 			<NavTag page={'inst'} />

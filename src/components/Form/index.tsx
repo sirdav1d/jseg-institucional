@@ -1,20 +1,16 @@
 import {
-	Button,
 	Flex,
 	FormControl,
-	FormErrorMessage,
 	FormHelperText,
 	FormLabel,
 	Heading,
-	HStack,
 	Input,
 	Radio,
 	RadioGroup,
 	Select,
-	useColorModeValue,
-	VStack,
+	useColorModeValue
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ButtonGeneral from '../ButtonGeneral';
 
 export default function Form() {
@@ -25,7 +21,7 @@ export default function Form() {
 	const handleTelChange = (e: any) => setTel(e.target.value);
 
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.700');
-
+	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<Flex
 			minWidth={'348px'}
@@ -40,6 +36,7 @@ export default function Form() {
 			borderRadius={'4px'}
 			gap='24px'>
 			<Heading
+				color={HeadingColor}
 				fontFamily={'Montserrat'}
 				fontSize={['lg', 'lg', 'xl', '2xl']}
 				textAlign='center'>
@@ -94,7 +91,7 @@ export default function Form() {
 			<ButtonGeneral
 				bgColor={'brand.dourado.500'}
 				text='Enviar'
-				size={'2xl'}
+				size={'3xl'}
 			/>
 		</Flex>
 	);

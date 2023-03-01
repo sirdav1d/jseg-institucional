@@ -102,28 +102,28 @@ export const GeneralData = {
 				img: b1Inst,
 				title: 'Soluções escaláveis',
 				content:
-					'Oferecemos soluções escaláveis que crescem com sua empresa, permitindo que você adicione mais equipamentos e recursos à medida que sua empresa cresce, sem comprometer a qualidade ou a segurança.',
+					'Oferecemos soluções escaláveis que crescem com sua empresa, sem comprometer a qualidade ou a segurança.',
 				direction: 'row',
 			},
 			{
 				img: b2Inst,
 				title: 'Logística eficiente',
 				content:
-					'Com nossa logística eficiente, entregamos seus equipamentos rapidamente e garantimos que eles cheguem em perfeitas condições, para que sua empresa não perca tempo esperando pela entrega.',
+					'Com nossa logística eficiente, entregamos seus equipamentos rapidamente e garantimos que eles cheguem em perfeitas condições',
 				direction: 'row-reverse',
 			},
 			{
 				img: b3Inst,
 				title: 'Parceria estratégica',
 				content:
-					'Somos mais do que um fornecedor de equipamentos, somos parceiros estratégicos de sua empresa, oferecendo soluções personalizadas e suporte técnico para garantir que sua rede e segurança estejam protegidas e em funcionamento adequado.',
+					'Somos parceiros estratégicos de sua empresa, oferecendo soluções personalizadas e suporte técnico para garantir que sua rede e segurança estejam em pleno funcionamento',
 				direction: 'row',
 			},
 			{
 				img: b4Inst,
 				title: 'Preço justo',
 				content:
-					'Oferecemos preços justos e competitivos, sem comprometer a qualidade dos equipamentos e serviços, para que sua empresa possa obter as soluções necessárias sem ultrapassar seu orçamento.',
+					'Oferecemos preços justos e competitivos, para que sua empresa possa obter as soluções necessárias sem ultrapassar seu orçamento.',
 				direction: 'row-reverse',
 			},
 		],

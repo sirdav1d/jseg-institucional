@@ -1,9 +1,13 @@
-import { Flex, Heading, Text, Image, Box, HStack } from '@chakra-ui/react';
-import React from 'react';
-import r1 from '../../assets/institucional-imgs/ratings/img1.svg';
-import r2 from '../../assets/institucional-imgs/ratings/img2.svg';
-import r3 from '../../assets/institucional-imgs/ratings/img3.svg';
+import {
+	Divider,
+	Flex,
+	Heading,
+	Image,
+	Text,
+	useColorModeValue,
+} from '@chakra-ui/react';
 import c1 from '../../assets/institucional-imgs/ratings/clients/c1.svg';
+import c10 from '../../assets/institucional-imgs/ratings/clients/c10.svg';
 import c2 from '../../assets/institucional-imgs/ratings/clients/c2.svg';
 import c3 from '../../assets/institucional-imgs/ratings/clients/c3.svg';
 import c4 from '../../assets/institucional-imgs/ratings/clients/c4.svg';
@@ -12,82 +16,108 @@ import c6 from '../../assets/institucional-imgs/ratings/clients/c6.svg';
 import c7 from '../../assets/institucional-imgs/ratings/clients/c7.svg';
 import c8 from '../../assets/institucional-imgs/ratings/clients/c8.svg';
 import c9 from '../../assets/institucional-imgs/ratings/clients/c9.svg';
-import c10 from '../../assets/institucional-imgs/ratings/clients/c10.svg';
+import r1 from '../../assets/institucional-imgs/ratings/img1.svg';
+import r2 from '../../assets/institucional-imgs/ratings/img2.svg';
+import r3 from '../../assets/institucional-imgs/ratings/img3.svg';
 import SectionCTA from '../SectionCTA';
 
 export default function RatingsSection() {
+	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<>
 			<Flex
+				maxWidth={'880px'}
 				flexDir={'column'}
-				gap='40px'
+				gap={['20px', '20px', '20px', '40px']}
 				textAlign={'center'}
-				m='0px 80px'>
+				m='0px auto'>
 				<Heading
+					color={HeadingColor}
 					textAlign={'center'}
+					m='0px 20px'
 					fontFamily={'Montserrat'}>
 					O que dizem sobre nossos serviços?
 				</Heading>
-				<Flex gap='40px'>
+				<Flex
+					gap={['40px', '40px', '80px', '0px']}
+					flexDir={['column', 'column', 'column', 'row']}
+					justify={'space-between'}
+					m={['0px 20px', '0px 40px']}
+					align='center'>
 					<Flex
-						gap='20px'
+						gap='8px'
 						flexDir={'column'}>
 						<Text
-							fontSize={'xl'}
+							fontSize={['md', 'xl', 'xl', ' md']}
 							fontStyle='italic'>
 							“Pessoal com conhecimento técnico do produto e atendimento muito
 							bom.”
 						</Text>
 						<Flex
-							gap='40px'
+							gap='12px'
 							justify={'center'}
 							align='center'>
 							<Image src={r1} />
-							<Text fontWeight={'bold'}>Bruno Lima</Text>
+							<Text
+								fontWeight={'bold'}
+								color={HeadingColor}>
+								Bruno Lima
+							</Text>
 						</Flex>
 					</Flex>
 					<Flex
-						gap='20px'
+						gap='8px'
 						flexDir={'column'}>
 						<Text
-							fontSize={'xl'}
+							fontSize={['md', 'xl', 'xl', ' md']}
 							fontStyle='italic'>
 							“Atendentes NOTA 1000. Orientação precisa. Preço adequado. Virei
 							fã”
 						</Text>
 						<Flex
-							gap='40px'
+							gap='12px'
 							justify={'center'}
 							align='center'>
 							<Image src={r2} />
-							<Text fontWeight={'bold'}>Fidelis Estefan</Text>
+							<Text
+								fontWeight={'bold'}
+								color={HeadingColor}>
+								Fidelis Estefan
+							</Text>
 						</Flex>
 					</Flex>
 					<Flex
-						gap='20px'
+						gap='8px'
 						flexDir={'column'}>
 						<Text
-							fontSize={'xl'}
+							fontSize={['md', 'xl', 'xl', ' md']}
 							fontStyle='italic'>
 							“Tudo ótimo, encontrei o que queria e o atendimento perfeito”
 						</Text>
 						<Flex
-							gap='40px'
+							gap='12px'
 							justify={'center'}
 							align='center'>
 							<Image src={r3} />
-							<Text fontWeight={'bold'}>Fernando Rayol</Text>
+							<Text
+								fontWeight={'bold'}
+								color={HeadingColor}>
+								Fernando Rayol
+							</Text>
 						</Flex>
 					</Flex>
 				</Flex>
 			</Flex>
+			<Divider />
 			<Flex
 				flexDir={'column'}
 				justify='center'
 				gap='20px'
 				align={'center'}>
 				<Heading
+					color={HeadingColor}
 					textAlign={'center'}
+					m='20px'
 					fontFamily={'Montserrat'}>
 					Conheça nossos principais parceiros
 				</Heading>
@@ -96,7 +126,13 @@ export default function RatingsSection() {
 					align={'center'}
 					gap='20px'
 					justify='center'>
-					<HStack gap='20px'>
+					<Flex
+						justify={'center'}
+						align='center'
+						maxW='880px'
+						flexWrap={'wrap'}
+						gap='20px'
+						flexDir={'row'}>
 						<Image
 							transform={'auto'}
 							filter={'auto'}
@@ -137,8 +173,7 @@ export default function RatingsSection() {
 							_hover={{ saturate: '100%' }}
 							src={c5}
 						/>
-					</HStack>
-					<HStack gap='20px'>
+
 						<Image
 							transform={'auto'}
 							filter={'auto'}
@@ -179,7 +214,7 @@ export default function RatingsSection() {
 							_hover={{ saturate: '100%' }}
 							src={c10}
 						/>
-					</HStack>
+					</Flex>
 				</Flex>
 			</Flex>
 			<SectionCTA

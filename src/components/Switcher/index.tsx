@@ -7,7 +7,9 @@ export default function Switcher() {
 		<div>
 			<Box>
 				<Switch
-					style={{ transform: 'auto', transition: 'all .4s ease' }}
+					transform={'auto'}
+					transition='all 2s ease'
+					// style={{ transform: 'auto', transition: 'all .4s ease' }}
 					onChange={toggleColorMode}
 					colorScheme={'whatsapp'}
 				/>
