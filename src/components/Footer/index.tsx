@@ -130,6 +130,7 @@ export default function Footer() {
 
 					<VStack
 						p={'20px'}
+						
 						pos='absolute'
 						right={['0px', '0px', '0px', '40px','80px']}
 						top='0px'>
