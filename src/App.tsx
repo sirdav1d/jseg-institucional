@@ -12,7 +12,7 @@ export function App() {
 				></Route>
 
 				<Route
-					path='tks'
+					path='/tks'
 					element={<Thanks />}
 				></Route>
 			</Routes>
