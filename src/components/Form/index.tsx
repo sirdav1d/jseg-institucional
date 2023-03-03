@@ -8,7 +8,7 @@ import {
 	Radio,
 	RadioGroup,
 	Select,
-	useColorModeValue
+	useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import ButtonGeneral from '../ButtonGeneral';
@@ -24,9 +24,10 @@ export default function Form() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<Flex
+			maxW='480px'
 			minWidth={'348px'}
 			flexWrap='wrap'
-			shadow={'2xl'}
+			shadow={'xl'}
 			bgColor={bgColor}
 			flexDir={'column'}
 			m={['0px', '0px', '0 20px']}

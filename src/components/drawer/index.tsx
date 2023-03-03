@@ -80,6 +80,7 @@ export function DrawerMenu() {
 								</ListItem>
 								<ListItem>
 									<Link
+										href='#solutions'
 										fontSize={'md'}
 										transition={'all .4s ease'}
 										_hover={{
@@ -105,7 +106,7 @@ export function DrawerMenu() {
 								</ListItem>
 								<ListItem>
 									<Link
-									href='#findUs'
+										href='#findUs'
 										fontSize={'md'}
 										transition={'all .4s ease'}
 										_hover={{

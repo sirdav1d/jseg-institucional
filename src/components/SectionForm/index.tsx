@@ -8,18 +8,18 @@ export default function SectionForm() {
 	return (
 		<>
 			<Flex
-				m={['20px 40px', '20px 40px', '20px 40px', '20px 80px']}
+				m={['0px 40px', '20px 40px', '20px 40px', '20px 80px']}
 				gap='28px'
 				align={'center'}
 				justify={'center'}
-				flexDir={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
+				flexDir={['column', 'column', 'column', 'row']}
 				color={textColor}>
 				<Flex
-					mt={['40px', '0px', '0px', '80px']}
+					mt={['0px 40px 40px', '0px', '0px', '80px']}
 					flexDir={'column'}
 					gap='20px'
 					align={['center', 'center', 'center', 'start']}
-					textAlign={['center', 'center', 'center', 'left']}
+					textAlign={'left'}
 					w={['100%', '100%', '100%', '40%']}>
 					<Heading
 						color={HeadingColor}

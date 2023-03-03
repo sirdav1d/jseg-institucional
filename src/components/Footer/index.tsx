@@ -41,10 +41,11 @@ export default function Footer() {
 							align={'start'}
 							gap='24px'>
 							<Flex
+								fontSize={'sm'}
 								flexDir={'column'}
 								p='0px 20px 0px 20px'>
 								<Heading
-									fontSize={'2xl'}
+									fontSize={'xl'}
 									fontFamily={'Montserrat'}
 									color={HeadingColor}>
 									Home
@@ -54,10 +55,11 @@ export default function Footer() {
 								<Text>Botão para iniciar interação pelo Whatsapp</Text>
 							</Flex>
 							<Flex
+								fontSize={'sm'}
 								flexDir={'column'}
 								p='0px 20px 0px 20px'>
 								<Heading
-									fontSize={'2xl'}
+									fontSize={'xl'}
 									color={HeadingColor}
 									fontFamily={'Montserrat'}>
 									Quem Somos
@@ -68,10 +70,11 @@ export default function Footer() {
 								<Text>Valores</Text>
 							</Flex>
 							<Flex
+								fontSize={'sm'}
 								flexDir={'column'}
 								p='0px 20px 0px 20px'>
 								<Heading
-									fontSize={'2xl'}
+									fontSize={'xl'}
 									fontFamily={'Montserrat'}
 									color={HeadingColor}>
 									Benefícios
@@ -86,10 +89,11 @@ export default function Footer() {
 							align={'start'}
 							gap='24px'>
 							<Flex
+								fontSize={'sm'}
 								flexDir={'column'}
 								p='0px 20px 0px 20px'>
 								<Heading
-									fontSize={'2xl'}
+									fontSize={'xl'}
 									color={HeadingColor}
 									fontFamily={'Montserrat'}>
 									Soluções
@@ -103,10 +107,11 @@ export default function Footer() {
 								<Text>Soluções para Controle de Acesso</Text>
 							</Flex>
 							<Flex
+								fontSize={'sm'}
 								flexDir={'column'}
 								p='0px 20px 0px 20px'>
 								<Heading
-									fontSize={'2xl'}
+									fontSize={'xl'}
 									color={HeadingColor}
 									fontFamily={'Montserrat'}>
 									Nos Encontre
@@ -115,10 +120,11 @@ export default function Footer() {
 								<Text>Benefícios da localidade</Text>
 							</Flex>
 							<Flex
+								fontSize={'sm'}
 								flexDir={'column'}
 								p='0px 20px 0px 20px'>
 								<Heading
-									fontSize={'2xl'}
+									fontSize={'xl'}
 									color={HeadingColor}
 									fontFamily={'Montserrat'}>
 									Entrar em contato
@@ -130,25 +136,25 @@ export default function Footer() {
 
 					<VStack
 						p={'20px'}
-						
+						gap='12px'
 						pos='absolute'
-						right={['0px', '0px', '0px', '40px','80px']}
+						right={['0px', '0px', '0px', '40px', '80px']}
 						top='0px'>
 						<Link>
 							<Image
-								height={'40px'}
+								height={'56px'}
 								src={instaImage}
 							/>
 						</Link>
 						<Link>
 							<Image
-								height={'40px'}
+								height={'56px'}
 								src={faceImage}
 							/>
 						</Link>
 						<Link>
 							<Image
-								height={'40px'}
+								height={'56px'}
 								src={wppImage}
 							/>
 						</Link>
@@ -162,8 +168,8 @@ export default function Footer() {
 					bottom='0px'>
 					<Text
 						textAlign={'center'}
-						fontSize={['3xs', '2xs', 'xs', 'sm']}
-						w={['100%', '100%', '100%', '50%']}>
+						fontSize={['3xs', '2xs', 'xs', 'xs']}
+						w={['100%', '100%', '100%', '70%']}>
 						Telefone: 021-3628-4723 | E-mail: contato@jsegequipamentos.com.br |
 						<br />
 						JSEG Equipamentos - Dominus Tec Informática Eireli &copy; Todos os

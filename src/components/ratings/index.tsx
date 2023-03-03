@@ -33,12 +33,14 @@ export default function RatingsSection() {
 				m='0px auto'>
 				<Heading
 					color={HeadingColor}
-					textAlign={'center'}
-					m='0px 20px'
+					textAlign={'left'}
+					m='0px 40px'
 					fontFamily={'Montserrat'}>
 					O que dizem sobre nossos serviços?
 				</Heading>
 				<Flex
+					shadow='md'
+					padding={'20px'}
 					gap={['40px', '40px', '80px', '0px']}
 					flexDir={['column', 'column', 'column', 'row']}
 					justify={'space-between'}
@@ -112,11 +114,12 @@ export default function RatingsSection() {
 			<Flex
 				flexDir={'column'}
 				justify='center'
-				gap='20px'
-				align={'center'}>
+				m='0px auto'
+				maxW='880px'
+				gap='20px'>
 				<Heading
 					color={HeadingColor}
-					textAlign={'center'}
+					textAlign={'left'}
 					m='20px'
 					fontFamily={'Montserrat'}>
 					Conheça nossos principais parceiros
@@ -129,7 +132,6 @@ export default function RatingsSection() {
 					<Flex
 						justify={'center'}
 						align='center'
-						maxW='880px'
 						flexWrap={'wrap'}
 						gap='20px'
 						flexDir={'row'}>

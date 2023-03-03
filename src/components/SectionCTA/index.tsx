@@ -14,9 +14,9 @@ export default function SectionCTA(props: { text: string; btnText: string }) {
 			shadow='2xl'
 			padding={['20px', '20px', '20px', '40px']}
 			flexDir={['column', 'column', 'row']}
-			textAlign='center'
+			textAlign='left'
 			justifyContent={'space-around'}
-			gap='40px'
+			gap='20px'
 			background={bgColor}>
 			<Heading
 				color={HeadingColor}

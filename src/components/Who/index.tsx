@@ -20,10 +20,10 @@ export default function WhoSection() {
 				align='center'
 				flexDir={'column'}>
 				<Flex
-					w={['100%', '360px', '100%', '800px']}
+					w={['100%', '360px', '100%', '800px', '1024px']}
 					m={['20px', '20px', '20px', '20px auto 0px']}
 					borderRadius={'4px'}
-					shadow='md'
+					shadow={['none', 'none', 'none', 'md']}
 					align={'center'}
 					justify='center'
 					p='20px'
@@ -32,7 +32,7 @@ export default function WhoSection() {
 					<Flex
 						justify={'center'}
 						flexDir={'column'}
-						gap={['8px', '8px', '16px', '40px']}>
+						gap={['8px', '8px', '16px', '20px']}>
 						<Heading
 							color={HeadingColor}
 							fontSize={'3xl'}
@@ -54,20 +54,23 @@ export default function WhoSection() {
 					/>
 				</Flex>
 				<Flex
-					w={['100%', '100%', '100%', '800px']}
+					shadow={['md', 'md', 'md', 'none']}
+					w={['100%', '360px', '100%', '800px', '1024px']}
 					justify={'space-between'}
 					align='center'
-					gap='20px'
+					gap={['0px', '0px', '0px', '20px']}
 					flexDir={['column', 'column', 'row']}
 					m='20px auto'>
 					<Flex
 						borderRadius='4px'
 						m='0px 0px 16px'
 						p='0px 20px 20px'
-						shadow={'md'}
+						gap='12px'
+						shadow={['', '', '', 'md']}
 						justify={'center'}
 						align='center'
 						w='368px'
+						h={['100%', '100%', '100%', '300px']}
 						flexDir={'column'}>
 						<Heading
 							color={HeadingColor}
@@ -77,18 +80,20 @@ export default function WhoSection() {
 						</Heading>
 						<Image src={mission} />
 						<Text fontSize={'sm'}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua
+							Fornecer Soluções personalizadas de alta qualidade de produtos e
+							serviços exclusivos que geram impacto no mercado
 						</Text>
 					</Flex>
 					<Flex
 						m='0px 0px 16px'
 						borderRadius='4px'
+						gap={['0px', '0px', '0px', '20px']}
 						p='0px 20px 20px'
-						shadow={'md'}
+						shadow={['', '', '', 'md']}
 						justify={'center'}
 						align='center'
 						w='368px'
+						h={['100%', '100%', '100%', '300px']}
 						flexDir={'column'}>
 						<Heading
 							color={HeadingColor}
@@ -98,18 +103,21 @@ export default function WhoSection() {
 						</Heading>
 						<Image src={vision} />
 						<Text fontSize={'sm'}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua
+							Ser uma empresa reconhecida nacionalmente pela sua qualidade e
+							eficiência operacional
 						</Text>
 					</Flex>
 					<Flex
 						m='0px 0px 16px'
 						borderRadius='4px'
-						shadow={'md'}
+						shadow={['', '', '', 'md']}
 						p='0px 20px 20px'
 						justify={'center'}
+						gap={['0px', '0px', '0px', '20px']}
 						align='center'
+						textAlign={'left'}
 						w='368px'
+						h={['100%', '100%', '100%', '300px']}
 						flexDir={'column'}>
 						<Heading
 							color={HeadingColor}
@@ -118,10 +126,14 @@ export default function WhoSection() {
 							Valores
 						</Heading>
 						<Image src={value} />
-						<Text fontSize={'sm'}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua
-						</Text>
+						<Flex
+							flexDir={'column'}
+							gap='8px'>
+							<Text fontSize={'sm'}>
+								Comprometimento; Eficiência; Comunicação; Ética;
+								Autorresponsabilidade
+							</Text>
+						</Flex>
 					</Flex>
 				</Flex>
 			</Flex>

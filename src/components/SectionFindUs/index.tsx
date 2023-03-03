@@ -15,19 +15,17 @@ export default function FindUs() {
 			id='findUs'
 			align={'center'}
 			flexDir='column'
-			gap='20px'
 			padding={'20px 20px 0px'}
 			justify='center'>
 			<Heading
-				textAlign={'center'}
+				textAlign={'left'}
 				color={HeadingColor}
-				m='0px 20px'
 				fontFamily={'Montserrat'}>
 				Venha nos fazer uma visita!
 			</Heading>
 			<Flex
 				shadow={'lg'}
-				p='24px'
+				p='20px'
 				flexDir={['column', 'column', 'column', 'row']}
 				minW='348px'
 				justify={'space-between'}
@@ -40,7 +38,7 @@ export default function FindUs() {
 					referrerPolicy='no-referrer-when-downgrade'></iframe>
 				<Text
 					maxW='400px'
-					textAlign={'justify'}
+					textAlign={'left'}
 					fontSize={['md', 'md', 'md', 'xl']}>
 					Nosso endereço fica no coração do centro de Niterói, uma região muito
 					movimentada e conhecida pela sua infraestrutura comercial. Estamos
@@ -51,6 +49,7 @@ export default function FindUs() {
 			<Divider />
 			<Flex
 				maxW='880px'
+				mt='40px'
 				p='24px'
 				justify='center'
 				gap='20px'
@@ -59,18 +58,17 @@ export default function FindUs() {
 					gap='20px'
 					w='100%'
 					justify='left'
-					align={'center'}
 					flexDir={'column'}>
 					<Heading
 						fontSize={['2xl', '2xl', '2xl', '3xl', '4xl']}
-						textAlign={'center'}
+						textAlign={'left'}
 						color={HeadingColor}
 						fontFamily={'Montserrat'}>
 						Agora que conhece mais sobre nossa história, não perca a
 						oportunidade e deixe a gente te ajudar!
 					</Heading>
 					<Text
-						textAlign={'center'}
+						textAlign={'left'}
 						fontSize={['md', 'md', 'lg', 'xl']}>
 						Temos consultores qualificados e prontos pra te atender a um clique
 						de distância

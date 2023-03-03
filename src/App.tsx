@@ -27,7 +27,7 @@ export function App() {
 				_hover={{ opacity: 1 }}
 				left={['0px', '8px', '8px', '20px']}>
 				<Image
-					w={['40px', '48px', '60px', '100%']}
+					w={['52px', '52px', '60px', '60px']}
 					src={wppImage}
 				/>
 			</Box>

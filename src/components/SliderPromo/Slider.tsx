@@ -1,13 +1,10 @@
 import { Flex, Image } from '@chakra-ui/react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Slide, SliderComponent, SwiperProps } from './index';
+import { Slide, SliderComponent, SwiperProps } from '../GeneralSlider/index';
 import promo1 from '../../assets/institucional-imgs/promo/promo1.svg';
 import promo2 from '../../assets/institucional-imgs/promo/promo2.svg';
 import promo3 from '../../assets/institucional-imgs/promo/promo3.svg';
-import './Slider.css';
+import '../GeneralSlider/Slider.css';
 
 export default function SliderPromo() {
 	const promos = [promo1, promo2, promo3];
@@ -20,12 +17,25 @@ export default function SliderPromo() {
 		slidesPerView: 1,
 	};
 	return (
-		<Flex id='home'>
+		<Flex
+			id='home'
+			display={['none', 'none', 'none', 'flex']}>
 			<SliderComponent settings={settings}>
 				{promos.map((p, index) => {
 					return (
 						<Slide key={index}>
-							<Image src={p} />
+							<Image
+								objectFit={[
+									'contain',
+									'contain',
+									'contain',
+									'contain',
+									'cover',
+								]}
+								w={['90%', '90%', '90%', '100%']}
+								h='100%'
+								src={p}
+							/>
 						</Slide>
 					);
 				})}
