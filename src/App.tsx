@@ -10,6 +10,7 @@ export function App() {
 					path='/'
 					element={<Home />}
 				/>
+				
 				<Route
 					path='/tks'
 					element={<Thanks />}
