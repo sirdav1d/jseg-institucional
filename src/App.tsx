@@ -9,12 +9,12 @@ export function App() {
 				<Route
 					path='/'
 					element={<Home />}
-				/>
+				></Route>
 
 				<Route
 					path='tks'
 					element={<Thanks />}
-				/>
+				></Route>
 			</Routes>
 		</BrowserRouter>
 	);
