@@ -10,9 +10,9 @@ export function App() {
 					path='/'
 					element={<Home />}
 				/>
-				
+
 				<Route
-					path='/tks'
+					path='tks'
 					element={<Thanks />}
 				/>
 			</Routes>
