@@ -4,7 +4,9 @@ export default function ButtonGeneral(props: {
 	text: string;
 	size: string | string[];
 	bgColor?: string;
+	data?: any;
 }) {
+	function handleclick() {}
 	return (
 		<Button
 			maxW='420px'
@@ -21,7 +23,9 @@ export default function ButtonGeneral(props: {
 			_hover={{
 				bg: props.bgColor ? 'brand.dourado.300' : 'brand.verde.primary',
 			}}>
-			<Link _hover={{ textDecor: 'none' }}>
+			<Link
+				href={props.data}
+				_hover={{ textDecor: 'none' }}>
 				<Text fontSize={props.size}>{props.text}</Text>
 			</Link>
 		</Button>
