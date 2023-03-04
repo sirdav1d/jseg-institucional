@@ -9,18 +9,18 @@ import group from '../../assets/institucional-imgs/WhoSection/group.svg';
 import mission from '../../assets/institucional-imgs/WhoSection/mission.svg';
 import value from '../../assets/institucional-imgs/WhoSection/value.svg';
 import vision from '../../assets/institucional-imgs/WhoSection/vision.svg';
+import { AnimateText, MotionFlex } from '../../Styles/animation';
 
 export default function WhoSection() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<>
-			<Flex
+			<MotionFlex
 				id='who'
 				justify={'center'}
 				align='center'
 				flexDir={'column'}>
 				<Flex
-			
 					w={['100%', '360px', '100%', '800px', '1024px']}
 					m={['20px', '20px', '20px', '20px auto 0px']}
 					borderRadius={'4px'}
@@ -30,7 +30,11 @@ export default function WhoSection() {
 					p='20px'
 					flexDir={['column', 'column', 'row']}
 					gap={['12px', '12px', '12px', '40px']}>
-					<Flex
+					<MotionFlex
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 1 }}
 						justify={'center'}
 						flexDir={'column'}
 						gap={['8px', '8px', '16px', '20px']}>
@@ -40,14 +44,14 @@ export default function WhoSection() {
 							fontFamily={'Montserrat'}>
 							Quem Somos
 						</Heading>
-						<Text fontSize={'sm'}>
+						<Text fontSize={['sm', 'md']}>
 							Nós somos uma empresa de tecnologia empenhada em oferecer soluções
 							eficientes e inovadoras em rede e segurança para empresas e
 							residências. Com nossa expertise de 7 anos no mercado, temos o
 							conhecimento necessário para atender a qualquer desafio de
 							segurança que nossos clientes possam enfrentar.
 						</Text>
-					</Flex>
+					</MotionFlex>
 					<Image
 						w={['100%', '0%', '320px']}
 						h='auto'
@@ -62,7 +66,11 @@ export default function WhoSection() {
 					gap={['0px', '0px', '0px', '20px']}
 					flexDir={['column', 'column', 'row']}
 					m='20px auto'>
-					<Flex
+					<MotionFlex
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.2 }}
 						borderRadius='4px'
 						m='0px 0px 16px'
 						p='0px 20px 20px'
@@ -80,12 +88,16 @@ export default function WhoSection() {
 							Missão
 						</Heading>
 						<Image src={mission} />
-						<Text fontSize={'sm'}>
+						<Text fontSize={['sm', 'md']}>
 							Fornecer Soluções personalizadas de alta qualidade de produtos e
 							serviços exclusivos que geram impacto no mercado
 						</Text>
-					</Flex>
-					<Flex
+					</MotionFlex>
+					<MotionFlex
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.5 }}
 						m='0px 0px 16px'
 						borderRadius='4px'
 						gap={['0px', '0px', '0px', '20px']}
@@ -103,12 +115,16 @@ export default function WhoSection() {
 							Visão
 						</Heading>
 						<Image src={vision} />
-						<Text fontSize={'sm'}>
+						<Text fontSize={['sm', 'md']}>
 							Ser uma empresa reconhecida nacionalmente pela sua qualidade e
 							eficiência operacional
 						</Text>
-					</Flex>
-					<Flex
+					</MotionFlex>
+					<MotionFlex
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.8 }}
 						m='0px 0px 16px'
 						borderRadius='4px'
 						shadow={['', '', '', 'md']}
@@ -130,14 +146,14 @@ export default function WhoSection() {
 						<Flex
 							flexDir={'column'}
 							gap='8px'>
-							<Text fontSize={'sm'}>
+							<Text fontSize={['sm', 'md']}>
 								Comprometimento; Eficiência; Comunicação; Ética;
 								Autorresponsabilidade
 							</Text>
 						</Flex>
-					</Flex>
+					</MotionFlex>
 				</Flex>
-			</Flex>
+			</MotionFlex>
 		</>
 	);
 }

@@ -25,7 +25,7 @@ export default function SolutionsSlider() {
 					return (
 						<Slide>
 							<Flex
-								gap='24px'
+								gap={'24px'}
 								flexDir={['column', 'column', 'column', 'row']}
 								justify={'center'}
 								align='center'>

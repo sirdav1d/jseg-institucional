@@ -14,7 +14,6 @@ interface CardProps {
 	direction: ResponsiveValue<any> | undefined;
 }
 
-
 export default function CardItem(props: { data: CardProps }) {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (

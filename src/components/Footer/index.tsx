@@ -142,18 +142,27 @@ export default function Footer() {
 						top='0px'>
 						<Link>
 							<Image
+								opacity={0.8}
+								transition='all .3s ease'
+								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={instaImage}
 							/>
 						</Link>
 						<Link>
 							<Image
+								opacity={0.8}
+								transition='all .3s ease'
+								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={faceImage}
 							/>
 						</Link>
 						<Link>
 							<Image
+								opacity={0.8}
+								transition='all .3s ease'
+								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={wppImage}
 							/>

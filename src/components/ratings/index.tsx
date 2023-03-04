@@ -19,6 +19,12 @@ import c9 from '../../assets/institucional-imgs/ratings/clients/c9.svg';
 import r1 from '../../assets/institucional-imgs/ratings/img1.svg';
 import r2 from '../../assets/institucional-imgs/ratings/img2.svg';
 import r3 from '../../assets/institucional-imgs/ratings/img3.svg';
+import {
+	AnimateText,
+	MotionFlex,
+	MotionHeading,
+	MotionImage,
+} from '../../Styles/animation';
 import SectionCTA from '../SectionCTA';
 
 export default function RatingsSection() {
@@ -31,13 +37,17 @@ export default function RatingsSection() {
 				gap={'20px'}
 				textAlign={'center'}
 				m='0px auto'>
-				<Heading
+				<MotionHeading
+					variants={AnimateText}
+					initial={'start'}
+					whileInView={'end'}
+					viewport={{ once: true, amount: 0.5 }}
 					color={HeadingColor}
 					textAlign={'left'}
 					m='0px 40px'
 					fontFamily={'Montserrat'}>
 					O que dizem sobre nossos serviços?
-				</Heading>
+				</MotionHeading>
 				<Flex
 					shadow='md'
 					padding={'20px'}
@@ -46,7 +56,11 @@ export default function RatingsSection() {
 					justify={'space-between'}
 					m={['0px 20px', '0px 40px']}
 					align='center'>
-					<Flex
+					<MotionFlex
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.2 }}
 						gap='8px'
 						flexDir={'column'}>
 						<Text
@@ -66,8 +80,12 @@ export default function RatingsSection() {
 								Bruno Lima
 							</Text>
 						</Flex>
-					</Flex>
-					<Flex
+					</MotionFlex>
+					<MotionFlex
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.5 }}
 						gap='8px'
 						flexDir={'column'}>
 						<Text
@@ -87,8 +105,12 @@ export default function RatingsSection() {
 								Fidelis Estefan
 							</Text>
 						</Flex>
-					</Flex>
-					<Flex
+					</MotionFlex>
+					<MotionFlex
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.8 }}
 						gap='8px'
 						flexDir={'column'}>
 						<Text
@@ -107,7 +129,7 @@ export default function RatingsSection() {
 								Fernando Rayol
 							</Text>
 						</Flex>
-					</Flex>
+					</MotionFlex>
 				</Flex>
 			</Flex>
 			<Divider />
@@ -116,13 +138,17 @@ export default function RatingsSection() {
 				m={['20px ', '20px ', '20px ', '0px auto']}
 				gap='20px'
 				maxW='1024px'>
-				<Heading
+				<MotionHeading
+					variants={AnimateText}
+					initial={'start'}
+					whileInView={'end'}
+					viewport={{ once: true, amount: 0.5 }}
 					color={HeadingColor}
 					textAlign={'left'}
 					fontSize={['2xl', '2xl', '3xl', '4xl']}
 					fontFamily={'Montserrat'}>
 					Conheça nossos principais parceiros
-				</Heading>
+				</MotionHeading>
 				<Flex
 					flexDir={'column'}
 					align={'center'}>
@@ -132,85 +158,115 @@ export default function RatingsSection() {
 						flexWrap={'wrap'}
 						gap='20px'
 						flexDir={'row'}>
-						<Image
+						<MotionImage
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.1 }}
 							src={c1}
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.2 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c2}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.3 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
 							_hover={{ saturate: '100%' }}
 							src={c3}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.4 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c4}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.5 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c5}
 						/>
 
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.6 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c6}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.6 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c7}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.6 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c8}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.7 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c9}
 						/>
-						<Image
+						<MotionImage
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.7 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
-							transition='all .3s ease'
-							_hover={{ saturate: '100%' }}
+							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
 							src={c10}
 						/>
 					</Flex>

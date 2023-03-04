@@ -1,4 +1,5 @@
-import { Divider, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
+import { Divider, Flex, useColorModeValue } from '@chakra-ui/react';
+import { AnimateText, MotionHeading, MotionText } from '../../Styles/animation';
 import ButtonGeneral from '../ButtonGeneral';
 import Form from '../Form';
 
@@ -21,16 +22,25 @@ export default function SectionForm() {
 					align={['center', 'center', 'center', 'start']}
 					textAlign={'left'}
 					w={['100%', '100%', '100%', '40%']}>
-					<Heading
+					<MotionHeading
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.2 }}
 						color={HeadingColor}
 						fontSize={['2xl', '2xl', '3xl', '3xl', '4xl']}
 						fontFamily={'Montserrat'}>
 						Seu parceiro Intelbras no centro de Niterói
-					</Heading>
-					<Text fontSize={['sm', 'md', 'lg', 'lg', 'xl']}>
+					</MotionHeading>
+					<MotionText
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.2 }}
+						fontSize={['sm', 'md', 'lg', 'lg', 'xl']}>
 						Oferecemos os melhores equipamentos de rede e segurança com a
 						qualidade e confiabilidade da Intelbras, no coração de Niterói
-					</Text>
+					</MotionText>
 					<ButtonGeneral
 						size={['lg', 'lg', 'xl']}
 						text='Falar com Consultor'

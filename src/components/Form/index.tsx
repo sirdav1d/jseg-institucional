@@ -1,4 +1,5 @@
 import {
+	Button,
 	Flex,
 	FormControl,
 	FormHelperText,
@@ -11,11 +12,14 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import ButtonGeneral from '../ButtonGeneral';
+import { useNavigate } from 'react-router-dom';
+import { AnimateContainer, MotionFlex } from '../../Styles/animation';
 
 export default function Form() {
 	const [name, setName] = useState('');
 	const [tel, setTel] = useState('');
+
+	const navigation = useNavigate();
 
 	const handleNameChange = (e: any) => setName(e.target.value);
 	const handleTelChange = (e: any) => setTel(e.target.value);
@@ -23,7 +27,8 @@ export default function Form() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.700');
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
-		<Flex
+		<MotionFlex
+			variants={AnimateContainer}
 			maxW='480px'
 			minWidth={'348px'}
 			flexWrap='wrap'
@@ -35,7 +40,10 @@ export default function Form() {
 			justify={'center'}
 			align='center'
 			borderRadius={'4px'}
-			gap='24px'>
+			gap='24px'
+			viewport={{ once: true, amount: 0.1 }}
+			initial='start'
+			whileInView='end'>
 			<Heading
 				color={HeadingColor}
 				fontFamily={'Montserrat'}
@@ -89,11 +97,16 @@ export default function Form() {
 					<option>SMART HOME</option>
 				</Select>
 			</FormControl>
-			<ButtonGeneral
+			<Button
+				onClick={() => navigation('/thanks')}
 				bgColor={'brand.dourado.500'}
-				text='Enviar'
-				size={'3xl'}
-			/>
-		</Flex>
+				_hover={{ backgroundColor: 'brand.dourado.300' }}
+				color='brand.cinza.100'
+				w='100%'
+				fontWeight={'bold'}
+				fontSize={'2xl'}>
+				Enviar
+			</Button>
+		</MotionFlex>
 	);
 }

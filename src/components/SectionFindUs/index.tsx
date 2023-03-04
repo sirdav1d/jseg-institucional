@@ -5,6 +5,13 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
+import {
+	AnimateContainer,
+	AnimateText,
+	MotionFlex,
+	MotionHeading,
+	MotionText,
+} from '../../Styles/animation';
 import ButtonGeneral from '../ButtonGeneral';
 import Form from '../Form';
 
@@ -17,13 +24,21 @@ export default function FindUs() {
 			flexDir='column'
 			padding={'20px 20px 0px'}
 			justify='center'>
-			<Heading
+			<MotionHeading
+				variants={AnimateText}
+				initial={'start'}
+				whileInView={'end'}
+				viewport={{ once: true, amount: 0.2 }}
 				textAlign={'left'}
 				color={HeadingColor}
 				fontFamily={'Montserrat'}>
 				Venha nos fazer uma visita!
-			</Heading>
-			<Flex
+			</MotionHeading>
+			<MotionFlex
+				variants={AnimateContainer}
+				initial={'start'}
+				whileInView={'end'}
+				viewport={{ once: true, amount: 0.3 }}
 				shadow={'lg'}
 				p='20px'
 				flexDir={['column', 'column', 'column', 'row']}
@@ -39,13 +54,13 @@ export default function FindUs() {
 				<Text
 					maxW='400px'
 					textAlign={'left'}
-					fontSize={['md', 'md', 'md', 'xl']}>
+					fontSize={['md', 'md', 'md', 'lg']}>
 					Nosso endereço fica no coração do centro de Niterói, uma região muito
 					movimentada e conhecida pela sua infraestrutura comercial. Estamos
 					próximos a diversas linhas de ônibus, o que facilita bastante o acesso
 					de nossos clientes.
 				</Text>
-			</Flex>
+			</MotionFlex>
 			<Divider />
 			<Flex
 				maxW='880px'
@@ -59,20 +74,28 @@ export default function FindUs() {
 					w='100%'
 					justify='left'
 					flexDir={'column'}>
-					<Heading
+					<MotionHeading
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.5 }}
 						fontSize={['2xl', '2xl', '2xl', '3xl', '4xl']}
 						textAlign={'left'}
 						color={HeadingColor}
 						fontFamily={'Montserrat'}>
 						Agora que conhece mais sobre nossa história, não perca a
 						oportunidade e deixe a gente te ajudar!
-					</Heading>
-					<Text
+					</MotionHeading>
+					<MotionText
+						variants={AnimateText}
+						initial={'start'}
+						whileInView={'end'}
+						viewport={{ once: true, amount: 0.5 }}
 						textAlign={'left'}
 						fontSize={['md', 'md', 'lg', 'xl']}>
 						Temos consultores qualificados e prontos pra te atender a um clique
 						de distância
-					</Text>
+					</MotionText>
 					<ButtonGeneral
 						size={['lg', 'lg', 'xl']}
 						text='Falar com Consultor'

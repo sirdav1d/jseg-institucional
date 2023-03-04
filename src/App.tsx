@@ -8,13 +8,11 @@ export function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Home />}
-				></Route>
+					element={<Home />}></Route>
 
-				{/* <Route
+				<Route
 					path='/thanks'
-					element={<Thanks />}
-				></Route> */}
+					element={<Thanks />}></Route>
 			</Routes>
 		</BrowserRouter>
 	);

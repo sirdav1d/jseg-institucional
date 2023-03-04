@@ -1,4 +1,5 @@
 import { Flex, Heading, useColorModeValue } from '@chakra-ui/react';
+import { AnimateCTA, AnimateText, MotionFlex } from '../../Styles/animation';
 import ButtonGeneral from '../ButtonGeneral';
 
 export default function SectionCTA(props: { text: string; btnText: string }) {
@@ -8,7 +9,11 @@ export default function SectionCTA(props: { text: string; btnText: string }) {
 	);
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
-		<Flex
+		<MotionFlex
+			variants={AnimateCTA}
+			initial={'start'}
+			whileInView={'end'}
+			viewport={{ once: true, amount: 0.5 }}
 			justify={'center'}
 			align='center'
 			shadow='2xl'
@@ -29,6 +34,6 @@ export default function SectionCTA(props: { text: string; btnText: string }) {
 				text={props.btnText}
 				size={['lg', 'lg', 'xl', '2xl']}
 			/>
-		</Flex>
+		</MotionFlex>
 	);
 }

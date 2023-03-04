@@ -1,5 +1,6 @@
 import { Flex, Heading, useColorModeValue } from '@chakra-ui/react';
 import { GeneralData } from '../../mocks/data';
+import { AnimateText, MotionFlex, MotionHeading } from '../../Styles/animation';
 import CardItem from '../Card';
 
 export default function SectionBenefit() {
@@ -9,13 +10,17 @@ export default function SectionBenefit() {
 		<Flex
 			flexDir={'column'}
 			id='benefits'>
-			<Heading
+			<MotionHeading
+				variants={AnimateText}
+				initial={'start'}
+				whileInView={'end'}
+				viewport={{ once: true, amount: 0.2 }}
 				color={HeadingColor}
 				fontSize={['2xl', '2xl', '3xl', '4xl']}
 				textAlign={'center'}
 				fontFamily={'Montserrat'}>
 				Por que escolher nossa empresa?
-			</Heading>
+			</MotionHeading>
 			<Flex
 				bgColor={bgColor}
 				m={['16px', '16px', '16px', '20px', '16px 80px']}
@@ -29,10 +34,17 @@ export default function SectionBenefit() {
 				flexDir={['column', 'column', 'row']}>
 				{GeneralData.institucional.beneficios.map((b) => {
 					return (
-						<CardItem
-							key={b.title}
-							data={b}
-						/>
+						<MotionFlex
+							m='0 auto'
+							variants={AnimateText}
+							initial={'start'}
+							whileInView={'end'}
+							viewport={{ once: true, amount: 0.3 }}>
+							<CardItem
+								key={b.title}
+								data={b}
+							/>
+						</MotionFlex>
 					);
 				})}
 			</Flex>
