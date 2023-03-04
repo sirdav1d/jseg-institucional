@@ -32,7 +32,7 @@ export const MotionFlex = motion<FlexProps>(Flex);
 export const AnimateText = {
 	start: {
 		opacity: 0,
-		translateX: -200,
+		translateX: -100,
 	},
 	end: {
 		opacity: 1,
@@ -51,7 +51,7 @@ export const MotionHeading = motion<HeadingProps>(Heading);
 export const AnimateCTA = {
 	start: {
 		opacity: 0,
-		translateX: -400,
+		translateX: -100,
 	},
 	end: {
 		opacity: 1,
