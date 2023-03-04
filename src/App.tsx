@@ -11,10 +11,10 @@ export function App() {
 					element={<Home />}
 				></Route>
 
-				<Route
-					path='/tks'
+				{/* <Route
+					path='/thanks'
 					element={<Thanks />}
-				></Route>
+				></Route> */}
 			</Routes>
 		</BrowserRouter>
 	);

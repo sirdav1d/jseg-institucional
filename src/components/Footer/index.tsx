@@ -29,7 +29,7 @@ export default function Footer() {
 					justify='center'
 					h='100%'
 					pb='20px'
-					minH='68vh'>
+					minH='64vh'>
 					<Flex
 						align={'start'}
 						justify='space-between'

@@ -11,7 +11,7 @@ export default function ButtonGeneral(props: {
 		<Button
 			maxW='420px'
 			bg={props.bgColor ? props.bgColor : 'brand.verde.500'}
-			p={['12px 20px', '12px 20px', '16px 32px', '28px 40px']}
+			p={['12px 20px', '12px 20px', '24px 28px']}
 			borderRadius={'4px'}
 			fontWeight={'bold'}
 			color={'brand.branco'}

@@ -5,18 +5,17 @@ export default function Solutions() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<Flex
-		id='solutions'
+			id='solutions'
 			shadow={'md'}
 			flexDir={'column'}
 			maxW='1024px'
-			m='0px auto'
-			p='20px'
-			align='center'
+			p='0px 20px'
+			m={['0px 20px', '0px 20px', '0px 20px', '0px auto']}
 			justify={'center'}>
 			<Heading
 				color={HeadingColor}
 				textAlign='left'
-				fontSize={['xl', 'xl', 'xl', '3xl']}
+				fontSize={['2xl', '2xl', '3xl', '4xl']}
 				fontFamily={'Montserrat'}>
 				Temos a solução que você está procurando
 			</Heading>

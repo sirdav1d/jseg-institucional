@@ -20,6 +20,7 @@ export default function WhoSection() {
 				align='center'
 				flexDir={'column'}>
 				<Flex
+			
 					w={['100%', '360px', '100%', '800px', '1024px']}
 					m={['20px', '20px', '20px', '20px auto 0px']}
 					borderRadius={'4px'}

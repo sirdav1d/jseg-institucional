@@ -1,11 +1,9 @@
 import { Box, Flex, Image, useColorModeValue } from '@chakra-ui/react';
 import wppImage from '../../assets/institucional-imgs/wpp.svg';
-import {
-	default as Footer,
-	default as WhoSection,
-} from '../../components/Footer';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import RatingsSection from '../../components/ratings';
+import WhoSection from '../../components/Who';
 import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';

@@ -26,9 +26,9 @@ export default function RatingsSection() {
 	return (
 		<>
 			<Flex
-				maxWidth={'880px'}
+				maxWidth={'1100px'}
 				flexDir={'column'}
-				gap={['20px', '20px', '20px', '40px']}
+				gap={'20px'}
 				textAlign={'center'}
 				m='0px auto'>
 				<Heading
@@ -113,24 +113,21 @@ export default function RatingsSection() {
 			<Divider />
 			<Flex
 				flexDir={'column'}
-				justify='center'
-				m='0px auto'
-				maxW='880px'
-				gap='20px'>
+				m={['20px ', '20px ', '20px ', '0px auto']}
+				gap='20px'
+				maxW='1024px'>
 				<Heading
 					color={HeadingColor}
 					textAlign={'left'}
-					m='20px'
+					fontSize={['2xl', '2xl', '3xl', '4xl']}
 					fontFamily={'Montserrat'}>
 					Conheça nossos principais parceiros
 				</Heading>
 				<Flex
 					flexDir={'column'}
-					align={'center'}
-					gap='20px'
-					justify='center'>
+					align={'center'}>
 					<Flex
-						justify={'center'}
+						justify={['center', 'center', 'center', 'space-between']}
 						align='center'
 						flexWrap={'wrap'}
 						gap='20px'

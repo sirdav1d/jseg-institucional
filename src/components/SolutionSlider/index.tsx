@@ -16,7 +16,10 @@ export default function SolutionsSlider() {
 		slidesPerView: 1,
 	};
 	return (
-		<Flex maxW='1024px'>
+		<Flex
+			maxW='1024px'
+			align={'center'}
+			justify='center'>
 			<SliderComponent settings={settings}>
 				{SolutionsSliderData.map((s) => {
 					return (
@@ -28,13 +31,15 @@ export default function SolutionsSlider() {
 								align='center'>
 								<Image
 									borderRadius={'12px'}
-									h={['140px', '140px', '180px', '240px']}
+									h={['180px', '180px', '180px', '240px']}
 									src={s.img}
 								/>
 								<Flex
+									justify={'center'}
+									align='center'
 									flexDir={'column'}
 									gap='12px'>
-									<Heading fontSize={['lg', 'lg', 'xl', '2xl']}>
+									<Heading fontSize={['md', 'lg', 'xl', '2xl']}>
 										{s.title}
 									</Heading>
 									<Text
