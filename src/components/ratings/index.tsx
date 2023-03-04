@@ -251,7 +251,7 @@ export default function RatingsSection() {
 							variants={AnimateText}
 							initial={'start'}
 							whileInView={'end'}
-							viewport={{ once: true, amount: 0.7 }}
+							viewport={{ once: true, amount: 0.4 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
@@ -262,7 +262,7 @@ export default function RatingsSection() {
 							variants={AnimateText}
 							initial={'start'}
 							whileInView={'end'}
-							viewport={{ once: true, amount: 0.7 }}
+							viewport={{ once: true, amount: 0.4 }}
 							transform={'auto'}
 							filter={'auto'}
 							saturate={'0%'}
