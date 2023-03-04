@@ -34,7 +34,7 @@ export default function WhoSection() {
 						variants={AnimateText}
 						initial={'start'}
 						whileInView={'end'}
-						viewport={{ once: true, amount: 1 }}
+						viewport={{ once: true, amount: .2 }}
 						justify={'center'}
 						flexDir={'column'}
 						gap={['8px', '8px', '16px', '20px']}>
