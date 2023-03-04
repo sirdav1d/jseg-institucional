@@ -17,7 +17,7 @@ export default function SectionBenefit() {
 				viewport={{ once: true, amount: 0.2 }}
 				color={HeadingColor}
 				fontSize={['2xl', '2xl', '3xl', '4xl']}
-				textAlign={'center'}
+				textAlign={['left', 'left', 'left', 'center']}
 				fontFamily={'Montserrat'}>
 				Por que escolher nossa empresa?
 			</MotionHeading>
