@@ -1,11 +1,15 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { Autoplay, Navigation, Pagination } from 'swiper';
-import { SolutionsSliderData } from '../../mocks/data';
-import ButtonGeneral from '../ButtonGeneral';
-import { Slide, SliderComponent, SwiperProps } from '../GeneralSlider';
+import { GeneralData } from '../../mocks/data';
+import ButtonGeneral from '../../components/ButtonGeneral';
+import {
+	Slide,
+	SliderComponent,
+	SwiperProps,
+} from '../../components/GeneralSlider';
 
-export default function SolutionsSlider() {
+export default function SliderCftv() {
 	const settings: SwiperProps = {
 		modules: [Navigation, Pagination, Autoplay],
 		spaceBetween: 100,
@@ -17,10 +21,11 @@ export default function SolutionsSlider() {
 	return (
 		<Flex
 			maxW='1024px'
+			m='0px auto'
 			align={'center'}
 			justify='center'>
 			<SliderComponent settings={settings}>
-				{SolutionsSliderData.map((s) => {
+				{GeneralData.cftv.produtos.map((s) => {
 					return (
 						<Slide key={s.title}>
 							<Flex
@@ -30,7 +35,7 @@ export default function SolutionsSlider() {
 								align='center'>
 								<Image
 									borderRadius={'12px'}
-									h={['180px', '180px', '180px', '240px']}
+									h={['180px', '180px', '180px', '440px']}
 									src={s.img}
 								/>
 								<Flex
@@ -46,7 +51,7 @@ export default function SolutionsSlider() {
 										fontSize={'sm'}>
 										{s.content}
 									</Text>
-									<Link to={`${s.id}#home`}>
+									<Link to={'/'}>
 										<ButtonGeneral
 											text={'Saiba Mais'}
 											size={['lg', 'lg', 'xl', '2xl']}

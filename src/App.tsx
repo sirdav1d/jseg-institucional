@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Rede from './pages/Rede';
 import SmartHome from './pages/SmartHome';
 import Solar from './pages/Solar';
+import Telefonia from './pages/Tel';
 import Thanks from './pages/Thanks';
 
 export function App() {
@@ -27,7 +28,7 @@ export function App() {
 					element={<Alarme />}></Route>
 				<Route
 					path='/telefonia'
-					element={<Thanks />}></Route>
+					element={<Telefonia />}></Route>
 				<Route
 					path='/acesso'
 					element={<Acesso />}></Route>

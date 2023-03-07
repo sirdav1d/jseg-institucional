@@ -11,6 +11,8 @@ import { DataNavigationLP } from '../../mocks/data';
 import { AnimateText, MotionHeading, MotionText } from '../../Styles/animation';
 import ButtonGeneral from '../../components/ButtonGeneral';
 import InitalSectionLP from '../../components/InitialSectionLP';
+import { GeneralData } from '../../mocks/data';
+import SliderCftv from './SliderCftv';
 
 export default function Cftv() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
@@ -38,8 +40,14 @@ export default function Cftv() {
 				gap={['40px', '60px', '60px', '80px']}
 				flexDir={'column'}
 				bgColor={bgColor}>
-				<InitalSectionLP />
-				<SectionBenefit />
+				<InitalSectionLP
+					headLine={'Aproveite nossas soluções em CFTV!'}
+					subHeadLine={
+						'Monitore sua casa ou empresa de onde estiver, com imagens de alta qualidade e tecnologia de ponta. Não perca mais tempo, clique agora no botão abaixo e garanta a sua tranquilidade!'
+					}
+				/>
+				<SliderCftv />
+				<SectionBenefit data={GeneralData.cftv.beneficios} />
 				<SectionCTA
 					text={
 						'Procurando uma empresa parceira e de confiança?' +

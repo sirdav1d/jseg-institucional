@@ -9,7 +9,7 @@ import SectionForm from '../../components/SectionForm';
 import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import { DataNavigationLP } from '../../mocks/data';
 
-export default function Cftv() {
+export default function Telefonia() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
 	return (
 		<>

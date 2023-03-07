@@ -2,7 +2,6 @@ import b1Inst from '../assets/institucional-imgs/benefits/b1.svg';
 import b2Inst from '../assets/institucional-imgs/benefits/b2.svg';
 import b3Inst from '../assets/institucional-imgs/benefits/b3.svg';
 import b4Inst from '../assets/institucional-imgs/benefits/b4.svg';
-
 import cftv from '../assets/institucional-imgs/solutions/cftv.svg';
 import rede from '../assets/institucional-imgs/solutions/rede.svg';
 import smartHome from '../assets/institucional-imgs/solutions/smart.svg';
@@ -10,10 +9,14 @@ import alarme from '../assets/institucional-imgs/solutions/alarme.svg';
 import acesso from '../assets/institucional-imgs/solutions/acesso.svg';
 import telefonia from '../assets/institucional-imgs/solutions/telefonia.svg';
 import solar from '../assets/institucional-imgs/solutions/solar.svg';
+import b1cftv from '../assets/cftv-imgs/beneficios/b1.svg';
+import b2cftv from '../assets/cftv-imgs/beneficios/b2.svg';
+import b3cftv from '../assets/cftv-imgs/beneficios/b3.svg';
+import b4cftv from '../assets/cftv-imgs/beneficios/b4.svg';
+import p1cftv from '../assets/cftv-imgs/produtos/p1.svg';
 
 export const GeneralData = {
 	rede: {
-		
 		produtos: {
 			imgs: [],
 			title: [],
@@ -26,7 +29,6 @@ export const GeneralData = {
 		},
 	},
 	alarme: {
-	
 		produtos: {
 			imgs: [],
 			title: [],
@@ -39,7 +41,6 @@ export const GeneralData = {
 		},
 	},
 	smartHome: {
-		
 		produtos: {
 			imgs: [],
 			title: [],
@@ -52,7 +53,6 @@ export const GeneralData = {
 		},
 	},
 	tel: {
-		
 		produtos: {
 			imgs: [],
 			title: [],
@@ -65,7 +65,6 @@ export const GeneralData = {
 		},
 	},
 	acesso: {
-		
 		produtos: {
 			imgs: [],
 			title: [],
@@ -90,17 +89,58 @@ export const GeneralData = {
 		},
 	},
 	cftv: {
+		produtos: [
+			{
+				img: p1cftv,
+				title: 'Kit CFTV 4 Canais Coaxial',
+				content:
+					'Um kit CFTV coaxial de 4 canais é composto por um DVR (gravador de vídeo digital) e 4 câmeras de segurança com tecnologia coaxial. O DVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, esse tipo de kit é ideal para monitorar ambientes de médio porte, como residências e pequenas empresas, com um sistema de segurança simples e eficiente.',
+			},
+			{
+				img: p1cftv,
+				title: 'Kit CFTV 4 Canais POE',
+				content:
+					'Um kit CFTV IP PoE de 4 canais é composto por um NVR (gravador de vídeo em rede) e 4 câmeras de segurança com tecnologia IP, que se conectam à rede por meio de cabos Ethernet e utilizam a tecnologia PoE (Power over Ethernet) para alimentação. O NVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, permitindo o acesso às gravações a qualquer momento.',
+			},
 
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
+			{
+				img: p1cftv,
+				title: 'Kit CFTV 4 Canais IP WIFI',
+				content:
+					'Um kit CFTV IP Wi-Fi de 4 canais é composto por um NVR (gravador de vídeo em rede) e 4 câmeras de segurança com tecnologia IP, que se conectam à rede sem fio por meio de Wi-Fi. O NVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, permitindo o acesso às gravações a qualquer momento. Esse tipo de kit oferece flexibilidade e facilidade na instalação.',
+			},
+			{
+				img: p1cftv,
+				title: 'Kit CFTV 8 Canais Coaxial',
+				content: [],
+			},
+		],
+		beneficios: [
+			{
+				img: b1cftv,
+				title: 'Maior segurança',
+				content:
+					'Com câmeras posicionadas estrategicamente, é possível monitorar o ambiente em tempo real, o que ajuda a inibir a ação de criminosos e a detectar possíveis invasões ou roubos.',
+			},
+			{
+				img: b2cftv,
+				title: 'Acesso remoto',
+				content:
+					'Muitos kits de CFTV permitem o acesso remoto às imagens capturadas pelas câmeras, o que significa que você pode monitorar sua casa ou empresa de qualquer lugar do mundo, através do seu smartphone ou computador.',
+			},
+			{
+				img: b3cftv,
+				title: 'Redução de custos',
+				content:
+					'Com o kit de CFTV, você pode economizar dinheiro em segurança, pois não será necessário contratar vigilantes ou serviços de monitoramento remoto.',
+			},
+			{
+				img: b4cftv,
+				title: 'Monitoramento 24 horas',
+				content:
+					'Com as câmeras de segurança instaladas, é possível monitorar o local 24 horas por dia, 7 dias por semana, o que aumenta a proteção da sua casa ou empresa durante o dia e à noite.',
+			},
+		],
 	},
 	institucional: {
 		beneficios: [
