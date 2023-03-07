@@ -3,7 +3,7 @@ import { GeneralData } from '../../mocks/data';
 import { AnimateText, MotionFlex, MotionHeading } from '../../Styles/animation';
 import CardItem from '../Card';
 
-export default function SectionBenefit() {
+export default function SectionBenefit(props: { data?: any }) {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
@@ -33,7 +33,7 @@ export default function SectionBenefit() {
 				flexWrap={['wrap', 'wrap', 'wrap', 'nowrap']}
 				shadow='md'
 				flexDir={['column', 'column', 'row']}>
-				{GeneralData.institucional.beneficios.map((b) => {
+				{props.data.map((b: any) => {
 					return (
 						<MotionFlex
 							key={b.title}

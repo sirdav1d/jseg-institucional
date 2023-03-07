@@ -8,9 +8,13 @@ import FindUs from '../../components/SectionFindUs';
 import SectionForm from '../../components/SectionForm';
 import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import { DataNavigationLP } from '../../mocks/data';
+import { AnimateText, MotionHeading, MotionText } from '../../Styles/animation';
+import ButtonGeneral from '../../components/ButtonGeneral';
+import InitalSectionLP from '../../components/InitialSectionLP';
 
 export default function Cftv() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
+
 	return (
 		<>
 			<Header data={DataNavigationLP.items} />
@@ -28,11 +32,13 @@ export default function Cftv() {
 					src={wppImage}
 				/>
 			</Box>
+
 			<Flex
 				overflowX={'hidden'}
 				gap={['40px', '60px', '60px', '80px']}
 				flexDir={'column'}
 				bgColor={bgColor}>
+				<InitalSectionLP />
 				<SectionBenefit />
 				<SectionCTA
 					text={

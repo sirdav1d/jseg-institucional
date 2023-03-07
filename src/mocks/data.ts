@@ -12,21 +12,8 @@ import telefonia from '../assets/institucional-imgs/solutions/telefonia.svg';
 import solar from '../assets/institucional-imgs/solutions/solar.svg';
 
 export const GeneralData = {
-	cftv: {
-
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-	},
 	rede: {
-	
+		
 		produtos: {
 			imgs: [],
 			title: [],
@@ -52,7 +39,7 @@ export const GeneralData = {
 		},
 	},
 	smartHome: {
-	
+		
 		produtos: {
 			imgs: [],
 			title: [],
@@ -65,7 +52,7 @@ export const GeneralData = {
 		},
 	},
 	tel: {
-	
+		
 		produtos: {
 			imgs: [],
 			title: [],
@@ -91,6 +78,19 @@ export const GeneralData = {
 		},
 	},
 	solar: {
+		produtos: {
+			imgs: [],
+			title: [],
+			content: [],
+		},
+		beneficios: {
+			imgs: [],
+			title: [],
+			content: [],
+		},
+	},
+	cftv: {
+
 		produtos: {
 			imgs: [],
 			title: [],

@@ -2,7 +2,7 @@ import { Box, Flex, Image, useColorModeValue } from '@chakra-ui/react';
 import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import RatingsSection from '../../components/ratings';
+import RatingsSection from '../../components/Ratings';
 import WhoSection from '../../components/Who';
 import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
@@ -11,6 +11,7 @@ import SectionForm from '../../components/SectionForm';
 import SliderPromo from '../../components/SliderPromo/Slider';
 import Solutions from '../../components/Solutions';
 import { DataNavigation } from '../../mocks/data';
+import { GeneralData } from '../../mocks/data';
 
 export function Home() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
@@ -41,7 +42,7 @@ export function Home() {
 					<SliderPromo />
 				</Box>
 				<SectionForm />
-				<SectionBenefit />
+				<SectionBenefit data={GeneralData.institucional.beneficios} />
 				<SectionCTA
 					text={
 						'Procurando uma empresa parceira e de confiança?' +
