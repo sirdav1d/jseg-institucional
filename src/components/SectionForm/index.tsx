@@ -9,6 +9,7 @@ export default function SectionForm() {
 	return (
 		<>
 			<Flex
+				id='home'
 				m={['0px 40px', '20px 40px', '20px 40px', '20px 80px']}
 				gap='28px'
 				align={'center'}

@@ -2,8 +2,9 @@ import { Box, Flex, Image, Link, useColorModeValue } from '@chakra-ui/react';
 import logo from '../../assets/institucional-imgs/logo.svg';
 import { DrawerMenu } from '../drawer';
 import NavTag from '../Navigation';
+import { INavProps } from '../Navigation';
 
-export default function Header() {
+export default function Header(props: { data: INavProps | any }) {
 	const headerBg = useColorModeValue('brand.branco', 'brand.cinza.300');
 	return (
 		<Flex
@@ -23,7 +24,7 @@ export default function Header() {
 					width={['200px', '220px', '220px', '220px', '300px', '300px']}
 				/>
 			</Link>
-			<NavTag page={'inst'} />
+			<NavTag data={props.data} />
 			<Box display={['flex', 'flex', 'flex', 'none']}>
 				<DrawerMenu />
 			</Box>

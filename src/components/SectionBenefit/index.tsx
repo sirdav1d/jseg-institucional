@@ -18,7 +18,7 @@ export default function SectionBenefit() {
 				color={HeadingColor}
 				fontSize={['2xl', '2xl', '3xl', '4xl']}
 				textAlign={['left', 'left', 'left', 'center']}
-				m={['0px 20px', '0px 20px','0px 20px','0px']}
+				m={['0px 20px', '0px 20px', '0px 20px', '0px']}
 				fontFamily={'Montserrat'}>
 				Por que escolher nossa empresa?
 			</MotionHeading>
@@ -36,15 +36,13 @@ export default function SectionBenefit() {
 				{GeneralData.institucional.beneficios.map((b) => {
 					return (
 						<MotionFlex
+							key={b.title}
 							m='0 auto'
 							variants={AnimateText}
 							initial={'start'}
 							whileInView={'end'}
 							viewport={{ once: true, amount: 0.3 }}>
-							<CardItem
-								key={b.title}
-								data={b}
-							/>
+							<CardItem data={b} />
 						</MotionFlex>
 					);
 				})}

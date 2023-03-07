@@ -14,7 +14,7 @@ export const AnimateContainer = {
 	start: {
 		opacity: 0,
 		scale: 0,
-		y: 100,
+		y: 10,
 	},
 	end: {
 		opacity: 1,
@@ -23,7 +23,7 @@ export const AnimateContainer = {
 
 		transitions: {
 			delayChildren: 0.3,
-			staggerChildren: 0.5,
+			staggerChildren: 0.2,
 		},
 	},
 };

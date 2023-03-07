@@ -18,7 +18,6 @@ export default function SliderPromo() {
 	};
 	return (
 		<Flex
-			id='home'
 			display={['none', 'none', 'none', 'flex']}>
 			<SliderComponent settings={settings}>
 				{promos.map((p, index) => {
@@ -40,41 +39,6 @@ export default function SliderPromo() {
 					);
 				})}
 			</SliderComponent>
-			{/* <Swiper
-				modules={[Navigation, Pagination, Autoplay]}
-				spaceBetween={100}
-				navigation={{ enabled: true }}
-				autoplay={{ delay: 4000, pauseOnMouseEnter: true }}
-				pagination={{ clickable: true }}
-				slidesPerView={1}>
-				<SwiperSlide>
-					<Image
-						w={'100%'}
-						height={'100%'}
-						objectFit={'cover'}
-						objectPosition={'center'}
-						src={promo1}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						w={'100%'}
-						height={'100%'}
-						objectFit={'cover'}
-						objectPosition={'center'}
-						src={promo2}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						w={'100%'}
-						height={'100%'}
-						objectFit={'cover'}
-						objectPosition={'center'}
-						src={promo3}
-					/>
-				</SwiperSlide>
-			</Swiper> */}
 		</Flex>
 	);
 }

@@ -1,5 +1,6 @@
 import { Flex, Image, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 
 import { SolutionsSliderData } from '../../mocks/data';
@@ -23,7 +24,7 @@ export default function SolutionsSlider() {
 			<SliderComponent settings={settings}>
 				{SolutionsSliderData.map((s) => {
 					return (
-						<Slide>
+						<Slide key={s.title}>
 							<Flex
 								gap={'24px'}
 								flexDir={['column', 'column', 'column', 'row']}
@@ -47,10 +48,12 @@ export default function SolutionsSlider() {
 										fontSize={'sm'}>
 										{s.content}
 									</Text>
-									<ButtonGeneral
-										text={'Saiba Mais'}
-										size={['lg', 'lg', 'xl', '2xl']}
-									/>
+									<Link to={`${s.id}#home`}>
+										<ButtonGeneral
+											text={'Saiba Mais'}
+											size={['lg', 'lg', 'xl', '2xl']}
+										/>
+									</Link>
 								</Flex>
 							</Flex>
 						</Slide>

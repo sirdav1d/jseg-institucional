@@ -9,7 +9,7 @@ export default function Solutions() {
 			variants={AnimateContainer}
 			initial={'start'}
 			whileInView={'end'}
-			viewport={{ once: true, amount: 0.1 }}
+			viewport={{ once: true, amount: 0.2 }}
 			id='solutions'
 			shadow={'md'}
 			flexDir={'column'}
