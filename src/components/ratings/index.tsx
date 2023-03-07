@@ -26,7 +26,7 @@ import {
 } from '../../Styles/animation';
 import SectionCTA from '../SectionCTA';
 
-export  function RatingsSection() {
+export default function RatingsSection() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<>
@@ -272,7 +272,7 @@ export  function RatingsSection() {
 				</Flex>
 			</Flex>
 			<SectionCTA
-				text='Não perca mais tempo, adquira nossos produtos agora mesmo! Clique aqui para comprar!'
+				text={'Não perca mais tempo, adquira nossos produtos agora mesmo! Clique aqui para comprar!'}
 				btnText={'Comprar Agora'}
 			/>
 		</>
