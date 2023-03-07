@@ -2,7 +2,7 @@ import { Box, Flex, Image, useColorModeValue } from '@chakra-ui/react';
 import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import  RatingsSection from '../../components/Ratings';
+// import  RatingsSection from '../../components/Ratings';
 import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
@@ -51,7 +51,7 @@ export function Home() {
 				/>
 				<Solutions />
 				<WhoSection />
-				<RatingsSection />
+				{/* <RatingsSection /> */}
 				<FindUs />
 				<Footer />
 			</Flex>
