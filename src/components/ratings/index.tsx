@@ -26,7 +26,7 @@ import {
 } from '../../Styles/animation';
 import SectionCTA from '../SectionCTA';
 
-export default function RatingsSection() {
+export  function RatingsSection() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 	return (
 		<>
