@@ -3,15 +3,14 @@ import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import RatingsSection from '../../components/Ratings';
-import WhoSection from '../../components/Who';
 import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SectionForm from '../../components/SectionForm';
 import SliderPromo from '../../components/SliderPromo/Slider';
 import Solutions from '../../components/Solutions';
-import { DataNavigation } from '../../mocks/data';
-import { GeneralData } from '../../mocks/data';
+import WhoSection from '../../components/Who';
+import { DataNavigation, GeneralData } from '../../mocks/data';
 
 export function Home() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');

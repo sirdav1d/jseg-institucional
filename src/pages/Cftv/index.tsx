@@ -1,17 +1,12 @@
 import { Box, Flex, Image, useColorModeValue } from '@chakra-ui/react';
-import React from 'react';
+import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import InitalSectionLP from '../../components/InitialSectionLP';
 import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
-import SectionForm from '../../components/SectionForm';
-import wppImage from '../../assets/institucional-imgs/wpp.svg';
-import { DataNavigationLP } from '../../mocks/data';
-import { AnimateText, MotionHeading, MotionText } from '../../Styles/animation';
-import ButtonGeneral from '../../components/ButtonGeneral';
-import InitalSectionLP from '../../components/InitialSectionLP';
-import { GeneralData } from '../../mocks/data';
+import { DataNavigationLP, GeneralData } from '../../mocks/data';
 import SliderCftv from './SliderCftv';
 
 export default function Cftv() {

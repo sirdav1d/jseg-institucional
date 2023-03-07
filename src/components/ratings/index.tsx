@@ -1,7 +1,6 @@
 import {
 	Divider,
 	Flex,
-	Heading,
 	Image,
 	Text,
 	useColorModeValue,
