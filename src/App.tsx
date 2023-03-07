@@ -23,7 +23,7 @@ export function App() {
 				<Route
 					path='/cftv'
 					element={<Cftv />}></Route>
-				<Route
+				{/* <Route
 					path='/alarme'
 					element={<Alarme />}></Route>
 				<Route
@@ -40,7 +40,7 @@ export function App() {
 					element={<Rede />}></Route>
 				<Route
 					path='/smartHome'
-					element={<SmartHome />}></Route>
+					element={<SmartHome />}></Route> */}
 			</Routes>
 		</BrowserRouter>
 	);
