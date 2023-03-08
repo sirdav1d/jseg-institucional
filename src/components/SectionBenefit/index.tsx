@@ -18,7 +18,7 @@ export default function SectionBenefit(props: { data?: any }) {
 				color={HeadingColor}
 				fontSize={['2xl', '2xl', '3xl', '4xl']}
 				textAlign={['left', 'left', 'left', 'center']}
-				m={['0px 20px', '0px 20px', '0px 20px', '0px']}
+				m={['0px 40px', '0px 20px', '0px 20px', '0px']}
 				fontFamily={'Montserrat'}>
 				Por que escolher nossa empresa?
 			</MotionHeading>
@@ -30,7 +30,7 @@ export default function SectionBenefit(props: { data?: any }) {
 				justify={['center', 'center', 'center', 'space-between']}
 				align={['center', 'center', 'center', 'start']}
 				borderRadius={'4px'}
-				flexWrap={['wrap', 'wrap', 'wrap', 'nowrap']}
+				flexWrap={['wrap', 'wrap', 'wrap','wrap', 'nowrap']}
 				shadow='md'
 				flexDir={['column', 'column', 'row']}>
 				{props.data.map((b: any) => {

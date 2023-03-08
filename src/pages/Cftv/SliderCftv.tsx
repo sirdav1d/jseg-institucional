@@ -29,18 +29,19 @@ export default function SliderCftv() {
 					return (
 						<Slide key={s.title}>
 							<Flex
-								gap={'24px'}
 								flexDir={['column', 'column', 'column', 'row']}
 								justify={'center'}
+								gap='20px'
+								p='12px'
 								align='center'>
 								<Image
 									borderRadius={'12px'}
-									h={['180px', '180px', '180px', '440px']}
+									h={['180px', '180px', '180px', '240px']}
 									src={s.img}
 								/>
 								<Flex
 									justify={'center'}
-									align='center'
+									align={['center', 'center', 'center', 'normal']}
 									flexDir={'column'}
 									gap='12px'>
 									<Heading fontSize={['md', 'lg', 'xl', '2xl']}>
@@ -51,12 +52,14 @@ export default function SliderCftv() {
 										fontSize={'sm'}>
 										{s.content}
 									</Text>
-									<Link to={'/'}>
-										<ButtonGeneral
-											text={'Saiba Mais'}
-											size={['lg', 'lg', 'xl', '2xl']}
-										/>
-									</Link>
+
+									<ButtonGeneral
+										data={
+											'https://api.whatsapp.com/send?phone=5521971602106&text=Ol%C3%A1%20estava%20navegando%20pelo%20seu%20site,%20gostaria%20de%20montar%20um%20or%C3%A7amento!'
+										}
+										text={'Saiba Mais'}
+										size={['lg', 'lg', 'xl', '2xl']}
+									/>
 								</Flex>
 							</Flex>
 						</Slide>

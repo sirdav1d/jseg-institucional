@@ -6,29 +6,27 @@ export default function ButtonGeneral(props: {
 	bgColor?: string;
 	data?: any;
 }) {
-
 	return (
-		<Button
-			maxW='420px'
-			bg={props.bgColor ? props.bgColor : 'brand.verde.500'}
-			p={['12px 20px', '12px 20px', '24px 28px']}
-			borderRadius={'4px'}
-			fontWeight={'bold'}
-			color={'brand.branco'}
-			w={['240px', '240px', '240px', '100%']}
-			textAlign='center'
-			shadow={'lg'}
-			cursor={'pointer'}
-			transition={'all .3s ease'}
-			_hover={{
-				bg: props.bgColor ? 'brand.dourado.300' : 'brand.verde.primary',
-			}}>
-			<Link
-				target={'_blank'}
-				href={props.data}
-				_hover={{ textDecor: 'none' }}>
+		<Link
+			href={props.data}
+			_hover={{ textDecor: 'none' }}>
+			<Button
+				maxW='420px'
+				bg={props.bgColor ? props.bgColor : 'brand.verde.500'}
+				p={['12px 20px', '12px 20px', '24px 28px']}
+				borderRadius={'4px'}
+				fontWeight={'bold'}
+				color={'brand.branco'}
+				w={['240px', '240px', '240px', '100%']}
+				textAlign='center'
+				shadow={'lg'}
+				cursor={'pointer'}
+				transition={'all .3s ease'}
+				_hover={{
+					bg: props.bgColor ? 'brand.dourado.300' : 'brand.verde.primary',
+				}}>
 				<Text fontSize={props.size}>{props.text}</Text>
-			</Link>
-		</Button>
+			</Button>
+		</Link>
 	);
 }

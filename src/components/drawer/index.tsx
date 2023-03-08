@@ -7,6 +7,7 @@ import {
 	DrawerOverlay,
 	Flex,
 	Link,
+	List,
 	ListItem,
 	UnorderedList,
 	useColorModeValue,
@@ -16,7 +17,7 @@ import {
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import ButtonHeader from '../ButtonHeader';
 import Switcher from '../Switcher';
-export function DrawerMenu() {
+export function DrawerMenu(props: { data: any }) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	const DrawerBg = useColorModeValue('brand.branco', 'brand.cinza.900');
@@ -44,7 +45,7 @@ export function DrawerMenu() {
 							justify='center'
 							h='100%'
 							w='100%'>
-							<UnorderedList
+							<List
 								display={'flex'}
 								flexDir={'column'}
 								alignItems='center'
@@ -52,75 +53,28 @@ export function DrawerMenu() {
 								<ListItem>
 									<Switcher />
 								</ListItem>
-								<ListItem>
-									<Link
-										href='#home'
-										fontSize={'md'}
-										transition={'all .4s ease'}
-										_hover={{
-											textDecor: 'none',
-											color: 'brand.verde.primary',
-										}}
-										textDecor={'none'}>
-										Home
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link
-										href='#benefits'
-										fontSize={'md'}
-										transition={'all .4s ease'}
-										_hover={{
-											textDecor: 'none',
-											color: 'brand.verde.primary',
-										}}
-										textDecor={'none'}>
-										Benefícios
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link
-										href='#solutions'
-										fontSize={'md'}
-										transition={'all .4s ease'}
-										_hover={{
-											textDecor: 'none',
-											color: 'brand.verde.primary',
-										}}
-										textDecor={'none'}>
-										Soluções
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link
-										href='#who'
-										fontSize={'md'}
-										transition={'all .4s ease'}
-										_hover={{
-											textDecor: 'none',
-											color: 'brand.verde.primary',
-										}}
-										textDecor={'none'}>
-										Quem Somos
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link
-										href='#findUs'
-										fontSize={'md'}
-										transition={'all .4s ease'}
-										_hover={{
-											textDecor: 'none',
-											color: 'brand.verde.primary',
-										}}
-										textDecor={'none'}>
-										Nos Encontre
-									</Link>
-								</ListItem>
+								{props.data.map((d: any) => {
+									return (
+										<ListItem>
+											<Link
+												href={d.link}
+												fontSize={'md'}
+												transition={'all .4s ease'}
+												_hover={{
+													textDecor: 'none',
+													color: 'brand.verde.primary',
+												}}
+												textDecor={'none'}>
+												{d.navItem}
+											</Link>
+										</ListItem>
+									);
+								})}
+
 								<ListItem>
 									<ButtonHeader />
 								</ListItem>
-							</UnorderedList>
+							</List>
 						</Flex>
 					</DrawerBody>
 				</DrawerContent>

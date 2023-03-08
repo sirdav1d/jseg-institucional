@@ -1,5 +1,4 @@
-import { Flex, Heading, Image, Text } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import { Flex, Heading, Image, Text, Link } from '@chakra-ui/react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { SolutionsSliderData } from '../../mocks/data';
 import ButtonGeneral from '../ButtonGeneral';
@@ -35,7 +34,7 @@ export default function SolutionsSlider() {
 								/>
 								<Flex
 									justify={'center'}
-									align='center'
+									align={['center', 'center', 'center', 'normal']}
 									flexDir={'column'}
 									gap='12px'>
 									<Heading fontSize={['md', 'lg', 'xl', '2xl']}>
@@ -46,12 +45,12 @@ export default function SolutionsSlider() {
 										fontSize={'sm'}>
 										{s.content}
 									</Text>
-									<Link to={`${s.id}#home`}>
-										<ButtonGeneral
-											text={'Saiba Mais'}
-											size={['lg', 'lg', 'xl', '2xl']}
-										/>
-									</Link>
+
+									<ButtonGeneral
+										data={`${s.id}#Home`}
+										text={'Saiba Mais'}
+										size={['lg', 'lg', 'xl', '2xl']}
+									/>
 								</Flex>
 							</Flex>
 						</Slide>

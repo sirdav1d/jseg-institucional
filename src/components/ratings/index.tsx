@@ -272,7 +272,9 @@ export default function RatingsSection() {
 				</Flex>
 			</Flex>
 			<SectionCTA
-				text={'Não perca mais tempo, adquira nossos produtos agora mesmo! Clique aqui para comprar!'}
+				text={
+					'Não perca mais tempo, adquira nossos produtos agora mesmo! Clique aqui para comprar!'
+				}
 				btnText={'Comprar Agora'}
 			/>
 		</>

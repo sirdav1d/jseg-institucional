@@ -1,8 +1,8 @@
-import { Box, Flex, Image, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Image, Link, useColorModeValue } from '@chakra-ui/react';
 import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-// import  RatingsSection from '../../components/Ratings';
+import RatingsSection from '../../components/Ratings';
 import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
@@ -27,10 +27,12 @@ export function Home() {
 				zIndex={99999}
 				_hover={{ opacity: 1 }}
 				left={['0px', '8px', '8px', '20px']}>
-				<Image
-					w={['52px', '52px', '60px', '60px']}
-					src={wppImage}
-				/>
+				<Link href='https://api.whatsapp.com/send?phone=5521971602106&text=Ol%C3%A1%20estava%20navegando%20pelo%20seu%20site,%20gostaria%20de%20montar%20um%20or%C3%A7amento!'>
+					<Image
+						w={['52px', '52px', '60px', '60px']}
+						src={wppImage}
+					/>
+				</Link>
 			</Box>
 			<Flex
 				overflowX={'hidden'}
@@ -51,7 +53,7 @@ export function Home() {
 				/>
 				<Solutions />
 				<WhoSection />
-				{/* <RatingsSection /> */}
+				<RatingsSection />
 				<FindUs />
 				<Footer />
 			</Flex>

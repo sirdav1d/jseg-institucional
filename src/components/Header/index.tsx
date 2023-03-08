@@ -26,7 +26,7 @@ export default function Header(props: { data: INavProps | any }) {
 			</Link>
 			<NavTag data={props.data} />
 			<Box display={['flex', 'flex', 'flex', 'none']}>
-				<DrawerMenu />
+				<DrawerMenu data={props.data} />
 			</Box>
 		</Flex>
 	);

@@ -14,6 +14,8 @@ import b2cftv from '../assets/cftv-imgs/beneficios/b2.svg';
 import b3cftv from '../assets/cftv-imgs/beneficios/b3.svg';
 import b4cftv from '../assets/cftv-imgs/beneficios/b4.svg';
 import p1cftv from '../assets/cftv-imgs/produtos/p1.svg';
+import p2cftv from '../assets/cftv-imgs/produtos/p2.svg';
+import p3cftv from '../assets/cftv-imgs/produtos/p3.svg';
 
 export const GeneralData = {
 	rede: {
@@ -92,27 +94,22 @@ export const GeneralData = {
 		produtos: [
 			{
 				img: p1cftv,
-				title: 'Kit CFTV 4 Canais Coaxial',
+				title: 'Kit CFTV Coaxial',
 				content:
-					'Um kit CFTV coaxial de 4 canais é composto por um DVR (gravador de vídeo digital) e 4 câmeras de segurança com tecnologia coaxial. O DVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, esse tipo de kit é ideal para monitorar ambientes de médio porte, como residências e pequenas empresas, com um sistema de segurança simples e eficiente.',
+					'Um kit CFTV coaxial é composto por um DVR (gravador de vídeo digital) e 4 câmeras de segurança com tecnologia coaxial. O DVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, esse tipo de kit é ideal para monitorar ambientes de médio porte, como residências e pequenas empresas, com um sistema de segurança simples e eficiente.',
 			},
 			{
-				img: p1cftv,
-				title: 'Kit CFTV 4 Canais POE',
+				img: p2cftv,
+				title: 'Kit CFTV IP POE',
 				content:
-					'Um kit CFTV IP PoE de 4 canais é composto por um NVR (gravador de vídeo em rede) e 4 câmeras de segurança com tecnologia IP, que se conectam à rede por meio de cabos Ethernet e utilizam a tecnologia PoE (Power over Ethernet) para alimentação. O NVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, permitindo o acesso às gravações a qualquer momento.',
+					'Um kit CFTV IP PoE é composto por um NVR (gravador de vídeo em rede) e 4 câmeras de segurança com tecnologia IP, que se conectam à rede por meio de cabos Ethernet e utilizam a tecnologia PoE (Power over Ethernet) para alimentação. O NVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, permitindo o acesso às gravações a qualquer momento.',
 			},
 
 			{
-				img: p1cftv,
-				title: 'Kit CFTV 4 Canais IP WIFI',
+				img: p3cftv,
+				title: 'Kit CFTV IP WIFI',
 				content:
-					'Um kit CFTV IP Wi-Fi de 4 canais é composto por um NVR (gravador de vídeo em rede) e 4 câmeras de segurança com tecnologia IP, que se conectam à rede sem fio por meio de Wi-Fi. O NVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, permitindo o acesso às gravações a qualquer momento. Esse tipo de kit oferece flexibilidade e facilidade na instalação.',
-			},
-			{
-				img: p1cftv,
-				title: 'Kit CFTV 8 Canais Coaxial',
-				content: [],
+					'Um kit CFTV IP Wi-Fi é composto por um NVR (gravador de vídeo em rede) e 4 câmeras de segurança com tecnologia IP, que se conectam à rede sem fio por meio de Wi-Fi. O NVR é capaz de gravar as imagens captadas pelas câmeras e armazená-las em um disco rígido interno, permitindo o acesso às gravações a qualquer momento. Esse tipo de kit oferece flexibilidade e facilidade na instalação.',
 			},
 		],
 		beneficios: [
@@ -259,7 +256,7 @@ export const DataNavigation = {
 export const DataNavigationLP = {
 	items: [
 		{
-			link: '#home',
+			link: '#Home',
 			navItem: 'Home',
 		},
 		{
