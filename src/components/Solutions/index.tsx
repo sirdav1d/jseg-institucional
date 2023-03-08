@@ -19,7 +19,7 @@ export default function Solutions() {
 			justify={'center'}>
 			<Heading
 				color={HeadingColor}
-				textAlign='left'
+				textAlign={['left', 'left', 'left', 'center']}
 				fontSize={['2xl', '2xl', '3xl', '4xl']}
 				fontFamily={'Montserrat'}>
 				Temos a solução que você está procurando

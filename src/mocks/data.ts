@@ -18,18 +18,6 @@ import p2cftv from '../assets/cftv-imgs/produtos/p2.svg';
 import p3cftv from '../assets/cftv-imgs/produtos/p3.svg';
 
 export const GeneralData = {
-	rede: {
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-	},
 	alarme: {
 		produtos: {
 			imgs: [],
@@ -89,6 +77,54 @@ export const GeneralData = {
 			title: [],
 			content: [],
 		},
+	},
+	rede: {
+		produtos: [
+			{
+				img: [],
+				title: 'Cabo UTP CAT5E 100% Cobre',
+				content:
+					'Cabo Cat5e é um tipo de cabo de rede que é usado para conectar dispositivos de rede, como computadores, roteadores e switches, para permitir a transmissão de dados em alta velocidade. O termo "Cat5e" significa "Categoria 5 aprimorada". Ele suporta taxas de transferência de dados de até 1 Gbps em distâncias de até 100 metros, o que o torna ideal para uso em redes domésticas e empresariais.',
+			},
+			{
+				img: [],
+				title: 'Cabo UTP CAT6 100% Cobre',
+				content:
+					'O cabo Cat6 é um tipo de cabo de rede que foi projetado para suportar velocidades de transmissão de dados mais altas do que o cabo Cat5e. Ele é uma evolução do cabo Cat5e, com melhorias em sua estrutura interna que permitem a transmissão de dados em velocidades de até 10 Gbps em distâncias de até 55 metros.',
+			},
+			{
+				img: [],
+				title: 'Cabo FTP CAT6 100% Cobre',
+				content:
+					'cabo FTP Cat6 é mais resistente a ruídos externos e proporciona uma transmissão de dados mais estável e confiável, especialmente em ambientes com muitos dispositivos de rede eletromagnéticos próximos, como equipamentos de energia elétrica ou maquinário industrial.',
+			},
+		],
+		beneficios: [
+			{
+				img: [],
+				title: 'Conexão mais rápida',
+				content:
+					'Uma boa internet permite que você faça download, upload e streaming de conteúdo mais rapidamente. Isso é especialmente útil quando você precisa enviar grandes arquivos, assistir filmes em alta definição ou jogar jogos online.',
+			},
+			{
+				img: [],
+				title: 'Maior produtividade',
+				content:
+					'Você pode trabalhar de forma mais eficiente e eficaz, especialmente se você trabalha em casa ou em um escritório virtual. Você pode acessar aplicativos de negócios, armazenar arquivos na nuvem e colaborar com colegas de trabalho em tempo real sem interrupções.',
+			},
+			{
+				img: [],
+				title: 'Economia de tempo e dinheiro',
+				content:
+					'Você pode economizar tempo e dinheiro ao fazer compras online, pagar contas e gerenciar suas finanças pessoais. Isso também é útil para quem precisa realizar transações comerciais, como pagamentos e transferências bancárias, sem sair de casa.',
+			},
+			{
+				img: [],
+				title: 'Acesso à informação',
+				content:
+					'Você pode acessar rapidamente informações importantes de fontes confiáveis, como notícias, artigos científicos e documentos de pesquisa. Isso é especialmente útil para estudantes, pesquisadores e profissionais.',
+			},
+		],
 	},
 	cftv: {
 		produtos: [
