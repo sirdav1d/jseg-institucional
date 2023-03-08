@@ -6,8 +6,8 @@ import InitalSectionLP from '../../components/InitialSectionLP';
 import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
+import SliderProducts from '../../components/SliderProducts';
 import { DataNavigationLP, GeneralData } from '../../mocks/data';
-import SliderCftv from './SliderCftv';
 
 export default function Cftv() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
@@ -34,7 +34,7 @@ export default function Cftv() {
 
 			<Flex
 				overflowX={'hidden'}
-				gap={['40px', '60px', '60px', '80px']}
+				gap={['40px', '60px']}
 				flexDir={'column'}
 				bgColor={bgColor}>
 				<InitalSectionLP
@@ -43,7 +43,7 @@ export default function Cftv() {
 						'Monitore sua casa ou empresa de onde estiver, com imagens de alta qualidade e tecnologia de ponta. Não perca mais tempo, clique agora no botão abaixo e garanta a sua tranquilidade!'
 					}
 				/>
-				<SliderCftv />
+				<SliderProducts data={GeneralData.cftv.produtos} />
 				<SectionBenefit data={GeneralData.cftv.beneficios} />
 				<SectionCTA
 					text={

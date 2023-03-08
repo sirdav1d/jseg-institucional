@@ -1,7 +1,5 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
 import { Autoplay, Navigation, Pagination } from 'swiper';
-import { GeneralData } from '../../mocks/data';
 import ButtonGeneral from '../../components/ButtonGeneral';
 import {
 	Slide,
@@ -9,7 +7,7 @@ import {
 	SwiperProps,
 } from '../../components/GeneralSlider';
 
-export default function SliderCftv() {
+export default function SliderProducts(props: { data: any }) {
 	const settings: SwiperProps = {
 		modules: [Navigation, Pagination, Autoplay],
 		spaceBetween: 100,
@@ -25,7 +23,7 @@ export default function SliderCftv() {
 			align={'center'}
 			justify='center'>
 			<SliderComponent settings={settings}>
-				{GeneralData.cftv.produtos.map((s) => {
+				{props.data.map((s: any) => {
 					return (
 						<Slide key={s.title}>
 							<Flex

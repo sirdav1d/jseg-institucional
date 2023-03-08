@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Acesso from './pages/Acesso';
 import Alarme from './pages/Alarme';
 import Cftv from './pages/Cftv';
@@ -12,6 +13,7 @@ import Thanks from './pages/Thanks';
 export default function App() {
 	return (
 		<BrowserRouter>
+			<ScrollToTop />
 			<Routes>
 				<Route
 					path='/'
