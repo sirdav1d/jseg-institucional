@@ -9,7 +9,7 @@ import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
 import { DataNavigationLP, GeneralData } from '../../mocks/data';
 
-export default function Cftv() {
+export default function Rede() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
 
 	return (

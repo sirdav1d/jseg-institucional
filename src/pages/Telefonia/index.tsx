@@ -38,13 +38,13 @@ export default function Telefonia() {
 				flexDir={'column'}
 				bgColor={bgColor}>
 				<InitalSectionLP
-					headLine={'Conheça nossas soluções para Sistemas de Alarme'}
+					headLine={'Conheça nossas soluções para Sistemas de Telefonia'}
 					subHeadLine={
-						'Proteja o que é importante para você com um sistema de alarme da Intelbras. Entre em contato conosco agora e descubra como podemos proteger você e sua família.'
+						'Entre em contato conosco agora para obter mais informações e descobrir como podemos melhorar a comunicação em sua empresa ou residência'
 					}
 				/>
-				<SliderProducts data={GeneralData.alarme.produtos} />
-				<SectionBenefit data={GeneralData.alarme.beneficios} />
+				<SliderProducts data={GeneralData.tel.produtos} />
+				<SectionBenefit data={GeneralData.tel.beneficios} />
 				<SectionCTA
 					text={
 						'Procurando uma empresa parceira e de confiança?' +

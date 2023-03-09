@@ -34,7 +34,7 @@ export default function SliderProducts(props: { data: any }) {
 								align='center'>
 								<Image
 									borderRadius={'12px'}
-									h={['180px', '180px', '180px', '240px']}
+									h={['180px', '180px', '180px', '220px']}
 									src={s.img}
 								/>
 								<Flex

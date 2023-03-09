@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Rede from './pages/Rede';
 import SmartHome from './pages/SmartHome';
 import Solar from './pages/Solar';
-import Telefonia from './pages/Tel';
+import Telefonia from './pages/Telefonia';
 import Thanks from './pages/Thanks';
 
 export default function App() {

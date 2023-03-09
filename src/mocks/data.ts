@@ -16,84 +16,267 @@ import b4cftv from '../assets/cftv-imgs/beneficios/b4.svg';
 import p1cftv from '../assets/cftv-imgs/produtos/p1.svg';
 import p2cftv from '../assets/cftv-imgs/produtos/p2.svg';
 import p3cftv from '../assets/cftv-imgs/produtos/p3.svg';
+import p1rede from '../assets/rede-imgs/produtos/p1.svg';
+import p2rede from '../assets/rede-imgs/produtos/p2.svg';
+import p3rede from '../assets/rede-imgs/produtos/p3.svg';
 
 export const GeneralData = {
 	alarme: {
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
+		produtos: [
+			{
+				img: [],
+				title: 'Sensor de presença IVP 3000 MW PET',
+				content:
+					'Este sensor de presença sem fio é ideal para proteger ambientes internos e possui tecnologia PET imune a animais de estimação de até 20 kg.',
+			},
+			{
+				img: [],
+				title: 'Central de alarme AMT 4010 Smart',
+				content:
+					'Esta é uma central de alarme avançada, com capacidade de gerenciar até 30 zonas e 16 partições. Possui comunicação Ethernet e suporta até 128 dispositivos sem fio.',
+			},
+			{
+				img: [],
+				title: 'Barreira de infravermelho ativo IVA 3070',
+				content:
+					'Esta barreira de infravermelho ativo é ideal para proteger grandes áreas, como pátios e estacionamentos. Possui alcance de até 70 metros e é compatível com as centrais de alarme da Intelbras.',
+			},
+		],
+		beneficios: [
+			{
+				img: [],
+				title: 'Notificações instantâneas',
+				content:
+					'Com a notificação instantânea, você receberá um alerta imediato sempre que o alarme for ativado, permitindo que você tome medidas imediatas para garantir a segurança de sua propriedade.',
+			},
+			{
+				img: [],
+				title: 'Baixa manutenção',
+				content:
+					'A maioria dos sistemas de alarme da Intelbras não requer manutenção frequente, tornando-os uma solução de segurança de baixa manutenção.',
+			},
+			{
+				img: [],
+				title: 'Monitoramento remoto',
+				content:
+					'Com a opção de monitoramento remoto, você pode ficar de olho em sua propriedade de qualquer lugar, através de seu smartphone ou tablet, e receber alertas de atividade suspeita.',
+			},
+			{
+				img: [],
+				title: 'Proteção contra roubo e invasão',
+				content:
+					'Os sistemas de alarme da Intelbras fornecem proteção contra intrusos e podem alertá-lo imediatamente se alguém tentar invadir sua casa ou empresa.',
+			},
+		],
 	},
 	smartHome: {
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
+		produtos: [
+			{
+				img: [],
+				title: 'Interruptor de luz inteligente',
+				content:
+					'O interruptor de luz inteligente da Intelbras permite controlar as luzes da sua casa por meio de um aplicativo no smartphone ou por comando de voz, e é compatível com outros dispositivos inteligentes, como Amazon Alexa e Google Assistant.',
+			},
+			{
+				img: [],
+				title: 'Controle remoto universal',
+				content:
+					'O controle remoto universal da Intelbras permite controlar diversos dispositivos eletrônicos, como TV, som, ar-condicionado e outros aparelhos, por meio de um único dispositivo. Ele é compatível com diversos modelos e marcas de equipamentos.',
+			},
+			{
+				img: [],
+				title: 'Videoporteiro',
+				content:
+					'O videoporteiro da Intelbras permite ver quem está à porta de sua casa por meio de um monitor ou de um aplicativo no smartphone. Ele também pode ser integrado ao sistema de alarme residencial da Intelbras para aumentar a segurança da sua casa.',
+			},
+		],
+		beneficios: [
+			{
+				img: [],
+				title: 'Conforto',
+				content:
+					'Com a automação residencial, você pode controlar facilmente a iluminação, temperatura e outros sistemas de sua casa sem precisar se levantar ou se mover, tornando seu dia a dia mais confortável.',
+			},
+			{
+				img: [],
+				title: 'Entretenimento',
+				content:
+					'A automação residencial permite controlar facilmente seu sistema de entretenimento, incluindo televisão, som e jogos, tornando suas horas de lazer mais agradáveis.',
+			},
+			{
+				img: [],
+				title: 'Economia de energia',
+				content:
+					'A automação residencial pode ajudar a reduzir sua conta de energia, já que você pode controlar o uso de luzes e aparelhos eletrônicos remotamente, garantindo que eles não sejam deixados ligados desnecessariamente.',
+			},
+			{
+				img: [],
+				title: 'Gerenciamento remoto',
+				content:
+					'Com a automação residencial, você pode gerenciar a casa remotamente, mesmo estando fora de casa, para garantir que tudo esteja em ordem.',
+			},
+		],
 	},
 	tel: {
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
+		produtos: [
+			{
+				img: [],
+				title: 'Telefone sem fio Intelbras TS 5120',
+				content:
+					'Este telefone sem fio é ideal para quem precisa de maior alcance, já que possui tecnologia DECT 6.0, que oferece maior qualidade de sinal e alcance de até 300 metros sem obstáculos. Possui identificador de chamadas, viva-voz e display iluminado.',
+			},
+			{
+				img: [],
+				title: 'Telefone com fio Intelbras Pleno',
+				content:
+					'Este telefone com fio é ideal para quem busca economia e praticidade, já que é um dos telefones com fio mais acessíveis do mercado. Possui teclado luminoso, ajuste de volume da campainha e viva-voz.',
+			},
+			{
+				img: [],
+				title: 'PABX Intelbras Impacta 68',
+				content:
+					'Este sistema de PABX é ideal para empresas de pequeno e médio porte, já que possui capacidade para até 68 ramais e 30 linhas. Possui recursos avançados como identificador de chamadas, gravação de chamadas e atendimento automático.',
+			},
+		],
+		beneficios: [
+			{
+				img: [],
+				title: 'Qualidade de áudio',
+				content:
+					'Somos conhecidos por fornecer produtos de alta qualidade de áudio, o que significa que você terá conversas telefônicas mais claras e nítidas.',
+			},
+			{
+				img: [],
+				title: 'Durabilidade',
+				content:
+					'Os produtos da Intelbras são feitos com materiais de alta qualidade, o que significa que eles são duráveis ​​e resistentes a danos.',
+			},
+			{
+				img: [],
+				title: 'Variedade de produtos',
+				content:
+					'Trabalhamos com uma ampla variedade de produtos de telefonia, incluindo telefones sem fio, telefones com fio, sistemas de PABX, entre outros, o que significa que você pode encontrar o produto certo para suas necessidades.',
+			},
+			{
+				img: [],
+				title: 'Recursos avançados',
+				content:
+					'Ofertamos uma variedade de recursos avançados em seus produtos de telefonia, como identificador de chamadas, gravação de chamadas e transferência de chamadas, o que significa que você pode ter acesso a recursos avançados de telefonia.',
+			},
+		],
 	},
 	acesso: {
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
+		produtos: [
+			{
+				img: [],
+				title: 'Controladora de Acesso AC 1000',
+				content:
+					'ossui conexão via rede IP e permite gerenciar até 10.000 usuários, com controle de acesso por cartão de proximidade ou biometria.',
+			},
+			{
+				img: [],
+				title: 'Leitor Biométrico SCA 1000',
+				content:
+					'Garante alta segurança no controle de acesso por meio da leitura da impressão digital, com design moderno e compacto.',
+			},
+			{
+				img: [],
+				title: 'Controladora de Acesso AC 90',
+				content:
+					'Ideal para controle de acesso em condomínios e empresas, permite o controle de acesso por cartão de proximidade.',
+			},
+		],
+		beneficios: [
+			{
+				img: [],
+				title: 'Maior segurança',
+				content:
+					'Os produtos de controle de acesso da Intelbras permitem a criação de regras e restrições de acesso, garantindo maior segurança para as pessoas e para as informações.',
+			},
+			{
+				img: [],
+				title: 'Registro de acesso',
+				content:
+					'Nossos produtos de controle de acesso registram todas as entradas e saídas, permitindo uma gestão mais eficiente e segura.',
+			},
+			{
+				img: b3cftv,
+				title: 'Redução de custos',
+				content:
+					'Com a automatização do controle de acesso, é possível reduzir custos com pessoal e segurança, além de evitar fraudes e problemas relacionados à segurança.',
+			},
+			{
+				img: [],
+				title: 'Gerenciamento remoto',
+				content:
+					'É possível gerenciar os produtos de controle de acesso da Intelbras remotamente, por meio de aplicativos e softwares de gerenciamento.',
+			},
+		],
 	},
 	solar: {
-		produtos: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
-		beneficios: {
-			imgs: [],
-			title: [],
-			content: [],
-		},
+		produtos: [
+			{
+				img: [],
+				title: 'Painéis solares fotovoltaicos',
+				content:
+					'Oferecemos uma linha de painéis solares fotovoltaicos projetados para gerar energia elétrica a partir da luz solar. Eles são compatíveis com sistemas de energia solar residencial e comercial e estão disponíveis em várias potências e tamanhos.',
+			},
+			{
+				img: [],
+				title: 'Controlador de carga solar',
+				content:
+					'Temos um controlador de carga solar que regula a carga e descarga da bateria em um sistema de energia solar. Ele pode ser usado para controlar sistemas de iluminação e fornecer energia elétrica para dispositivos eletrônicos em áreas remotas.',
+			},
+			{
+				img: [],
+				title: 'Inversores solares',
+				content:
+					'Fornecemos uma linha de inversores solares projetados para converter a energia DC gerada pelos painéis solares em energia AC utilizável em sistemas elétricos residenciais e comerciais. Eles estão disponíveis em diferentes tamanhos e potências para atender às necessidades de diferentes sistemas de energia solar.',
+			},
+		],
+		beneficios: [
+			{
+				img: b3cftv,
+				title: 'Economia de custos',
+				content:
+					'Uma vez instalado, o sistema de energia solar converte a luz solar em eletricidade gratuita, o que pode reduzir significativamente sua dependência de energia elétrica da rede pública.',
+			},
+			{
+				img: [],
+				title: 'Fonte de energia limpa',
+				content:
+					'A energia solar é uma fonte de energia limpa e renovável que não emite gases poluentes ou emissões de carbono. Ela ajuda a reduzir a dependência de combustíveis fósseis, que emitem dióxido de carbono, metano e outros gases que contribuem para as mudanças climáticas.',
+			},
+			{
+				img: [],
+				title: 'Baixa manutenção',
+				content:
+					'As placas solares podem durar de 25 a 30 anos e requerem pouca ou nenhuma manutenção. Os custos de manutenção são geralmente mínimos, o que significa que a energia solar pode oferecer economia de custos a longo prazo.',
+			},
+			{
+				img: [],
+				title: 'Flexibilidade de instalação',
+				content:
+					'Os sistemas de energia solar podem ser instalados em uma ampla variedade de locais, desde telhados de casas e edifícios comerciais até em áreas remotas sem acesso à rede elétrica pública.',
+			},
+		],
 	},
 	rede: {
 		produtos: [
 			{
-				img: [],
+				img: p1rede,
 				title: 'Cabo UTP CAT5E 100% Cobre',
 				content:
 					'Cabo Cat5e é um tipo de cabo de rede que é usado para conectar dispositivos de rede, como computadores, roteadores e switches, para permitir a transmissão de dados em alta velocidade. O termo "Cat5e" significa "Categoria 5 aprimorada". Ele suporta taxas de transferência de dados de até 1 Gbps em distâncias de até 100 metros, o que o torna ideal para uso em redes domésticas e empresariais.',
 			},
 			{
-				img: [],
+				img: p2rede,
 				title: 'Cabo UTP CAT6 100% Cobre',
 				content:
 					'O cabo Cat6 é um tipo de cabo de rede que foi projetado para suportar velocidades de transmissão de dados mais altas do que o cabo Cat5e. Ele é uma evolução do cabo Cat5e, com melhorias em sua estrutura interna que permitem a transmissão de dados em velocidades de até 10 Gbps em distâncias de até 55 metros.',
 			},
 			{
-				img: [],
+				img: p3rede,
 				title: 'Cabo FTP CAT6 100% Cobre',
 				content:
 					'cabo FTP Cat6 é mais resistente a ruídos externos e proporciona uma transmissão de dados mais estável e confiável, especialmente em ambientes com muitos dispositivos de rede eletromagnéticos próximos, como equipamentos de energia elétrica ou maquinário industrial.',
@@ -113,7 +296,7 @@ export const GeneralData = {
 					'Você pode trabalhar de forma mais eficiente e eficaz, especialmente se você trabalha em casa ou em um escritório virtual. Você pode acessar aplicativos de negócios, armazenar arquivos na nuvem e colaborar com colegas de trabalho em tempo real sem interrupções.',
 			},
 			{
-				img: [],
+				img: b3cftv,
 				title: 'Economia de tempo e dinheiro',
 				content:
 					'Você pode economizar tempo e dinheiro ao fazer compras online, pagar contas e gerenciar suas finanças pessoais. Isso também é útil para quem precisa realizar transações comerciais, como pagamentos e transferências bancárias, sem sair de casa.',
