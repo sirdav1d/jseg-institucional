@@ -13,6 +13,7 @@ import background from '../../assets/institucional-imgs/backFooter.svg';
 import instaImage from '../../assets/institucional-imgs/insta.svg';
 import wppImage from '../../assets/institucional-imgs/wpp.svg';
 import faceImage from '../../assets/institucional-imgs/face.svg';
+import youtubeImage from '../../assets/institucional-imgs/youtube.svg';
 
 export default function Footer() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
@@ -140,7 +141,9 @@ export default function Footer() {
 						pos='absolute'
 						right={['0px', '0px', '0px', '40px', '80px']}
 						top='0px'>
-						<Link>
+						<Link
+							href='https://www.instagram.com/jsegequipamentos/'
+							target={'_blank'}>
 							<Image
 								opacity={0.8}
 								transition='all .3s ease'
@@ -149,7 +152,9 @@ export default function Footer() {
 								src={instaImage}
 							/>
 						</Link>
-						<Link>
+						<Link
+							href='https://www.facebook.com/jsegintelbrasniteroi'
+							target={'_blank'}>
 							<Image
 								opacity={0.8}
 								transition='all .3s ease'
@@ -158,13 +163,26 @@ export default function Footer() {
 								src={faceImage}
 							/>
 						</Link>
-						<Link>
+						<Link
+							href='https://api.whatsapp.com/send?phone=5521971602106'
+							target={'_blank'}>
 							<Image
 								opacity={0.8}
 								transition='all .3s ease'
 								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={wppImage}
+							/>
+						</Link>
+						<Link
+							href='https://www.youtube.com/@jsegequipamentos'
+							target={'_blank'}>
+							<Image
+								opacity={0.75}
+								transition='all .3s ease'
+								_hover={{ opacity: 1 }}
+								height={'56px'}
+								src={youtubeImage}
 							/>
 						</Link>
 					</VStack>

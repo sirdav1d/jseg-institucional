@@ -124,9 +124,9 @@ export const GeneralData = {
 			},
 			{
 				img: p3smart,
-				title: 'Videoporteiro',
+				title: 'Câmera interna Wi-Fi - iMX1 com micro-SD 32GB',
 				content:
-					'O videoporteiro da Intelbras permite ver quem está à porta de sua casa por meio de um monitor ou de um aplicativo no smartphone. Ele também pode ser integrado ao sistema de alarme residencial da Intelbras para aumentar a segurança da sua casa.',
+					'Para registrar tudo, o modelo capta imagens em resolução HD e conta com interação por voz, visão noturna e cartão micro-SD 32GB. Sinta-se sempre pertinho do seu bebê! Use a função Babá Eletrônica para acompanhar todos os momentos em tempo real pelo app Mibo Cam.',
 			},
 		],
 		beneficios: [
