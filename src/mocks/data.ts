@@ -13,6 +13,30 @@ import b1cftv from '../assets/cftv-imgs/beneficios/b1.svg';
 import b2cftv from '../assets/cftv-imgs/beneficios/b2.svg';
 import b3cftv from '../assets/cftv-imgs/beneficios/b3.svg';
 import b4cftv from '../assets/cftv-imgs/beneficios/b4.svg';
+import b1rede from '../assets/rede-imgs/beneficios/b1.svg';
+import b2rede from '../assets/rede-imgs/beneficios/b2.svg';
+import b3rede from '../assets/rede-imgs/beneficios/b3.svg';
+import b4rede from '../assets/rede-imgs/beneficios/b4.svg';
+import b1smart from '../assets/smartHome-imgs/beneficios/b1.svg';
+import b2smart from '../assets/smartHome-imgs/beneficios/b2.svg';
+import b3smart from '../assets/smartHome-imgs/beneficios/b3.svg';
+import b4smart from '../assets/smartHome-imgs/beneficios/b4.svg';
+import b1solar from '../assets/solar-imgs/beneficios/b1.svg';
+import b2solar from '../assets/solar-imgs/beneficios/b2.svg';
+import b3solar from '../assets/solar-imgs/beneficios/b3.svg';
+import b4solar from '../assets/solar-imgs/beneficios/b4.svg';
+import b1tel from '../assets/telefonia-imgs/beneficios/b1.svg';
+import b2tel from '../assets/telefonia-imgs/beneficios/b2.svg';
+import b3tel from '../assets/telefonia-imgs/beneficios/b3.svg';
+import b4tel from '../assets/telefonia-imgs/beneficios/b4.svg';
+import b1acesso from '../assets/acesso-imgs/beneficios/b1.svg';
+import b2acesso from '../assets/acesso-imgs/beneficios/b2.svg';
+import b3acesso from '../assets/acesso-imgs/beneficios/b3.svg';
+import b4acesso from '../assets/acesso-imgs/beneficios/b4.svg';
+import b1alarme from '../assets/alarme-imgs/beneficios/b1.svg';
+import b2alarme from '../assets/alarme-imgs/beneficios/b2.svg';
+import b3alarme from '../assets/alarme-imgs/beneficios/b3.svg';
+import b4alarme from '../assets/alarme-imgs/beneficios/b4.svg';
 import p1cftv from '../assets/cftv-imgs/produtos/p1.svg';
 import p2cftv from '../assets/cftv-imgs/produtos/p2.svg';
 import p3cftv from '../assets/cftv-imgs/produtos/p3.svg';
@@ -59,25 +83,25 @@ export const GeneralData = {
 		],
 		beneficios: [
 			{
-				img: [],
+				img: b1alarme,
 				title: 'Notificações instantâneas',
 				content:
 					'Com a notificação instantânea, você receberá um alerta imediato sempre que o alarme for ativado, permitindo que você tome medidas imediatas para garantir a segurança de sua propriedade.',
 			},
 			{
-				img: [],
+				img: b2alarme,
 				title: 'Baixa manutenção',
 				content:
 					'A maioria dos sistemas de alarme da Intelbras não requer manutenção frequente, tornando-os uma solução de segurança de baixa manutenção.',
 			},
 			{
-				img: [],
+				img: b3alarme,
 				title: 'Monitoramento remoto',
 				content:
 					'Com a opção de monitoramento remoto, você pode ficar de olho em sua propriedade de qualquer lugar, através de seu smartphone ou tablet, e receber alertas de atividade suspeita.',
 			},
 			{
-				img: [],
+				img: b4alarme,
 				title: 'Proteção contra roubo e invasão',
 				content:
 					'Os sistemas de alarme da Intelbras fornecem proteção contra intrusos e podem alertá-lo imediatamente se alguém tentar invadir sua casa ou empresa.',
@@ -107,25 +131,25 @@ export const GeneralData = {
 		],
 		beneficios: [
 			{
-				img: [],
+				img: b1smart,
 				title: 'Conforto',
 				content:
 					'Com a automação residencial, você pode controlar facilmente a iluminação, temperatura e outros sistemas de sua casa sem precisar se levantar ou se mover, tornando seu dia a dia mais confortável.',
 			},
 			{
-				img: [],
+				img: b2smart,
 				title: 'Entretenimento',
 				content:
 					'A automação residencial permite controlar facilmente seu sistema de entretenimento, incluindo televisão, som e jogos, tornando suas horas de lazer mais agradáveis.',
 			},
 			{
-				img: [],
+				img: b3smart,
 				title: 'Economia de energia',
 				content:
 					'A automação residencial pode ajudar a reduzir sua conta de energia, já que você pode controlar o uso de luzes e aparelhos eletrônicos remotamente, garantindo que eles não sejam deixados ligados desnecessariamente.',
 			},
 			{
-				img: [],
+				img: b4smart,
 				title: 'Gerenciamento remoto',
 				content:
 					'Com a automação residencial, você pode gerenciar a casa remotamente, mesmo estando fora de casa, para garantir que tudo esteja em ordem.',
@@ -155,25 +179,25 @@ export const GeneralData = {
 		],
 		beneficios: [
 			{
-				img: [],
+				img: b1tel,
 				title: 'Qualidade de áudio',
 				content:
 					'Somos conhecidos por fornecer produtos de alta qualidade de áudio, o que significa que você terá conversas telefônicas mais claras e nítidas.',
 			},
 			{
-				img: [],
+				img: b2tel,
 				title: 'Durabilidade',
 				content:
 					'Os produtos da Intelbras são feitos com materiais de alta qualidade, o que significa que eles são duráveis ​​e resistentes a danos.',
 			},
 			{
-				img: [],
+				img: b3tel,
 				title: 'Variedade de produtos',
 				content:
 					'Trabalhamos com uma ampla variedade de produtos de telefonia, incluindo telefones sem fio, telefones com fio, sistemas de PABX, entre outros, o que significa que você pode encontrar o produto certo para suas necessidades.',
 			},
 			{
-				img: [],
+				img: b4tel,
 				title: 'Recursos avançados',
 				content:
 					'Ofertamos uma variedade de recursos avançados em seus produtos de telefonia, como identificador de chamadas, gravação de chamadas e transferência de chamadas, o que significa que você pode ter acesso a recursos avançados de telefonia.',
@@ -203,25 +227,25 @@ export const GeneralData = {
 		],
 		beneficios: [
 			{
-				img: [],
+				img: b1acesso,
 				title: 'Maior segurança',
 				content:
 					'Os produtos de controle de acesso da Intelbras permitem a criação de regras e restrições de acesso, garantindo maior segurança para as pessoas e para as informações.',
 			},
 			{
-				img: [],
+				img: b2acesso,
 				title: 'Registro de acesso',
 				content:
 					'Nossos produtos de controle de acesso registram todas as entradas e saídas, permitindo uma gestão mais eficiente e segura.',
 			},
 			{
-				img: b3cftv,
+				img: b3acesso,
 				title: 'Redução de custos',
 				content:
 					'Com a automatização do controle de acesso, é possível reduzir custos com pessoal e segurança, além de evitar fraudes e problemas relacionados à segurança.',
 			},
 			{
-				img: [],
+				img: b4acesso,
 				title: 'Gerenciamento remoto',
 				content:
 					'É possível gerenciar os produtos de controle de acesso da Intelbras remotamente, por meio de aplicativos e softwares de gerenciamento.',
@@ -251,25 +275,25 @@ export const GeneralData = {
 		],
 		beneficios: [
 			{
-				img: b3cftv,
+				img: b1solar,
 				title: 'Economia de custos',
 				content:
 					'Uma vez instalado, o sistema de energia solar converte a luz solar em eletricidade gratuita, o que pode reduzir significativamente sua dependência de energia elétrica da rede pública.',
 			},
 			{
-				img: [],
+				img: b2solar,
 				title: 'Fonte de energia limpa',
 				content:
 					'A energia solar é uma fonte de energia limpa e renovável que não emite gases poluentes ou emissões de carbono. Ela ajuda a reduzir a dependência de combustíveis fósseis, que emitem dióxido de carbono, metano e outros gases que contribuem para as mudanças climáticas.',
 			},
 			{
-				img: [],
+				img: b3solar,
 				title: 'Baixa manutenção',
 				content:
 					'As placas solares podem durar de 25 a 30 anos e requerem pouca ou nenhuma manutenção. Os custos de manutenção são geralmente mínimos, o que significa que a energia solar pode oferecer economia de custos a longo prazo.',
 			},
 			{
-				img: [],
+				img: b4solar,
 				title: 'Flexibilidade de instalação',
 				content:
 					'Os sistemas de energia solar podem ser instalados em uma ampla variedade de locais, desde telhados de casas e edifícios comerciais até em áreas remotas sem acesso à rede elétrica pública.',
@@ -299,25 +323,25 @@ export const GeneralData = {
 		],
 		beneficios: [
 			{
-				img: [],
+				img: b1rede,
 				title: 'Conexão mais rápida',
 				content:
 					'Uma boa internet permite que você faça download, upload e streaming de conteúdo mais rapidamente. Isso é especialmente útil quando você precisa enviar grandes arquivos, assistir filmes em alta definição ou jogar jogos online.',
 			},
 			{
-				img: [],
+				img: b2rede,
 				title: 'Maior produtividade',
 				content:
 					'Você pode trabalhar de forma mais eficiente e eficaz, especialmente se você trabalha em casa ou em um escritório virtual. Você pode acessar aplicativos de negócios, armazenar arquivos na nuvem e colaborar com colegas de trabalho em tempo real sem interrupções.',
 			},
 			{
-				img: b3cftv,
+				img: b3rede,
 				title: 'Economia de tempo e dinheiro',
 				content:
 					'Você pode economizar tempo e dinheiro ao fazer compras online, pagar contas e gerenciar suas finanças pessoais. Isso também é útil para quem precisa realizar transações comerciais, como pagamentos e transferências bancárias, sem sair de casa.',
 			},
 			{
-				img: [],
+				img: b4rede,
 				title: 'Acesso à informação',
 				content:
 					'Você pode acessar rapidamente informações importantes de fontes confiáveis, como notícias, artigos científicos e documentos de pesquisa. Isso é especialmente útil para estudantes, pesquisadores e profissionais.',
