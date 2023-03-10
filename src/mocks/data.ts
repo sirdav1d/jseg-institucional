@@ -19,27 +19,42 @@ import p3cftv from '../assets/cftv-imgs/produtos/p3.svg';
 import p1rede from '../assets/rede-imgs/produtos/p1.svg';
 import p2rede from '../assets/rede-imgs/produtos/p2.svg';
 import p3rede from '../assets/rede-imgs/produtos/p3.svg';
+import p1smart from '../assets/smartHome-imgs/produtos/p1.svg';
+import p2smart from '../assets/smartHome-imgs/produtos/p2.svg';
+import p3smart from '../assets/smartHome-imgs/produtos/p3.svg';
+import p1solar from '../assets/solar-imgs/produtos/p1.svg';
+import p2solar from '../assets/solar-imgs/produtos/p2.svg';
+import p3solar from '../assets/solar-imgs/produtos/p3.svg';
+import p1tel from '../assets/telefonia-imgs/produtos/p1.svg';
+import p2tel from '../assets/telefonia-imgs/produtos/p2.svg';
+import p3tel from '../assets/telefonia-imgs/produtos/p3.svg';
+import p1acesso from '../assets/acesso-imgs/produtos/p1.svg';
+import p2acesso from '../assets/acesso-imgs/produtos/p2.svg';
+import p3acesso from '../assets/acesso-imgs/produtos/p3.svg';
+import p1alarme from '../assets/alarme-imgs/produtos/p1.svg';
+import p2alarme from '../assets/alarme-imgs/produtos/p2.svg';
+import p3alarme from '../assets/alarme-imgs/produtos/p3.svg';
 
 export const GeneralData = {
 	alarme: {
 		produtos: [
 			{
-				img: [],
-				title: 'Sensor de presença IVP 3000 MW PET',
+				img: p1alarme,
+				title: 'Sistema de alarme - Kit ANM 24 NET',
 				content:
-					'Este sensor de presença sem fio é ideal para proteger ambientes internos e possui tecnologia PET imune a animais de estimação de até 20 kg.',
+					'Sistema de alarme não monitorado com conexão via nuvem que permite configuração e interação por aplicativo. Composto por uma ANM 24 NET, uma SIR 1000, dois XAC 4000, dois XAS 4010 Smart e um IVP 4000 Smart. Através do aplicativo AMT Remoto Mobile, é possível fazer o cadastro facilitado dos controles e sensores, bem como alterar configurações do sistema.',
 			},
 			{
-				img: [],
-				title: 'Central de alarme AMT 4010 Smart',
+				img: p2alarme,
+				title: 'Sistema de alarme sem fio - Kit 8000 Slim',
 				content:
-					'Esta é uma central de alarme avançada, com capacidade de gerenciar até 30 zonas e 16 partições. Possui comunicação Ethernet e suporta até 128 dispositivos sem fio.',
+					'Com o melhor custo-benefício, o sistema é totalmente sem fios, o que garante fácil instalação e longo alcance de transmissão. Composto por uma AMT 8000, uma XSS 8000, um XAC 8000, um IVP 8000 PET e dois XAS 8000. Com alta performance de comunicação, os dispositivos possuem bateria com duração de até 5 anos.',
 			},
 			{
-				img: [],
-				title: 'Barreira de infravermelho ativo IVA 3070',
+				img: p3alarme,
+				title: 'Central de cerca elétrica ELC 5001',
 				content:
-					'Esta barreira de infravermelho ativo é ideal para proteger grandes áreas, como pátios e estacionamentos. Possui alcance de até 70 metros e é compatível com as centrais de alarme da Intelbras.',
+					'A central ELC 5001 da Intelbras é ideal para residências de menor porte, entregando muita potência de choque ao menor preço da categoria. Pelo smartphone, monitore o disparo do eletrificador e receba o status no dispositivo quando interligado à central de alarme (via cabo ou TX 4020)',
 			},
 		],
 		beneficios: [
@@ -72,19 +87,19 @@ export const GeneralData = {
 	smartHome: {
 		produtos: [
 			{
-				img: [],
-				title: 'Interruptor de luz inteligente',
+				img: p1smart,
+				title: 'Kit de Iluminação Inteligente',
 				content:
-					'O interruptor de luz inteligente da Intelbras permite controlar as luzes da sua casa por meio de um aplicativo no smartphone ou por comando de voz, e é compatível com outros dispositivos inteligentes, como Amazon Alexa e Google Assistant.',
+					'O interruptor de luz inteligente permite controlar as luzes da sua casa por meio de um aplicativo no smartphone ou por comando de voz, e é compatível com outros dispositivos inteligentes, como Amazon Alexa e Google Assistant.',
 			},
 			{
-				img: [],
+				img: p2smart,
 				title: 'Controle remoto universal',
 				content:
 					'O controle remoto universal da Intelbras permite controlar diversos dispositivos eletrônicos, como TV, som, ar-condicionado e outros aparelhos, por meio de um único dispositivo. Ele é compatível com diversos modelos e marcas de equipamentos.',
 			},
 			{
-				img: [],
+				img: p3smart,
 				title: 'Videoporteiro',
 				content:
 					'O videoporteiro da Intelbras permite ver quem está à porta de sua casa por meio de um monitor ou de um aplicativo no smartphone. Ele também pode ser integrado ao sistema de alarme residencial da Intelbras para aumentar a segurança da sua casa.',
@@ -120,20 +135,20 @@ export const GeneralData = {
 	tel: {
 		produtos: [
 			{
-				img: [],
+				img: p1tel,
 				title: 'Telefone sem fio Intelbras TS 5120',
 				content:
 					'Este telefone sem fio é ideal para quem precisa de maior alcance, já que possui tecnologia DECT 6.0, que oferece maior qualidade de sinal e alcance de até 300 metros sem obstáculos. Possui identificador de chamadas, viva-voz e display iluminado.',
 			},
 			{
-				img: [],
+				img: p2tel,
 				title: 'Telefone com fio Intelbras Pleno',
 				content:
 					'Este telefone com fio é ideal para quem busca economia e praticidade, já que é um dos telefones com fio mais acessíveis do mercado. Possui teclado luminoso, ajuste de volume da campainha e viva-voz.',
 			},
 			{
-				img: [],
-				title: 'PABX Intelbras Impacta 68',
+				img: p3tel,
+				title: 'Kit PABX Intelbras Impacta 68',
 				content:
 					'Este sistema de PABX é ideal para empresas de pequeno e médio porte, já que possui capacidade para até 68 ramais e 30 linhas. Possui recursos avançados como identificador de chamadas, gravação de chamadas e atendimento automático.',
 			},
@@ -168,22 +183,22 @@ export const GeneralData = {
 	acesso: {
 		produtos: [
 			{
-				img: [],
-				title: 'Controladora de Acesso AC 1000',
+				img: p1acesso,
+				title: 'Controladora de Acesso SS 420',
 				content:
-					'ossui conexão via rede IP e permite gerenciar até 10.000 usuários, com controle de acesso por cartão de proximidade ou biometria.',
+					'O SS 420 é um controlador de acesso stand alone com display touch screen e abertura através de senha, cartão de proximidade e leitor biométrico. Controla até 5.000 usuários e 1.500 biometrias, além de permitir o gerenciamento do controle de acesso através dos navegadores Firefox e Google Chrome.',
 			},
 			{
-				img: [],
-				title: 'Leitor Biométrico SCA 1000',
+				img: p2acesso,
+				title: 'Kit Acesso Digiprox SA 203',
 				content:
-					'Garante alta segurança no controle de acesso por meio da leitura da impressão digital, com design moderno e compacto.',
+					'O controlador de acesso Digiprox SA 203 é um dispositivo stand alone, com frequência 125 kHz, teclado touch screen e possui abertura por senha ou cartão de proximidade RFID. Os usuários podem ser cadastrados pelos métodos de senha numérica e cartão de proximidade.',
 			},
 			{
-				img: [],
-				title: 'Controladora de Acesso AC 90',
+				img: p3acesso,
+				title: 'Fechadura eletroímã Kit Elite',
 				content:
-					'Ideal para controle de acesso em condomínios e empresas, permite o controle de acesso por cartão de proximidade.',
+					'A fechadura-eletroímã Kit Elite da Automatiza é composta por suportes em alumínio de fabricação 100% nacional e fechadura-eletroímã de 150 Kgf, é nossa opção mais versátil e pode ser instalado em portas de madeira, alumínio, aço e divisórias, sendo necessário dupla face em portas de vidro.',
 			},
 		],
 		beneficios: [
@@ -216,19 +231,19 @@ export const GeneralData = {
 	solar: {
 		produtos: [
 			{
-				img: [],
+				img: p1solar,
 				title: 'Painéis solares fotovoltaicos',
 				content:
 					'Oferecemos uma linha de painéis solares fotovoltaicos projetados para gerar energia elétrica a partir da luz solar. Eles são compatíveis com sistemas de energia solar residencial e comercial e estão disponíveis em várias potências e tamanhos.',
 			},
 			{
-				img: [],
+				img: p2solar,
 				title: 'Controlador de carga solar',
 				content:
 					'Temos um controlador de carga solar que regula a carga e descarga da bateria em um sistema de energia solar. Ele pode ser usado para controlar sistemas de iluminação e fornecer energia elétrica para dispositivos eletrônicos em áreas remotas.',
 			},
 			{
-				img: [],
+				img: p3solar,
 				title: 'Inversores solares',
 				content:
 					'Fornecemos uma linha de inversores solares projetados para converter a energia DC gerada pelos painéis solares em energia AC utilizável em sistemas elétricos residenciais e comerciais. Eles estão disponíveis em diferentes tamanhos e potências para atender às necessidades de diferentes sistemas de energia solar.',
@@ -410,7 +425,7 @@ export const SolutionsSliderData = [
 	{
 		id: '/smartHome',
 		img: smartHome,
-		title: 'Soluções de Automação Smart',
+		title: 'Soluções de Automação Residêncial',
 		content:
 			'São dispositivos que permitem a automação de funções e tarefas em uma casa ou apartamento, tornando a rotina do dia a dia mais prática e eficiente. Podem ser controlados por meio de dispositivos móveis, como smartphones e tablets, ou por assistentes virtuais, como a Alexa e o Google Assistant, permitindo que o usuário gerencie a iluminação, temperatura, segurança, entre outros recursos.',
 	},

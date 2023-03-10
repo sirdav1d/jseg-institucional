@@ -37,7 +37,7 @@ export default function Thanks() {
 				gap='40px'
 				justify={'center'}
 				align='center'>
-				<Link href='/thanks'>
+				<Link href='/'>
 					<Image
 						h={['40px', '40px', '48px', '100%']}
 						src={logo}
