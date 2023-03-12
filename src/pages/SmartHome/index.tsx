@@ -50,7 +50,7 @@ export default function SmartHome() {
 						'Procurando uma empresa parceira e de confiança?' +
 						' Clique aqui e faça seu orçamento'
 					}
-					btnText={'Fazer orçamento'}
+					btnText={'Orçamento Rápido'}
 				/>
 				<FindUs />
 				<Footer />
