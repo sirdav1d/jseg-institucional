@@ -124,7 +124,7 @@ export const GeneralData = {
 			},
 			{
 				img: p3smart,
-				title: 'Câmera interna Wi-Fi - iMX1 com micro-SD 32GB',
+				title: 'Câmera Wi-Fi - iMX1 com microSD 32GB',
 				content:
 					'Para registrar tudo, o modelo capta imagens em resolução HD e conta com interação por voz, visão noturna e cartão micro-SD 32GB. Sinta-se sempre pertinho do seu bebê! Use a função Babá Eletrônica para acompanhar todos os momentos em tempo real pelo app Mibo Cam.',
 			},
