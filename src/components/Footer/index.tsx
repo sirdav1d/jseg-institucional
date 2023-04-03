@@ -9,11 +9,11 @@ import {
 	VStack,
 	Link,
 } from '@chakra-ui/react';
-import background from '../../assets/institucional-imgs/backFooter.svg';
-import instaImage from '../../assets/institucional-imgs/insta.svg';
-import wppImage from '../../assets/institucional-imgs/wpp.svg';
-import faceImage from '../../assets/institucional-imgs/face.svg';
-import youtubeImage from '../../assets/institucional-imgs/youtube.svg';
+import background from '/assets/institucional-imgs/backFooter.svg';
+import instaImage from '/assets/institucional-imgs/insta.svg';
+import wppImage from '/assets/institucional-imgs/wpp.svg';
+import faceImage from '/assets/institucional-imgs/face.svg';
+import youtubeImage from '/assets/institucional-imgs/youtube.svg';
 
 export default function Footer() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');

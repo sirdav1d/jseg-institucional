@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Link, useColorModeValue } from '@chakra-ui/react';
-import wppImage from '../../assets/institucional-imgs/wpp.svg';
+import wppImage from '/assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import InitalSectionLP from '../../components/InitialSectionLP';

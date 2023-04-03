@@ -5,10 +5,10 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
-import group from '../../assets/institucional-imgs/WhoSection/group.svg';
-import mission from '../../assets/institucional-imgs/WhoSection/mission.svg';
-import value from '../../assets/institucional-imgs/WhoSection/value.svg';
-import vision from '../../assets/institucional-imgs/WhoSection/vision.svg';
+import group from '/assets/institucional-imgs/WhoSection/group.svg';
+import mission from '/assets/institucional-imgs/WhoSection/mission.svg';
+import value from '/assets/institucional-imgs/WhoSection/value.svg';
+import vision from '/assets/institucional-imgs/WhoSection/vision.svg';
 import { AnimateText, MotionFlex } from '../../Styles/animation';
 
 export default function WhoSection() {

@@ -1,9 +1,9 @@
 import { Flex, Image } from '@chakra-ui/react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Slide, SliderComponent, SwiperProps } from '../GeneralSlider/index';
-import promo1 from '../../assets/institucional-imgs/promo/promo1.svg';
-import promo2 from '../../assets/institucional-imgs/promo/promo2.svg';
-import promo3 from '../../assets/institucional-imgs/promo/promo3.svg';
+import promo1 from '/assets/institucional-imgs/promo/promo1.svg';
+import promo2 from '/assets/institucional-imgs/promo/promo2.svg';
+import promo3 from '/assets/institucional-imgs/promo/promo3.svg';
 import '../GeneralSlider/Slider.css';
 
 export default function SliderPromo() {

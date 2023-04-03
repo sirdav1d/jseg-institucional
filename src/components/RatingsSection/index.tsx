@@ -5,19 +5,19 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
-import c1 from '../../assets/institucional-imgs/ratings/clients/c1.svg';
-import c10 from '../../assets/institucional-imgs/ratings/clients/c10.svg';
-import c2 from '../../assets/institucional-imgs/ratings/clients/c2.svg';
-import c3 from '../../assets/institucional-imgs/ratings/clients/c3.svg';
-import c4 from '../../assets/institucional-imgs/ratings/clients/c4.svg';
-import c5 from '../../assets/institucional-imgs/ratings/clients/c5.svg';
-import c6 from '../../assets/institucional-imgs/ratings/clients/c6.svg';
-import c7 from '../../assets/institucional-imgs/ratings/clients/c7.svg';
-import c8 from '../../assets/institucional-imgs/ratings/clients/c8.svg';
-import c9 from '../../assets/institucional-imgs/ratings/clients/c9.svg';
-import r1 from '../../assets/institucional-imgs/ratings/img1.svg';
-import r2 from '../../assets/institucional-imgs/ratings/img2.svg';
-import r3 from '../../assets/institucional-imgs/ratings/img3.svg';
+import c1 from '/assets/institucional-imgs/ratings/clients/c1.svg';
+import c10 from '/assets/institucional-imgs/ratings/clients/c10.svg';
+import c2 from '/assets/institucional-imgs/ratings/clients/c2.svg';
+import c3 from '/assets/institucional-imgs/ratings/clients/c3.svg';
+import c4 from '/assets/institucional-imgs/ratings/clients/c4.svg';
+import c5 from '/assets/institucional-imgs/ratings/clients/c5.svg';
+import c6 from '/assets/institucional-imgs/ratings/clients/c6.svg';
+import c7 from '/assets/institucional-imgs/ratings/clients/c7.svg';
+import c8 from '/assets/institucional-imgs/ratings/clients/c8.svg';
+import c9 from '/assets/institucional-imgs/ratings/clients/c9.svg';
+import r1 from '/assets/institucional-imgs/ratings/img1.svg';
+import r2 from '/assets/institucional-imgs/ratings/img2.svg';
+import r3 from '/assets/institucional-imgs/ratings/img3.svg';
 import {
 	AnimateText,
 	MotionFlex,

@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Link, useColorModeValue } from '@chakra-ui/react';
-import logo from '../../assets/institucional-imgs/logo.svg';
+import logo from '/assets/institucional-imgs/logo.svg';
 import { DrawerMenu } from '../drawer';
 import NavTag from '../Navigation';
 import { INavProps } from '../Navigation';
