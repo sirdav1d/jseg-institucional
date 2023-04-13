@@ -12,14 +12,11 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { AnimateContainer, MotionFlex } from '../../Styles/animation';
 
 export default function Form() {
 	const [name, setName] = useState('');
 	const [tel, setTel] = useState('');
-
-	const navigate = useNavigate();
 
 	const handleNameChange = (e: any) => setName(e.target.value);
 	const handleTelChange = (e: any) => setTel(e.target.value);

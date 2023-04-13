@@ -1,5 +1,5 @@
-import { Flex, Heading, useColorModeValue } from '@chakra-ui/react';
-import { AnimateCTA, AnimateText, MotionFlex } from '../../Styles/animation';
+import { Heading, useColorModeValue } from '@chakra-ui/react';
+import { AnimateCTA, MotionFlex } from '../../Styles/animation';
 import ButtonGeneral from '../ButtonGeneral';
 
 export default function SectionCTA(props: { text: string; btnText: string }) {

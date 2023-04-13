@@ -4,7 +4,7 @@ import ButtonGeneral from '../../components/ButtonGeneral';
 import {
 	Slide,
 	SliderComponent,
-	SwiperProps,
+	SwiperProps
 } from '../../components/GeneralSlider';
 
 export default function SliderProducts(props: { data: any }) {

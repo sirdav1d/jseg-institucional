@@ -5,11 +5,11 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
+import { AnimateText, MotionFlex } from '../../Styles/animation';
 import group from '/assets/institucional-imgs/WhoSection/group.svg';
 import mission from '/assets/institucional-imgs/WhoSection/mission.svg';
 import value from '/assets/institucional-imgs/WhoSection/value.svg';
 import vision from '/assets/institucional-imgs/WhoSection/vision.svg';
-import { AnimateText, MotionFlex } from '../../Styles/animation';
 
 export default function WhoSection() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
@@ -34,7 +34,7 @@ export default function WhoSection() {
 						variants={AnimateText}
 						initial={'start'}
 						whileInView={'end'}
-						viewport={{ once: true, amount: .2 }}
+						viewport={{ once: true, amount: 0.2 }}
 						justify={'center'}
 						flexDir={'column'}
 						gap={['8px', '8px', '16px', '20px']}>

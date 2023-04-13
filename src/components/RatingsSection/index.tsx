@@ -5,6 +5,13 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
+import {
+	AnimateText,
+	MotionFlex,
+	MotionHeading,
+	MotionImage,
+} from '../../Styles/animation';
+import SectionCTA from '../SectionCTA';
 import c1 from '/assets/institucional-imgs/ratings/clients/c1.svg';
 import c10 from '/assets/institucional-imgs/ratings/clients/c10.svg';
 import c2 from '/assets/institucional-imgs/ratings/clients/c2.svg';
@@ -18,13 +25,6 @@ import c9 from '/assets/institucional-imgs/ratings/clients/c9.svg';
 import r1 from '/assets/institucional-imgs/ratings/img1.svg';
 import r2 from '/assets/institucional-imgs/ratings/img2.svg';
 import r3 from '/assets/institucional-imgs/ratings/img3.svg';
-import {
-	AnimateText,
-	MotionFlex,
-	MotionHeading,
-	MotionImage,
-} from '../../Styles/animation';
-import SectionCTA from '../SectionCTA';
 
 export default function RatingsSection() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');

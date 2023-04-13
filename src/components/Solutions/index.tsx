@@ -1,4 +1,4 @@
-import { Flex, Heading, useColorModeValue } from '@chakra-ui/react';
+import { Heading, useColorModeValue } from '@chakra-ui/react';
 import { AnimateContainer, MotionFlex } from '../../Styles/animation';
 import SolutionsSlider from '../SolutionSlider';
 

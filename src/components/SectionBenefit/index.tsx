@@ -1,5 +1,4 @@
-import { Flex, Heading, useColorModeValue } from '@chakra-ui/react';
-import { GeneralData } from '../../mocks/data';
+import { Flex, useColorModeValue } from '@chakra-ui/react';
 import { AnimateText, MotionFlex, MotionHeading } from '../../Styles/animation';
 import CardItem from '../Card';
 
@@ -30,7 +29,7 @@ export default function SectionBenefit(props: { data?: any }) {
 				justify={['center', 'center', 'center', 'space-between']}
 				align={['center', 'center', 'center', 'start']}
 				borderRadius={'4px'}
-				flexWrap={['wrap', 'wrap', 'wrap','wrap', 'nowrap']}
+				flexWrap={['wrap', 'wrap', 'wrap', 'wrap', 'nowrap']}
 				shadow='md'
 				flexDir={['column', 'column', 'row']}>
 				{props.data.map((b: any) => {

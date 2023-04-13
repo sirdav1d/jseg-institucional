@@ -9,7 +9,6 @@ import {
 	Link,
 	List,
 	ListItem,
-	UnorderedList,
 	useColorModeValue,
 	useDisclosure,
 } from '@chakra-ui/react';

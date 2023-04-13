@@ -1,10 +1,4 @@
-import {
-	Divider,
-	Flex,
-	Heading,
-	Text,
-	useColorModeValue,
-} from '@chakra-ui/react';
+import { Divider, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 import {
 	AnimateContainer,
 	AnimateText,
@@ -13,7 +7,6 @@ import {
 	MotionText,
 } from '../../Styles/animation';
 import ButtonGeneral from '../ButtonGeneral';
-import Form from '../Form';
 
 export default function FindUs() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');

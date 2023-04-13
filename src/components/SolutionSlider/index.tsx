@@ -1,8 +1,7 @@
-import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { SolutionsSliderData } from '../../mocks/data';
-import ButtonGeneral from '../ButtonGeneral';
 import { Slide, SliderComponent, SwiperProps } from '../GeneralSlider';
 
 export default function SolutionsSlider() {

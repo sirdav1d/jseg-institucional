@@ -1,4 +1,4 @@
-import { Flex, Heading, Link, List, ListItem, Text } from '@chakra-ui/react';
+import { Flex, Link, List, ListItem } from '@chakra-ui/react';
 import ButtonHeader from '../ButtonHeader';
 import Switcher from '../Switcher';
 
