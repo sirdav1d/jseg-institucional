@@ -1,5 +1,4 @@
 import { Box, Flex, Image, Link, useColorModeValue } from '@chakra-ui/react';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import InitalSectionLP from '../../components/InitialSectionLP';
@@ -7,10 +6,89 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import { DataNavigationLP, GeneralData } from '../../mocks/data';
+import b1alarme from '/assets/alarme-imgs/beneficios/b1.svg';
+import b2alarme from '/assets/alarme-imgs/beneficios/b2.svg';
+import b3alarme from '/assets/alarme-imgs/beneficios/b3.svg';
+import b4alarme from '/assets/alarme-imgs/beneficios/b4.svg';
+import p1alarme from '/assets/alarme-imgs/produtos/p1.svg';
+import p2alarme from '/assets/alarme-imgs/produtos/p2.svg';
+import p3alarme from '/assets/alarme-imgs/produtos/p3.svg';
+import wppImage from '/assets/institucional-imgs/wpp.svg';
 
 export default function Telefonia() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
+	const DataNavigationLP = {
+		items: [
+			{
+				link: '#Home',
+				navItem: 'Home',
+			},
+			{
+				link: '#benefits',
+				navItem: 'Benefícios',
+			},
+			,
+			{
+				link: '#findUs',
+				navItem: 'Nos Encontre',
+			},
+			{
+				link: '/',
+				navItem: 'Institucional',
+			},
+		],
+	};
+
+	const GeneralData = {
+		alarme: {
+			produtos: [
+				{
+					img: p1alarme,
+					title: 'Sistema de alarme - Kit ANM 24 NET',
+					content:
+						'Sistema de alarme não monitorado com conexão via nuvem que permite configuração e interação por aplicativo. Composto por uma ANM 24 NET, uma SIR 1000, dois XAC 4000, dois XAS 4010 Smart e um IVP 4000 Smart. Através do aplicativo AMT Remoto Mobile, é possível fazer o cadastro facilitado dos controles e sensores, bem como alterar configurações do sistema.',
+				},
+				{
+					img: p2alarme,
+					title: 'Sistema de alarme sem fio - Kit 8000 Slim',
+					content:
+						'Com o melhor custo-benefício, o sistema é totalmente sem fios, o que garante fácil instalação e longo alcance de transmissão. Composto por uma AMT 8000, uma XSS 8000, um XAC 8000, um IVP 8000 PET e dois XAS 8000. Com alta performance de comunicação, os dispositivos possuem bateria com duração de até 5 anos.',
+				},
+				{
+					img: p3alarme,
+					title: 'Central de cerca elétrica ELC 5001',
+					content:
+						'A central ELC 5001 da Intelbras é ideal para residências de menor porte, entregando muita potência de choque ao menor preço da categoria. Pelo smartphone, monitore o disparo do eletrificador e receba o status no dispositivo quando interligado à central de alarme (via cabo ou TX 4020)',
+				},
+			],
+			beneficios: [
+				{
+					img: b1alarme,
+					title: 'Notificações instantâneas',
+					content:
+						'Com a notificação instantânea, você receberá um alerta imediato sempre que o alarme for ativado, permitindo que você tome medidas imediatas para garantir a segurança de sua propriedade.',
+				},
+				{
+					img: b2alarme,
+					title: 'Baixa manutenção',
+					content:
+						'A maioria dos sistemas de alarme da Intelbras não requer manutenção frequente, tornando-os uma solução de segurança de baixa manutenção.',
+				},
+				{
+					img: b3alarme,
+					title: 'Monitoramento remoto',
+					content:
+						'Com a opção de monitoramento remoto, você pode ficar de olho em sua propriedade de qualquer lugar, através de seu smartphone ou tablet, e receber alertas de atividade suspeita.',
+				},
+				{
+					img: b4alarme,
+					title: 'Proteção contra roubo e invasão',
+					content:
+						'Os sistemas de alarme da Intelbras fornecem proteção contra intrusos e podem alertá-lo imediatamente se alguém tentar invadir sua casa ou empresa.',
+				},
+			],
+		},
+	};
 
 	return (
 		<>

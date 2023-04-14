@@ -1,5 +1,4 @@
 import { Box, Flex, Image, Link, useColorModeValue } from '@chakra-ui/react';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import InitalSectionLP from '../../components/InitialSectionLP';
@@ -7,11 +6,88 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import { DataNavigationLP, GeneralData } from '../../mocks/data';
+import b1tel from '/assets/telefonia-imgs/beneficios/b1.svg';
+import b2tel from '/assets/telefonia-imgs/beneficios/b2.svg';
+import b3tel from '/assets/telefonia-imgs/beneficios/b3.svg';
+import b4tel from '/assets/telefonia-imgs/beneficios/b4.svg';
+import p1tel from '/assets/telefonia-imgs/produtos/p1.svg';
+import p2tel from '/assets/telefonia-imgs/produtos/p2.svg';
+import p3tel from '/assets/telefonia-imgs/produtos/p3.svg';
+import wppImage from '/assets/institucional-imgs/wpp.svg';
 
 export default function Telefonia() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
-
+	const DataNavigationLP = {
+		items: [
+			{
+				link: '#Home',
+				navItem: 'Home',
+			},
+			{
+				link: '#benefits',
+				navItem: 'Benefícios',
+			},
+			,
+			{
+				link: '#findUs',
+				navItem: 'Nos Encontre',
+			},
+			{
+				link: '/',
+				navItem: 'Institucional',
+			},
+		],
+	};
+	const GeneralData = {
+		tel: {
+			produtos: [
+				{
+					img: p1tel,
+					title: 'Telefone sem fio Intelbras TS 5120',
+					content:
+						'Este telefone sem fio é ideal para quem precisa de maior alcance, já que possui tecnologia DECT 6.0, que oferece maior qualidade de sinal e alcance de até 300 metros sem obstáculos. Possui identificador de chamadas, viva-voz e display iluminado.',
+				},
+				{
+					img: p2tel,
+					title: 'Telefone com fio Intelbras Pleno',
+					content:
+						'Este telefone com fio é ideal para quem busca economia e praticidade, já que é um dos telefones com fio mais acessíveis do mercado. Possui teclado luminoso, ajuste de volume da campainha e viva-voz.',
+				},
+				{
+					img: p3tel,
+					title: 'Kit PABX Intelbras Impacta 68',
+					content:
+						'Este sistema de PABX é ideal para empresas de pequeno e médio porte, já que possui capacidade para até 68 ramais e 30 linhas. Possui recursos avançados como identificador de chamadas, gravação de chamadas e atendimento automático.',
+				},
+			],
+			beneficios: [
+				{
+					img: b1tel,
+					title: 'Qualidade de áudio',
+					content:
+						'Somos conhecidos por fornecer produtos de alta qualidade de áudio, o que significa que você terá conversas telefônicas mais claras e nítidas.',
+				},
+				{
+					img: b2tel,
+					title: 'Durabilidade',
+					content:
+						'Os produtos da Intelbras são feitos com materiais de alta qualidade, o que significa que eles são duráveis ​​e resistentes a danos.',
+				},
+				{
+					img: b3tel,
+					title: 'Variedade de produtos',
+					content:
+						'Trabalhamos com uma ampla variedade de produtos de telefonia, incluindo telefones sem fio, telefones com fio, sistemas de PABX, entre outros, o que significa que você pode encontrar o produto certo para suas necessidades.',
+				},
+				{
+					img: b4tel,
+					title: 'Recursos avançados',
+					content:
+						'Ofertamos uma variedade de recursos avançados em seus produtos de telefonia, como identificador de chamadas, gravação de chamadas e transferência de chamadas, o que significa que você pode ter acesso a recursos avançados de telefonia.',
+				},
+			],
+		},
+	};
 	return (
 		<>
 			<Header data={DataNavigationLP.items} />
