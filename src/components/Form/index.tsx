@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { AnimateContainer, MotionFlex } from '../../Styles/animation';
+import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
 	const [name, setName] = useState('');
@@ -23,6 +24,8 @@ export default function Form() {
 
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.700');
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
+
+	const navigate = useNavigate();
 	return (
 		<MotionFlex
 			variants={AnimateContainer}
@@ -49,9 +52,9 @@ export default function Form() {
 				Formulário de Contato com Especialista em Vendas
 			</Heading>
 			<form
-				action='https://gmail.us21.list-manage.com/subscribe/post?u=c47b60b99b096c2172ccb717f&amp;id=d71bd292bd&amp;f_id=0073afe1f0'
+				action='https://gmail.us21.list-manage.com/subscribe/post?u=4fa7838876d4535d0002ea553&amp;id=98a06c8b40&amp;f_id=007dbae1f0'
 				method='post'
-				target='_blank'
+				// target='_blank'
 				noValidate
 				id='mc-embedded-subscribe-form'
 				name='mc-embedded-subscribe-form'>
@@ -61,7 +64,7 @@ export default function Form() {
 						mb='8px'
 						type={'text'}
 						value={name}
-						name='LP1NAME'
+						name='FULLNAME'
 						onChange={handleNameChange}
 						placeholder='Digite seu nome'
 					/>
@@ -81,7 +84,7 @@ export default function Form() {
 						mb='8px'
 						type={'tel'}
 						value={tel}
-						name='LP1PHONE'
+						name='PHONE'
 						onChange={handleTelChange}
 						placeholder='(99)99999 - 9999'
 					/>
@@ -96,17 +99,17 @@ export default function Form() {
 							gap='24px'
 							flexDir={['column', 'column', 'row']}>
 							<Radio
-								name='LP1LOCAL'
+								name='LOCAL3'
 								value='Residencia'>
 								Residência
 							</Radio>
 							<Radio
-								name='LP1LOCAL'
+								name='LOCAL3'
 								value='Condominio'>
 								Condomínio
 							</Radio>
 							<Radio
-								name='LP1LOCAL'
+								name='LOCAL3'
 								value='Empresa'>
 								Empresa
 							</Radio>
@@ -119,7 +122,7 @@ export default function Form() {
 				<FormControl mb='8px'>
 					<FormLabel>Soluções</FormLabel>
 					<Select
-						name='LP1SOL'
+						name='SOL7'
 						placeholder='O que você precisa hoje?'>
 						<option value={'CFTV'}>CFTV</option>
 						<option value={'REDE'}>REDE DE INTERNET</option>
@@ -131,7 +134,7 @@ export default function Form() {
 					</Select>
 				</FormControl>
 				<Button
-					// onClick={() => navigate('/thanks')}
+					onClick={() => navigate('/thanks')}
 					bgColor={'brand.dourado.500'}
 					_hover={{ backgroundColor: 'brand.dourado.300' }}
 					color='brand.cinza.100'

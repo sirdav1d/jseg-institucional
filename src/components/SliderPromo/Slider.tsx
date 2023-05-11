@@ -33,6 +33,7 @@ export default function SliderPromo() {
 								w={['90%', '90%', '90%', '100%']}
 								h='100%'
 								src={p}
+								alt={'promo images'}
 							/>
 						</Slide>
 					);
