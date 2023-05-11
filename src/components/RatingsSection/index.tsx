@@ -5,23 +5,8 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
-import {
-	AnimateText,
-	MotionFlex,
-	MotionHeading,
-	MotionImage,
-} from '../../Styles/animation';
+import { AnimateText, MotionFlex, MotionHeading } from '../../Styles/animation';
 import SectionCTA from '../SectionCTA';
-import c1 from '/assets/institucional-imgs/ratings/clients/c1.svg';
-import c10 from '/assets/institucional-imgs/ratings/clients/c10.svg';
-import c2 from '/assets/institucional-imgs/ratings/clients/c2.svg';
-import c3 from '/assets/institucional-imgs/ratings/clients/c3.svg';
-import c4 from '/assets/institucional-imgs/ratings/clients/c4.svg';
-import c5 from '/assets/institucional-imgs/ratings/clients/c5.svg';
-import c6 from '/assets/institucional-imgs/ratings/clients/c6.svg';
-import c7 from '/assets/institucional-imgs/ratings/clients/c7.svg';
-import c8 from '/assets/institucional-imgs/ratings/clients/c8.svg';
-import c9 from '/assets/institucional-imgs/ratings/clients/c9.svg';
 import r1 from '/assets/institucional-imgs/ratings/img1.svg';
 import r2 from '/assets/institucional-imgs/ratings/img2.svg';
 import r3 from '/assets/institucional-imgs/ratings/img3.svg';
@@ -72,7 +57,10 @@ export default function RatingsSection() {
 							gap='12px'
 							justify={'center'}
 							align='center'>
-							<Image src={r1} />
+							<Image
+								src={r1}
+								alt='Avatar Bruno Lima'
+							/>
 							<Text
 								fontWeight={'bold'}
 								color={HeadingColor}>
@@ -97,7 +85,10 @@ export default function RatingsSection() {
 							gap='12px'
 							justify={'center'}
 							align='center'>
-							<Image src={r2} />
+							<Image
+								src={r2}
+								alt='Avatar Fidelis Estefan'
+							/>
 							<Text
 								fontWeight={'bold'}
 								color={HeadingColor}>
@@ -121,7 +112,10 @@ export default function RatingsSection() {
 							gap='12px'
 							justify={'center'}
 							align='center'>
-							<Image src={r3} />
+							<Image
+								src={r3}
+								alt='Avatar Fernando Rayol'
+							/>
 							<Text
 								fontWeight={'bold'}
 								color={HeadingColor}>
@@ -132,7 +126,7 @@ export default function RatingsSection() {
 				</Flex>
 			</Flex>
 			<Divider />
-			<Flex
+			{/* <Flex
 				flexDir={'column'}
 				m={['20px ', '20px ', '20px ', '0px auto']}
 				gap='20px'
@@ -270,7 +264,7 @@ export default function RatingsSection() {
 						/>
 					</Flex>
 				</Flex>
-			</Flex>
+			</Flex> */}
 			<SectionCTA
 				text={
 					'Não perca mais tempo, adquira nossos produtos agora mesmo! Clique aqui para comprar!'

@@ -28,6 +28,7 @@ export default function CardItem(props: { data: CardProps }) {
 				w='100%'
 				h='100%'
 				objectFit='contain'
+				alt={props.data.title}
 				src={props.data.img}
 			/>
 			<Flex

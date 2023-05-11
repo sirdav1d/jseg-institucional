@@ -41,6 +41,7 @@ export default function Thanks() {
 					<Image
 						h={['40px', '40px', '48px', '100%']}
 						src={logo}
+						alt='logo whatsapp'
 					/>
 				</Link>
 
@@ -79,6 +80,7 @@ export default function Thanks() {
 					borderRadius='20px'
 					shadow={'xl'}
 					src={brinde}
+					alt='Imagem de brinde'
 				/>
 			</Flex>
 			<Flex

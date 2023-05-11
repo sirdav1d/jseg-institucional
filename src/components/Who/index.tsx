@@ -56,6 +56,7 @@ export default function WhoSection() {
 						w={['100%', '0%', '320px']}
 						h='auto'
 						src={group}
+						alt='Grupo trabalhando juntos'
 					/>
 				</Flex>
 				<Flex
@@ -87,7 +88,10 @@ export default function WhoSection() {
 							fontFamily={'Montserrat'}>
 							Missão
 						</Heading>
-						<Image src={mission} />
+						<Image
+							src={mission}
+							alt='Alvo'
+						/>
 						<Text fontSize={['sm', 'md']}>
 							Fornecer Soluções personalizadas de alta qualidade de produtos e
 							serviços exclusivos que geram impacto no mercado
@@ -114,7 +118,10 @@ export default function WhoSection() {
 							fontFamily={'Montserrat'}>
 							Visão
 						</Heading>
-						<Image src={vision} />
+						<Image
+							src={vision}
+							alt='Olho'
+						/>
 						<Text fontSize={['sm', 'md']}>
 							Ser uma empresa reconhecida nacionalmente pela sua qualidade e
 							eficiência operacional
@@ -142,7 +149,7 @@ export default function WhoSection() {
 							fontFamily={'Montserrat'}>
 							Valores
 						</Heading>
-						<Image src={value} />
+						<Image src={value} alt='Mão segurando um avatar'/>
 						<Flex
 							flexDir={'column'}
 							gap='8px'>

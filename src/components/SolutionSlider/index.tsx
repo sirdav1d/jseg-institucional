@@ -89,6 +89,7 @@ export default function SolutionsSlider() {
 									borderRadius={'12px'}
 									h={['180px', '180px', '180px', '220px']}
 									src={s.img}
+									alt={s.title}
 								/>
 								<Flex
 									justify={'center'}

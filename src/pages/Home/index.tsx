@@ -96,6 +96,7 @@ export function Home() {
 					<Image
 						w={['52px', '52px', '60px', '60px']}
 						src={wppImage}
+						alt='logo whatsapp'
 					/>
 				</Link>
 			</Box>
