@@ -23,7 +23,7 @@ export default function NavTag(props: { data: INavProps | any }) {
 					gap={'24px'}>
 					{props.data.map((d: any) => {
 						return (
-							<ListItem>
+							<ListItem key={d.link}>
 								<Link
 									href={d.link}
 									fontSize={['small', 'small', 'small', 'sm', 'md']}

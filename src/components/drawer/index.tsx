@@ -54,7 +54,7 @@ export function DrawerMenu(props: { data: any }) {
 								</ListItem>
 								{props.data.map((d: any) => {
 									return (
-										<ListItem>
+										<ListItem key={d.link}>
 											<Link
 												href={d.link}
 												fontSize={'md'}

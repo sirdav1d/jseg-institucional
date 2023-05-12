@@ -11,7 +11,7 @@ import {
 	Select,
 	useColorModeValue,
 } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AnimateContainer, MotionFlex } from '../../Styles/animation';
 import { useNavigate } from 'react-router-dom';
 
@@ -25,7 +25,19 @@ export default function Form() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.700');
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
 
+	const [isDisable, setIsDisable] = useState(true);
+
+	useEffect(() => {
+		if (name === '' || tel === '') {
+			setIsDisable(true);
+		} else {
+			setIsDisable(false);
+		}
+		console.log(isDisable);
+	}, [name, tel, isDisable]);
+
 	const navigate = useNavigate();
+
 	return (
 		<MotionFlex
 			variants={AnimateContainer}
@@ -54,13 +66,14 @@ export default function Form() {
 			<form
 				action='https://gmail.us21.list-manage.com/subscribe/post?u=4fa7838876d4535d0002ea553&amp;id=98a06c8b40&amp;f_id=007dbae1f0'
 				method='post'
-				// target='_blank'
 				noValidate
 				id='mc-embedded-subscribe-form'
 				name='mc-embedded-subscribe-form'>
 				<FormControl isRequired>
 					<FormLabel>Nome:</FormLabel>
 					<Input
+						as={Input}
+						required={true}
 						mb='8px'
 						type={'text'}
 						value={name}
@@ -72,8 +85,10 @@ export default function Form() {
 				<FormControl isRequired>
 					<FormLabel>Email:</FormLabel>
 					<Input
+						as={Input}
+						isRequired
 						mb='8px'
-						type={'email'}
+						type='email'
 						name='EMAIL'
 						placeholder='Digite seu E-mail'
 					/>
@@ -81,8 +96,10 @@ export default function Form() {
 				<FormControl isRequired>
 					<FormLabel>Telefone:</FormLabel>
 					<Input
+						as={Input}
+						required={true}
 						mb='8px'
-						type={'tel'}
+						type='tel'
 						value={tel}
 						name='PHONE'
 						onChange={handleTelChange}
@@ -93,6 +110,7 @@ export default function Form() {
 					as='fieldset'
 					mb='8px'>
 					<RadioGroup
+						aria-required={'true'}
 						defaultValue='Residencia'
 						colorScheme={'whatsapp'}>
 						<Flex
@@ -134,7 +152,7 @@ export default function Form() {
 					</Select>
 				</FormControl>
 				<Button
-					onClick={() => navigate('/thanks')}
+					isDisabled={isDisable}
 					bgColor={'brand.dourado.500'}
 					_hover={{ backgroundColor: 'brand.dourado.300' }}
 					color='brand.cinza.100'
