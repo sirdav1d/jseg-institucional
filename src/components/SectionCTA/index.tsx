@@ -32,7 +32,7 @@ export default function SectionCTA(props: { text: string; btnText: string }) {
 			</Heading>
 			<ButtonGeneral
 				text={props.btnText}
-				size={['lg', 'lg', 'xl', '2xl']}
+				size={['md', 'lg', 'xl']}
 				data='https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1%20te%20encontrei%20no%20site%20institucional%20da%20JSEG.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento,%20pode%20me%20ajudar?'
 			/>
 		</MotionFlex>

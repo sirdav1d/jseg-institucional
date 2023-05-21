@@ -149,7 +149,10 @@ export default function WhoSection() {
 							fontFamily={'Montserrat'}>
 							Valores
 						</Heading>
-						<Image src={value} alt='Mão segurando um avatar'/>
+						<Image
+							src={value}
+							alt='Mão segurando um avatar'
+						/>
 						<Flex
 							flexDir={'column'}
 							gap='8px'>

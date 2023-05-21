@@ -158,8 +158,9 @@ export default function Form() {
 					color='brand.cinza.100'
 					w='100%'
 					type='submit'
-					fontWeight={'bold'}
-					fontSize={'2xl'}>
+					fontWeight={'semibold'}
+					mt={'8px'}
+					fontSize={'xl'}>
 					Enviar
 				</Button>
 			</form>

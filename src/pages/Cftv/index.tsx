@@ -103,7 +103,7 @@ export default function Cftv() {
 				zIndex={99999}
 				_hover={{ opacity: 1 }}
 				left={['0px', '8px', '8px', '20px']}>
-				<Link href='https://api.whatsapp.com/send?phone=5521971602106&text=Ol%C3%A1%20estava%20navegando%20pelo%20seu%20site,%20gostaria%20de%20montar%20um%20or%C3%A7amento!'>
+				<Link href='https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1%20vim%20pela%20Landing%20Page%20e%20gostaria%20de%20montar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar?'>
 					<Image
 						w={['52px', '52px', '60px', '60px']}
 						src={wppImage}

@@ -13,11 +13,11 @@ export default function ButtonGeneral(props: {
 			<Button
 				maxW='420px'
 				bg={props.bgColor ? props.bgColor : 'brand.verde.500'}
-				p={['12px 20px', '12px 20px', '24px 28px']}
+				p={['16px', '16px', '20px']}
 				borderRadius={'4px'}
-				fontWeight={'bold'}
+				fontWeight={'semibold'}
 				color={'brand.branco'}
-				w={['240px', '240px', '240px', '100%']}
+				// w={['240px', '240px', '240px', '100%']}
 				textAlign='center'
 				shadow={'lg'}
 				cursor={'pointer'}

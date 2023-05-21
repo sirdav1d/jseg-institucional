@@ -40,9 +40,9 @@ export default function InitalSectionLP(props: {
 			</MotionText>
 			<Box m='0px auto'>
 				<ButtonGeneral
-					size={['lg', 'lg', 'xl']}
+					size={['md', 'lg', 'xl']}
 					data={
-						'https://api.whatsapp.com/send?phone=5521971602106&text=Ol%C3%A1%20estava%20navegando%20pelo%20seu%20site,%20gostaria%20de%20montar%20um%20or%C3%A7amento!'
+						'https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1%20vim%20pela%20Landing%20Page%20e%20gostaria%20de%20montar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar?'
 					}
 					bgColor={'brand.dourado.500'}
 					text='Falar com Consultor'
