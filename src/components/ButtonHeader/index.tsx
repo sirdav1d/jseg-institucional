@@ -14,9 +14,9 @@ export default function ButtonHeader() {
 			transition={'all .3s ease'}
 			_hover={{ bg: 'brand.verde.primary' }}>
 			<Link
-				href='https://api.whatsapp.com/send?phone=5521971602106&text=Ol%C3%A1%20estava%20navegando%20pelo%20seu%20site,%20gostaria%20de%20montar%20um%20or%C3%A7amento!'
+				href='https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1%20te%20encontrei%20no%20site%20institucional%20da%20JSEG.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento,%20pode%20me%20ajudar?'
 				_hover={{ textDecor: 'none' }}>
-				<Text>(21) 97160-2106</Text>
+				<Text>(21) 99962-4160</Text>
 
 				<Text>Entrar em contato!</Text>
 			</Link>

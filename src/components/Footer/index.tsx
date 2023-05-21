@@ -164,7 +164,7 @@ export default function Footer() {
 							/>
 						</Link>
 						<Link
-							href='https://api.whatsapp.com/send?phone=5521971602106'
+							href='https://api.whatsapp.com/send?phone=5521999624160'
 							target={'_blank'}>
 							<Image
 								opacity={0.8}
@@ -197,7 +197,8 @@ export default function Footer() {
 						textAlign={'center'}
 						fontSize={['3xs', '2xs', 'xs', 'xs']}
 						w={['100%', '100%', '100%', '70%']}>
-						Telefone: 021-3628-4723 | E-mail: contato@jsegequipamentos.com.br |
+						Telefone: (21) 99962-4160 | E-mail: contato@jsegequipamentos.com.br
+						|
 						<br />
 						JSEG Equipamentos - Dominus Tec Informática Eireli &copy; Todos os
 						direitos reservados | CNPJ:08.644.747/0001-94 IE: 78.258.969 | Av.
