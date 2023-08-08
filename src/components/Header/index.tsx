@@ -4,7 +4,7 @@ import NavTag, { INavProps } from '../Navigation';
 import logo from '/assets/institucional-imgs/logo.svg';
 
 export default function Header(props: { data: INavProps | any }) {
-	const headerBg = useColorModeValue('brand.branco', 'brand.cinza.300');
+	const headerBg = useColorModeValue('whitesmoke', 'brand.cinza.300');
 	return (
 		<Flex
 			bg={headerBg}
