@@ -13,7 +13,6 @@ import {
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { AnimateContainer, MotionFlex } from '../../Styles/animation';
-import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
 	const [name, setName] = useState('');
@@ -28,15 +27,13 @@ export default function Form() {
 	const [isDisable, setIsDisable] = useState(true);
 
 	useEffect(() => {
-		if (name === '' || tel === '') {
+		if (name == '' || tel == '') {
 			setIsDisable(true);
 		} else {
 			setIsDisable(false);
 		}
 		console.log(isDisable);
-	}, [name, tel, isDisable]);
-
-	const navigate = useNavigate();
+	}, [name, tel]);
 
 	return (
 		<MotionFlex
@@ -107,6 +104,7 @@ export default function Form() {
 					/>
 				</FormControl>
 				<FormControl
+					isRequired
 					as='fieldset'
 					mb='8px'>
 					<RadioGroup
@@ -137,7 +135,9 @@ export default function Form() {
 						Informe para receber orçamento personalizado
 					</FormHelperText>
 				</FormControl>
-				<FormControl mb='8px'>
+				<FormControl
+					mb='8px'
+					isRequired>
 					<FormLabel>Soluções</FormLabel>
 					<Select
 						name='SOL7'
