@@ -43,7 +43,8 @@ export default function BannerLGPD() {
 			{!accept && (
 				<Box
 					w={'100vw'}
-					h={'80px'}
+					h={'auto'}
+					p={'20px 40px'}
 					pos={'fixed'}
 					bottom={0}
 					left={0}
@@ -52,6 +53,7 @@ export default function BannerLGPD() {
 					bg={lgpdBg}>
 					<Flex
 						w={'100%'}
+						flexDir={['column', 'column', 'row']}
 						alignItems={'center'}
 						justify={'center'}
 						gap={'40px'}
