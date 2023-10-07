@@ -11,7 +11,6 @@ export default function BannerLGPD() {
 	function getLGPD() {
 		const resp = localStorage.getItem('lgpd');
 		if (resp) {
-			const lgpd = JSON.stringify(resp);
 			setAccept(true);
 		} else {
 			setAccept(false);

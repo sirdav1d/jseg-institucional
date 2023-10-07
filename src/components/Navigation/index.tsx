@@ -25,6 +25,7 @@ export default function NavTag(props: { data: INavProps | any }) {
 						return (
 							<ListItem key={d.link}>
 								<Link
+									fontWeight={'semibold'}
 									href={d.link}
 									fontSize={['small', 'small', 'small', 'sm', 'md']}
 									transition={'all .3s ease'}

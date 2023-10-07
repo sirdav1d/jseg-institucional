@@ -1,6 +1,7 @@
-import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, useColorModeValue } from '@chakra-ui/react';
 import { AnimateText, MotionHeading, MotionText } from '../../Styles/animation';
 import ButtonGeneral from '../ButtonGeneral';
+import { motion } from 'framer-motion';
 
 export default function InitalSectionLP(props: {
 	headLine: string;
@@ -18,7 +19,8 @@ export default function InitalSectionLP(props: {
 			align={['center', 'center', 'center', 'start']}
 			textAlign={'left'}
 			w={['100%', '90%', '80%', '50%']}>
-			<MotionHeading
+			<Heading
+				as={motion.h1}
 				m='0px 20px'
 				variants={AnimateText}
 				initial={'start'}
@@ -28,7 +30,7 @@ export default function InitalSectionLP(props: {
 				fontSize={['2xl', '2xl', '3xl', '3xl', '3xl']}
 				fontFamily={'Montserrat'}>
 				{props.headLine}
-			</MotionHeading>
+			</Heading>
 			<MotionText
 				m='0px 20px'
 				variants={AnimateText}

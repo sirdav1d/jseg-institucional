@@ -16,7 +16,7 @@ import p2smart from '/assets/smartHome-imgs/produtos/p2.svg';
 import p3smart from '/assets/smartHome-imgs/produtos/p3.svg';
 
 export default function SmartHome() {
-	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
+	const bgColor = useColorModeValue('brand.cinza.100', 'brand.cinza.900');
 	const DataNavigationLP = {
 		items: [
 			{

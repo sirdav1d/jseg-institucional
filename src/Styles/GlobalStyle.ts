@@ -42,6 +42,7 @@ export const theme = extendTheme({
 				fontFamily: 'Montserrat',
 				height: '100%',
 				minHeight: '100vh',
+				
 			},
 			li: {
 				listStyle: 'none',

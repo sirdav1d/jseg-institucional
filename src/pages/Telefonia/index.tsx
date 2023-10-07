@@ -16,7 +16,7 @@ import p3tel from '/assets/telefonia-imgs/produtos/p3.svg';
 import wppImage from '/assets/institucional-imgs/wpp.svg';
 
 export default function Telefonia() {
-	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
+	const bgColor = useColorModeValue('brand.cinza.100', 'brand.cinza.900');
 	const DataNavigationLP = {
 		items: [
 			{

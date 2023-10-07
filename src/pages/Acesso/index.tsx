@@ -6,13 +6,13 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import b1acesso from '/assets/acesso-imgs/beneficios/b1.svg';
-import b2acesso from '/assets/acesso-imgs/beneficios/b2.svg';
-import b3acesso from '/assets/acesso-imgs/beneficios/b3.svg';
-import b4acesso from '/assets/acesso-imgs/beneficios/b4.svg';
-import p1acesso from '/assets/acesso-imgs/produtos/p1.svg';
-import p2acesso from '/assets/acesso-imgs/produtos/p2.svg';
-import p3acesso from '/assets/acesso-imgs/produtos/p3.svg';
+import b1acesso from '/assets/acesso-imgs/beneficios/pessoas_andando_segurança.webp';
+import b2acesso from '/assets/acesso-imgs/beneficios/apertando_botao.webp';
+import b3acesso from '/assets/acesso-imgs/beneficios/grafico_com_moedas.webp';
+import b4acesso from '/assets/acesso-imgs/beneficios/mulher_olhando_tablet.webp';
+import p1acesso from '/assets/acesso-imgs/produtos/Controladora_Acesso_SS420.webp';
+import p2acesso from '/assets/acesso-imgs/produtos/kit_controle_de_acesso.webp';
+import p3acesso from '/assets/acesso-imgs/produtos/kit_elite_fechadura.webp';
 import wppImage from '/assets/institucional-imgs/wpp.svg';
 
 export default function Telefonia() {

@@ -1,4 +1,5 @@
 import { Box, Flex, Image, Link, useColorModeValue } from '@chakra-ui/react';
+import BannerLGPD from '../../components/BannerLGPD';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import RatingsSection from '../../components/RatingsSection';
@@ -14,11 +15,9 @@ import b2Inst from '/assets/institucional-imgs/benefits/b2.svg';
 import b3Inst from '/assets/institucional-imgs/benefits/b3.svg';
 import b4Inst from '/assets/institucional-imgs/benefits/b4.svg';
 import wppImage from '/assets/institucional-imgs/wpp.svg';
-import BannerLGPD from '../../components/BannerLGPD';
-import { useEffect, useState } from 'react';
 
 export function Home() {
-	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
+	const bgColor = useColorModeValue('brand.cinza.100', 'brand.cinza.900');
 	const DataNavigation = {
 		items: [
 			{
@@ -82,7 +81,6 @@ export function Home() {
 		},
 	};
 
-	
 	return (
 		<>
 			<Header data={DataNavigation.items} />
