@@ -7,9 +7,9 @@ import {
 } from '@chakra-ui/react';
 import { AnimateText, MotionFlex, MotionHeading } from '../../Styles/animation';
 import SectionCTA from '../SectionCTA';
-import r1 from '/assets/institucional-imgs/ratings/img1.svg';
-import r2 from '/assets/institucional-imgs/ratings/img2.svg';
-import r3 from '/assets/institucional-imgs/ratings/img3.svg';
+import r1 from '/assets/institucional-imgs/ratings/homem_com_filho_testimonial1.webp';
+import r2 from '/assets/institucional-imgs/ratings/homem_sorrindo_testimonial2.webp';
+import r3 from '/assets/institucional-imgs/ratings/homem_cruzando_bracos_testimonial3.webp';
 
 export default function RatingsSection() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
@@ -126,145 +126,6 @@ export default function RatingsSection() {
 				</Flex>
 			</Flex>
 			<Divider />
-			{/* <Flex
-				flexDir={'column'}
-				m={['20px ', '20px ', '20px ', '0px auto']}
-				gap='20px'
-				maxW='1024px'>
-				<MotionHeading
-					variants={AnimateText}
-					initial={'start'}
-					whileInView={'end'}
-					viewport={{ once: true, amount: 0.5 }}
-					color={HeadingColor}
-					textAlign={'left'}
-					fontSize={['2xl', '2xl', '3xl', '4xl']}
-					fontFamily={'Montserrat'}>
-					Conheça nossos principais parceiros
-				</MotionHeading>
-				<Flex
-					flexDir={'column'}
-					align={'center'}>
-					<Flex
-						justify={['center', 'center', 'center', 'space-between']}
-						align='center'
-						flexWrap={'wrap'}
-						gap='20px'
-						flexDir={'row'}>
-						<MotionImage
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.1 }}
-							src={c1}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.2 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c2}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%' }}
-							src={c3}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c4}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c5}
-						/>
-
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c6}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c7}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c8}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c9}
-						/>
-						<MotionImage
-							variants={AnimateText}
-							initial={'start'}
-							whileInView={'end'}
-							viewport={{ once: true, amount: 0.4 }}
-							transform={'auto'}
-							filter={'auto'}
-							saturate={'0%'}
-							_hover={{ saturate: '100%', transition: 'all .3s ease' }}
-							src={c10}
-						/>
-					</Flex>
-				</Flex>
-			</Flex> */}
 			<SectionCTA
 				text={
 					'Não perca mais tempo, adquira nossos produtos agora mesmo! Clique aqui para comprar!'

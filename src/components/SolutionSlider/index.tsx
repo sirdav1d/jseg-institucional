@@ -1,13 +1,13 @@
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { Autoplay, Navigation, Pagination } from 'swiper';
-import acesso from '/assets/institucional-imgs/solutions/acesso.svg';
-import alarme from '/assets/institucional-imgs/solutions/alarme.svg';
-import cftv from '/assets/institucional-imgs/solutions/cftv.svg';
-import rede from '/assets/institucional-imgs/solutions/rede.svg';
-import smartHome from '/assets/institucional-imgs/solutions/smart.svg';
-import solar from '/assets/institucional-imgs/solutions/solar.svg';
-import telefonia from '/assets/institucional-imgs/solutions/telefonia.svg';
+import acesso from '/assets/institucional-imgs/solutions/controle_de_acesso.webp';
+import alarme from '/assets/institucional-imgs/solutions/sistema_de_alarme.webp';
+import cftv from '/assets/institucional-imgs/solutions/camera_cftv.webp';
+import rede from '/assets/institucional-imgs/solutions/cabo_de_rede_furukawa.webp';
+import smartHome from '/assets/institucional-imgs/solutions/kit_smart_home.webp';
+import solar from '/assets/institucional-imgs/solutions/homens_em_painel_solar.webp';
+import telefonia from '/assets/institucional-imgs/solutions/telefone_intelbras.webp';
 import { Slide, SliderComponent, SwiperProps } from '../GeneralSlider';
 
 export default function SolutionsSlider() {

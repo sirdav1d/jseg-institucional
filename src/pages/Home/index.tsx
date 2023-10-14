@@ -10,10 +10,10 @@ import SectionForm from '../../components/SectionForm';
 import SliderPromo from '../../components/SliderPromo/Slider';
 import Solutions from '../../components/Solutions';
 import WhoSection from '../../components/Who';
-import b1Inst from '/assets/institucional-imgs/benefits/b1.svg';
-import b2Inst from '/assets/institucional-imgs/benefits/b2.svg';
-import b3Inst from '/assets/institucional-imgs/benefits/b3.svg';
-import b4Inst from '/assets/institucional-imgs/benefits/b4.svg';
+import b1Inst from '/assets/institucional-imgs/benefits/homem_na _montanha.webp';
+import b2Inst from '/assets/institucional-imgs/benefits/homem_no_estoque.webp';
+import b3Inst from '/assets/institucional-imgs/benefits/aperto_de_maos.webp';
+import b4Inst from '/assets/institucional-imgs/benefits/batendo_martelo.webp';
 import wppImage from '/assets/institucional-imgs/wpp.svg';
 
 export function Home() {
