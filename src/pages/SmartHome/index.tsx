@@ -6,7 +6,7 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
+import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 import b1smart from '/assets/smartHome-imgs/beneficios/b1.svg';
 import b2smart from '/assets/smartHome-imgs/beneficios/b2.svg';
 import b3smart from '/assets/smartHome-imgs/beneficios/b3.svg';

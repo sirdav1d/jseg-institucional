@@ -13,7 +13,7 @@ import b4rede from '/assets/rede-imgs/beneficios/b4.svg';
 import p1rede from '/assets/rede-imgs/produtos/p1.svg';
 import p2rede from '/assets/rede-imgs/produtos/p2.svg';
 import p3rede from '/assets/rede-imgs/produtos/p3.svg';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
+import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Rede() {
 	const bgColor = useColorModeValue('brand.cinza.100', 'brand.cinza.900');

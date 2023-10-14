@@ -9,7 +9,7 @@ import {
 	Text,
 	useColorModeValue,
 } from '@chakra-ui/react';
-import logo from '/assets/institucional-imgs/logo.svg';
+import logo from '/assets/institucional-imgs/logo_jseg.webp';
 import bgImage from '/assets/thanks/bg.svg';
 import brinde from '/assets/thanks/brinde.svg';
 import ButtonGeneral from '../../components/ButtonGeneral';

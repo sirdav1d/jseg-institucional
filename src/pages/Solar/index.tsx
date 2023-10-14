@@ -13,7 +13,7 @@ import b4solar from '/assets/solar-imgs/beneficios/b4.svg';
 import p1solar from '/assets/solar-imgs/produtos/p1.svg';
 import p2solar from '/assets/solar-imgs/produtos/p2.svg';
 import p3solar from '/assets/solar-imgs/produtos/p3.svg';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
+import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Solar() {
 	const bgColor = useColorModeValue('brand.cinza.100', 'brand.cinza.900');

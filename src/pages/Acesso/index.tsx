@@ -13,7 +13,7 @@ import b4acesso from '/assets/acesso-imgs/beneficios/mulher_olhando_tablet.webp'
 import p1acesso from '/assets/acesso-imgs/produtos/Controladora_Acesso_SS420.webp';
 import p2acesso from '/assets/acesso-imgs/produtos/kit_controle_de_acesso.webp';
 import p3acesso from '/assets/acesso-imgs/produtos/kit_elite_fechadura.webp';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
+import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Telefonia() {
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.900');
