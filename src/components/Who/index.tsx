@@ -6,10 +6,10 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react';
 import { AnimateText, MotionFlex } from '../../Styles/animation';
-import group from '/assets/institucional-imgs/WhoSection/group.svg';
-import mission from '/assets/institucional-imgs/WhoSection/mission.svg';
-import value from '/assets/institucional-imgs/WhoSection/value.svg';
-import vision from '/assets/institucional-imgs/WhoSection/vision.svg';
+import group from '/assets/institucional-imgs/WhoSection/grupo_dando_as_maos.webp';
+import mission from '/assets/institucional-imgs/WhoSection/alvo_missao.webp';
+import value from '/assets/institucional-imgs/WhoSection/mao_com_uma_pessoa_valor.webp';
+import vision from '/assets/institucional-imgs/WhoSection/olho_com_quebra_cabeca_visao.webp';
 
 export default function WhoSection() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');

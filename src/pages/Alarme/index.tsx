@@ -6,13 +6,13 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import b1alarme from '/assets/alarme-imgs/beneficios/b1.svg';
-import b2alarme from '/assets/alarme-imgs/beneficios/b2.svg';
-import b3alarme from '/assets/alarme-imgs/beneficios/b3.svg';
-import b4alarme from '/assets/alarme-imgs/beneficios/b4.svg';
-import p1alarme from '/assets/alarme-imgs/produtos/p1.svg';
-import p2alarme from '/assets/alarme-imgs/produtos/p2.svg';
-import p3alarme from '/assets/alarme-imgs/produtos/p3.svg';
+import b1alarme from '/assets/alarme-imgs/beneficios/celular_recebendo_mensagens.webp';
+import b2alarme from '/assets/alarme-imgs/beneficios/tecnico_reparando_computador.webp';
+import b3alarme from '/assets/alarme-imgs/beneficios/mulher_vendo_tablet.webp';
+import b4alarme from '/assets/alarme-imgs/beneficios/apertando_botao.webp';
+import p1alarme from '/assets/alarme-imgs/produtos/sistema_de_alarme_intelbras.webp';
+import p2alarme from '/assets/alarme-imgs/produtos/sistema_de_alarme_intelbras_8000.webp';
+import p3alarme from '/assets/alarme-imgs/produtos/central_de_cerca_eletrica.webp';
 import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Telefonia() {
