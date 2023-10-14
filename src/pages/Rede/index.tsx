@@ -6,13 +6,13 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import b1rede from '/assets/rede-imgs/beneficios/b1.svg';
-import b2rede from '/assets/rede-imgs/beneficios/b2.svg';
-import b3rede from '/assets/rede-imgs/beneficios/b3.svg';
-import b4rede from '/assets/rede-imgs/beneficios/b4.svg';
-import p1rede from '/assets/rede-imgs/produtos/p1.svg';
-import p2rede from '/assets/rede-imgs/produtos/p2.svg';
-import p3rede from '/assets/rede-imgs/produtos/p3.svg';
+import b1rede from '/assets/rede-imgs/beneficios/cabo_de_rede_com_efeito.webp';
+import b2rede from '/assets/rede-imgs/beneficios/grafico_em_ascencao.webp';
+import b3rede from '/assets/cftv-imgs/beneficios/grafico_em_ascencao_com_moedas.webp';
+import b4rede from '/assets/rede-imgs/beneficios/notebook.webp';
+import p1rede from '/assets/rede-imgs/produtos/cabo_cat5e_furukawa.webp';
+import p2rede from '/assets/rede-imgs/produtos/cabo_cat6_furukawa.webp';
+import p3rede from '/assets/rede-imgs/produtos/cabo_cat6_gigalan.webp';
 import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Rede() {

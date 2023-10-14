@@ -7,7 +7,7 @@ import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
 import b1cftv from '/assets/cftv-imgs/beneficios/camera_de_seguranca.webp';
-import b2cftv from '/assets/alarme-imgs/mulher_vendo_tablet.webp';
+import b2cftv from '/assets/alarme-imgs/beneficios/mulher_vendo_tablet.webp';
 import b3cftv from '/assets/cftv-imgs/beneficios/grafico_em_ascencao_com_moedas.webp';
 import b4cftv from '/assets/cftv-imgs/beneficios/mulher_vendo_painel_de_cftv.webp';
 import p1cftv from '/assets/cftv-imgs/produtos/kit_cftv_coaxial.webp';
