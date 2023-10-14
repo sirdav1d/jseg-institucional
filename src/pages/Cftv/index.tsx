@@ -6,13 +6,13 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import b1cftv from '/assets/cftv-imgs/beneficios/b1.svg';
-import b2cftv from '/assets/cftv-imgs/beneficios/b2.svg';
-import b3cftv from '/assets/cftv-imgs/beneficios/b3.svg';
-import b4cftv from '/assets/cftv-imgs/beneficios/b4.svg';
-import p1cftv from '/assets/cftv-imgs/produtos/p1.svg';
-import p2cftv from '/assets/cftv-imgs/produtos/p2.svg';
-import p3cftv from '/assets/cftv-imgs/produtos/p3.svg';
+import b1cftv from '/assets/cftv-imgs/beneficios/camera_de_seguranca.webp';
+import b2cftv from '/assets/alarme-imgs/mulher_vendo_tablet.webp';
+import b3cftv from '/assets/cftv-imgs/beneficios/grafico_em_ascencao_com_moedas.webp';
+import b4cftv from '/assets/cftv-imgs/beneficios/mulher_vendo_painel_de_cftv.webp';
+import p1cftv from '/assets/cftv-imgs/produtos/kit_cftv_coaxial.webp';
+import p2cftv from '/assets/cftv-imgs/produtos/kit_cftv_ip.webp';
+import p3cftv from '/assets/cftv-imgs/produtos/kit_cftv_wifi.webp';
 import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Cftv() {
