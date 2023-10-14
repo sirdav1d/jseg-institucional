@@ -9,11 +9,11 @@ import {
 	useColorModeValue,
 	VStack,
 } from '@chakra-ui/react';
-import background from '/assets/institucional-imgs/backFooter.svg';
-import faceImage from '/assets/institucional-imgs/face.svg';
-import instaImage from '/assets/institucional-imgs/insta.svg';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
-import youtubeImage from '/assets/institucional-imgs/youtube.svg';
+import background from '/assets/institucional-imgs/background_ondas_verdes_footer.webp';
+import faceImage from '/assets/institucional-imgs/logo_instagram.webp';
+import instaImage from '/assets/institucional-imgs/logo_instagram.webp';
+import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
+import youtubeImage from '/assets/institucional-imgs/logo_youtube.webp';
 
 export default function Footer() {
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
@@ -150,6 +150,7 @@ export default function Footer() {
 								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={instaImage}
+								alt='logo do insagram'
 							/>
 						</Link>
 						<Link
@@ -161,6 +162,7 @@ export default function Footer() {
 								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={faceImage}
+								alt='logo do facebook'
 							/>
 						</Link>
 						<Link
@@ -172,6 +174,7 @@ export default function Footer() {
 								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={wppImage}
+								alt='logo do whatsapp'
 							/>
 						</Link>
 						<Link
@@ -183,6 +186,7 @@ export default function Footer() {
 								_hover={{ opacity: 1 }}
 								height={'56px'}
 								src={youtubeImage}
+								alt='logo do youtube'
 							/>
 						</Link>
 					</VStack>

@@ -20,6 +20,7 @@ export default function Header(props: { data: INavProps | any }) {
 			<Link href='/'>
 				<Image
 					src={logo}
+					alt='logo JSEG'
 					width={['200px', '220px', '220px', '220px', '300px', '300px']}
 				/>
 			</Link>

@@ -14,7 +14,7 @@ import b1Inst from '/assets/institucional-imgs/benefits/homem_na _montanha.webp'
 import b2Inst from '/assets/institucional-imgs/benefits/homem_no_estoque.webp';
 import b3Inst from '/assets/institucional-imgs/benefits/aperto_de_maos.webp';
 import b4Inst from '/assets/institucional-imgs/benefits/batendo_martelo.webp';
-import wppImage from '/assets/institucional-imgs/wpp.svg';
+import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export function Home() {
 	const bgColor = useColorModeValue('brand.cinza.100', 'brand.cinza.900');

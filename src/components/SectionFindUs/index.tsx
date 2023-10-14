@@ -40,6 +40,7 @@ export default function FindUs() {
 				gap='40px'
 				align='center'>
 				<iframe
+					title='Mapa da JSEG Equipamentos'
 					src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.530121296829!2d-43.12146778520169!3d-22.893809785018412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983c3b5bfb783%3A0x8e73cd566abcceda!2sAv.%20Ernani%20do%20Amaral%20Peixoto%2C%20436%20-%20Centro%2C%20Niter%C3%B3i%20-%20RJ%2C%2024020-077!5e0!3m2!1spt-BR!2sbr!4v1677645954377!5m2!1spt-BR!2sbr'
 					style={{ borderRadius: '4px', width: '348px', height: '348px' }}
 					loading='lazy'
