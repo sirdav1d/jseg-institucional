@@ -6,13 +6,13 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import b1solar from '/assets/solar-imgs/beneficios/b1.svg';
-import b2solar from '/assets/solar-imgs/beneficios/b2.svg';
-import b3solar from '/assets/solar-imgs/beneficios/b3.svg';
-import b4solar from '/assets/solar-imgs/beneficios/b4.svg';
-import p1solar from '/assets/solar-imgs/produtos/p1.svg';
-import p2solar from '/assets/solar-imgs/produtos/p2.svg';
-import p3solar from '/assets/solar-imgs/produtos/p3.svg';
+import b1solar from '/assets/cftv-imgs/beneficios/grafico_em_ascencao_com_moedas.webp';
+import b2solar from '/assets/solar-imgs/beneficios/folhas_dentro_de_lampada.webp';
+import b3solar from '/assets/solar-imgs/beneficios/tecnico_feliz_jogando_capacete.webp';
+import b4solar from '/assets/solar-imgs/beneficios/tecnico_em_painel_solar.webp';
+import p1solar from '/assets/solar-imgs/produtos/tecnico_instalando_painel_solar.webp';
+import p2solar from '/assets/solar-imgs/produtos/kit_solar_intelbras.webp';
+import p3solar from '/assets/solar-imgs/produtos/inversor_solar_intelbras.webp';
 import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Solar() {
