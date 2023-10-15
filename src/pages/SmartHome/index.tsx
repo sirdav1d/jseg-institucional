@@ -7,13 +7,13 @@ import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
 import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
-import b1smart from '/assets/smartHome-imgs/beneficios/b1.svg';
-import b2smart from '/assets/smartHome-imgs/beneficios/b2.svg';
-import b3smart from '/assets/smartHome-imgs/beneficios/b3.svg';
-import b4smart from '/assets/smartHome-imgs/beneficios/b4.svg';
-import p1smart from '/assets/smartHome-imgs/produtos/p1.svg';
-import p2smart from '/assets/smartHome-imgs/produtos/p2.svg';
-import p3smart from '/assets/smartHome-imgs/produtos/p3.svg';
+import b1smart from '/assets/smartHome-imgs/beneficios/mulher_utilizando_tablet.webp';
+import b2smart from '/assets/smartHome-imgs/beneficios/grupo_com_oculos_vr.webp';
+import b3smart from '/assets/smartHome-imgs/beneficios/lampada_com_grafico_sobreposto.webp';
+import b4smart from '/assets/alarme-imgs/beneficios/mulher_vendo_tablet.webp';
+import p1smart from '/assets/smartHome-imgs/produtos/kit_iluminacao_smart.webp';
+import p2smart from '/assets/smartHome-imgs/produtos/controle_universal_smart.webp';
+import p3smart from '/assets/smartHome-imgs/produtos/camera_smart_imx.webp';
 
 export default function SmartHome() {
 	const bgColor = useColorModeValue('brand.cinza.100', 'brand.cinza.900');
