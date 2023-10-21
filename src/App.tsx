@@ -9,6 +9,7 @@ import SmartHome from './pages/SmartHome';
 import Solar from './pages/Solar';
 import Telefonia from './pages/Telefonia';
 import Thanks from './pages/Thanks';
+import { Suspense } from 'react';
 
 export default function App() {
 	return (
@@ -21,28 +22,61 @@ export default function App() {
 
 				<Route
 					path='/thanks'
-					element={<Thanks />}></Route>
+					element={
+						<Suspense>
+							<Thanks />
+						</Suspense>
+					}></Route>
+
 				<Route
 					path='/cftv'
-					element={<Cftv />}></Route>
+					element={
+						<Suspense>
+							<Cftv />
+						</Suspense>
+					}></Route>
 				<Route
 					path='/alarme'
-					element={<Alarme />}></Route>
+					element={
+						<Suspense>
+							<Alarme />
+						</Suspense>
+					}></Route>
 				<Route
 					path='/telefonia'
-					element={<Telefonia />}></Route>
+					element={
+						<Suspense>
+							<Telefonia />
+						</Suspense>
+					}></Route>
 				<Route
 					path='/acesso'
-					element={<Acesso />}></Route>
+					element={
+						<Suspense>
+							<Acesso />
+						</Suspense>
+					}></Route>
 				<Route
 					path='/solar'
-					element={<Solar />}></Route>
+					element={
+						<Suspense>
+							<Solar />
+						</Suspense>
+					}></Route>
 				<Route
 					path='/rede'
-					element={<Rede />}></Route>
+					element={
+						<Suspense>
+							<Rede />
+						</Suspense>
+					}></Route>
 				<Route
 					path='/smartHome'
-					element={<SmartHome />}></Route>
+					element={
+						<Suspense>
+							<SmartHome />
+						</Suspense>
+					}></Route>
 			</Routes>
 		</BrowserRouter>
 	);
