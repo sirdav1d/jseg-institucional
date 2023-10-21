@@ -1,18 +1,16 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Acesso from './pages/Acesso';
+import Alarme from './pages/Alarme';
+import Cftv from './pages/Cftv';
 import Home from './pages/Home';
-import { Suspense, lazy } from 'react';
+import Rede from './pages/Rede';
+import SmartHome from './pages/SmartHome';
+import Solar from './pages/Solar';
+import Telefonia from './pages/Telefonia';
+import Thanks from './pages/Thanks';
 
 export default function App() {
-	const Telefonia = lazy(() => import('./pages/Telefonia'));
-	const Acesso = lazy(() => import('./pages/Acesso'));
-	const Alarme = lazy(() => import('./pages/Alarme'));
-	const Rede = lazy(() => import('./pages/Rede'));
-	const Cftv = lazy(() => import('./pages/Cftv'));
-	const SmartHome = lazy(() => import('./pages/SmartHome'));
-	const Solar = lazy(() => import('./pages/Solar'));
-	const Thanks = lazy(() => import('./pages/Thanks'));
-
 	return (
 		<BrowserRouter>
 			<ScrollToTop />
@@ -23,61 +21,29 @@ export default function App() {
 
 				<Route
 					path='/thanks'
-					element={
-						<Suspense>
-							<Thanks />
-						</Suspense>
-					}></Route>
+					element={<Thanks />}></Route>
 
 				<Route
 					path='/cftv'
-					element={
-						<Suspense>
-							<Cftv />
-						</Suspense>
-					}></Route>
+					element={<Cftv />}></Route>
 				<Route
 					path='/alarme'
-					element={
-						<Suspense>
-							<Alarme />
-						</Suspense>
-					}></Route>
+					element={<Alarme />}></Route>
 				<Route
 					path='/telefonia'
-					element={
-						<Suspense>
-							<Telefonia />
-						</Suspense>
-					}></Route>
+					element={<Telefonia />}></Route>
 				<Route
 					path='/acesso'
-					element={
-						<Suspense>
-							<Acesso />
-						</Suspense>
-					}></Route>
+					element={<Acesso />}></Route>
 				<Route
 					path='/solar'
-					element={
-						<Suspense>
-							<Solar />
-						</Suspense>
-					}></Route>
+					element={<Solar />}></Route>
 				<Route
 					path='/rede'
-					element={
-						<Suspense>
-							<Rede />
-						</Suspense>
-					}></Route>
+					element={<Rede />}></Route>
 				<Route
 					path='/smartHome'
-					element={
-						<Suspense>
-							<SmartHome />
-						</Suspense>
-					}></Route>
+					element={<SmartHome />}></Route>
 			</Routes>
 		</BrowserRouter>
 	);
