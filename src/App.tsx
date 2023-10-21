@@ -1,17 +1,18 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import Acesso from './pages/Acesso';
-import Alarme from './pages/Alarme';
-import Cftv from './pages/Cftv';
 import Home from './pages/Home';
-import Rede from './pages/Rede';
-import SmartHome from './pages/SmartHome';
-import Solar from './pages/Solar';
-import Telefonia from './pages/Telefonia';
-import Thanks from './pages/Thanks';
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 
 export default function App() {
+	const Telefonia = lazy(() => import('./pages/Telefonia'));
+	const Acesso = lazy(() => import('./pages/Acesso'));
+	const Alarme = lazy(() => import('./pages/Alarme'));
+	const Rede = lazy(() => import('./pages/Rede'));
+	const Cftv = lazy(() => import('./pages/Cftv'));
+	const SmartHome = lazy(() => import('./pages/SmartHome'));
+	const Solar = lazy(() => import('./pages/Solar'));
+	const Thanks = lazy(() => import('./pages/Thanks'));
+
 	return (
 		<BrowserRouter>
 			<ScrollToTop />
