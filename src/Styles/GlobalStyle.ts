@@ -42,7 +42,6 @@ export const theme = extendTheme({
 				fontFamily: 'Montserrat',
 				height: '100%',
 				minHeight: '100vh',
-				
 			},
 			li: {
 				listStyle: 'none',
@@ -50,7 +49,10 @@ export const theme = extendTheme({
 			'*': {
 				fontFamily: 'Montserrat',
 				scrollBehavior: 'smooth',
-				scrollMarginBlockStart: '88px',
+				scrollMarginBlock: '68px',
+				scrollMarginBottom: '68px',
+				scrollMargin: '68px',
+				scrollPadding: '68px',
 			},
 			'::-webkit-scrollbar': {
 				width: '12px',

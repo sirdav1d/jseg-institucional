@@ -6,13 +6,13 @@ import SectionBenefit from '../../components/SectionBenefit';
 import SectionCTA from '../../components/SectionCTA';
 import FindUs from '../../components/SectionFindUs';
 import SliderProducts from '../../components/SliderProducts';
-import b1tel from '/assets/telefonia-imgs/beneficios/b1.svg';
-import b2tel from '/assets/telefonia-imgs/beneficios/b2.svg';
-import b3tel from '/assets/telefonia-imgs/beneficios/b3.svg';
-import b4tel from '/assets/telefonia-imgs/beneficios/b4.svg';
-import p1tel from '/assets/telefonia-imgs/produtos/p1.svg';
-import p2tel from '/assets/telefonia-imgs/produtos/p2.svg';
-import p3tel from '/assets/telefonia-imgs/produtos/p3.svg';
+import b1tel from '/assets/telefonia-imgs/beneficios/mulheres_atendendo_telefone.webp';
+import b2tel from '/assets/telefonia-imgs/beneficios/mao_em_telefone.webp';
+import b3tel from '/assets/telefonia-imgs/beneficios/escritorio.webp';
+import b4tel from '/assets/telefonia-imgs/beneficios/tablet_com_grafico.webp';
+import p1tel from '/assets/telefonia-imgs/produtos/sistema_telefonia_intelbras.webp';
+import p2tel from '/assets/telefonia-imgs/produtos/telefone_pleno_intelbras.webp';
+import p3tel from '/assets/telefonia-imgs/produtos/central_telefonia_intelbras.webp';
 import wppImage from '/assets/institucional-imgs/logo_whatsapp.webp';
 
 export default function Telefonia() {
