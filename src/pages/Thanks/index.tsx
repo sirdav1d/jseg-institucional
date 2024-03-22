@@ -1,3 +1,5 @@
+/** @format */
+
 import {
 	Box,
 	Center,
@@ -111,6 +113,9 @@ export default function Thanks() {
 						</Box>
 					</Flex>
 					<Flex
+						position={'absolute'}
+						width={'100%'}
+						bottom={0}
 						flexDir={'column'}
 						gap='20px'
 						p='20px'>

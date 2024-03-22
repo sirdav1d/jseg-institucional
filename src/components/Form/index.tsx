@@ -1,3 +1,6 @@
+/** @format */
+
+import emailjs from '@emailjs/browser';
 import {
 	Button,
 	Flex,
@@ -11,15 +14,57 @@ import {
 	Select,
 	useColorModeValue,
 } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { AnimateContainer, MotionFlex } from '../../Styles/animation';
+import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
 	const [name, setName] = useState('');
 	const [tel, setTel] = useState('');
+	const [email, setEmail] = useState('');
+	const [opt, setOpt] = useState('');
+	const [usual, setUsual] = useState('');
 
-	const handleNameChange = (e: any) => setName(e.target.value);
-	const handleTelChange = (e: any) => setTel(e.target.value);
+	const message = `Me Chamo ${name}, telefone: ${tel}, email: ${email}. Preciso de ajuda sobre soluções de ${opt} para ${usual}`;
+
+	const templateParams = {
+		from_name: name,
+		to_name:'JSEG Equipamentos', 
+		message: message,
+		email: email,
+		tel: tel,
+	};
+
+	const navigate = useNavigate();
+
+	const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		setIsDisable(true);
+		emailjs
+			.send(
+				'service_ym56mme',
+				'template_m7qd9tn',
+				templateParams,
+				'thIqgjNi2ETIwWY2w',
+			)
+			.then(
+				(result) => {
+					alert('Email Enviado');
+					console.log(result.text);
+					setName('');
+					setEmail('');
+					setOpt('');
+					setUsual('');
+					setTel('');
+					setIsDisable(false);
+					navigate('/thanks');
+				},
+				(error) => {
+					alert(`Algo deu Errado - ${error}`);
+					console.log(error);
+				},
+			);
+	};
 
 	const bgColor = useColorModeValue('brand.branco', 'brand.cinza.700');
 	const HeadingColor = useColorModeValue('brand.preto', 'brand.cinza.100');
@@ -27,13 +72,13 @@ export default function Form() {
 	const [isDisable, setIsDisable] = useState(true);
 
 	useEffect(() => {
-		if (name == '' || tel == '') {
+		if (name == '' || tel == '' || email == '' || opt == '' || usual == '') {
 			setIsDisable(true);
 		} else {
 			setIsDisable(false);
 		}
 		console.log(isDisable);
-	}, [name, tel]);
+	}, [name, tel, usual, opt, email]);
 
 	return (
 		<MotionFlex
@@ -61,11 +106,8 @@ export default function Form() {
 				Formulário de Contato com Especialista em Vendas
 			</Heading>
 			<form
-				action='https://gmail.us21.list-manage.com/subscribe/post?u=4fa7838876d4535d0002ea553&amp;id=98a06c8b40&amp;f_id=007dbae1f0'
-				method='post'
-				noValidate
-				id='mc-embedded-subscribe-form'
-				name='mc-embedded-subscribe-form'>
+				id='form'
+				onSubmit={(e) => sendEmail(e)}>
 				<FormControl isRequired>
 					<FormLabel>Nome:</FormLabel>
 					<Input
@@ -74,8 +116,7 @@ export default function Form() {
 						mb='8px'
 						type={'text'}
 						value={name}
-						name='FULLNAME'
-						onChange={handleNameChange}
+						onChange={(e) => setName(e.target.value)}
 						placeholder='Digite seu nome'
 					/>
 				</FormControl>
@@ -86,7 +127,8 @@ export default function Form() {
 						isRequired
 						mb='8px'
 						type='email'
-						name='EMAIL'
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
 						placeholder='Digite seu E-mail'
 					/>
 				</FormControl>
@@ -98,8 +140,7 @@ export default function Form() {
 						mb='8px'
 						type='tel'
 						value={tel}
-						name='PHONE'
-						onChange={handleTelChange}
+						onChange={(e) => setTel(e.target.value)}
 						placeholder='(99)99999 - 9999'
 					/>
 				</FormControl>
@@ -110,23 +151,24 @@ export default function Form() {
 					<RadioGroup
 						aria-required={'true'}
 						defaultValue='Residencia'
+						value={usual}
 						colorScheme={'whatsapp'}>
 						<Flex
 							gap='24px'
 							flexDir={['column', 'column', 'row']}>
 							<Radio
-								name='LOCAL3'
-								value='Residencia'>
+								onChange={(e) => setUsual(e.target.value)}
+								value='RESIDÊNCIA'>
 								Residência
 							</Radio>
 							<Radio
-								name='LOCAL3'
-								value='Condominio'>
+								onChange={(e) => setUsual(e.target.value)}
+								value='CONDOMÍNIO'>
 								Condomínio
 							</Radio>
 							<Radio
-								name='LOCAL3'
-								value='Empresa'>
+								onChange={(e) => setUsual(e.target.value)}
+								value='EMPRESA'>
 								Empresa
 							</Radio>
 						</Flex>
@@ -140,15 +182,44 @@ export default function Form() {
 					isRequired>
 					<FormLabel>Soluções</FormLabel>
 					<Select
-						name='SOL7'
-						placeholder='O que você precisa hoje?'>
-						<option value={'CFTV'}>CFTV</option>
-						<option value={'REDE'}>REDE DE INTERNET</option>
-						<option value={'ALARME'}>ALARME</option>
-						<option value={'ACESSO'}>CONTROLE DE ACESSO</option>
-						<option value={'SOLAR'}>ENERGIA SOLAR</option>
-						<option value={'TELEFONE'}>TELEFONIA</option>
-						<option value={'SMART HOME'}>SMART HOME</option>
+						placeholder='O que você precisa hoje?'
+						value={opt}
+						onChange={(e) => setOpt(e.target.value)}>
+						<option
+							onChange={(e) => setOpt(e.currentTarget.value)}
+							value='CFTV'>
+							CFTV
+						</option>
+						<option
+							onChange={(e) => setOpt(e.currentTarget.value)}
+							value='REDE DE INTERNET'>
+							REDE DE INTERNET
+						</option>
+						<option
+							onChange={(e) => setOpt(e.currentTarget.value)}
+							value='ALARME'>
+							ALARME
+						</option>
+						<option
+							onChange={(e) => setOpt(e.currentTarget.value)}
+							value='CONTROLE DE ACESSO'>
+							CONTROLE DE ACESSO
+						</option>
+						<option
+							onChange={(e) => setOpt(e.currentTarget.value)}
+							value='ENERGIA SOLAR'>
+							ENERGIA SOLAR
+						</option>
+						<option
+							onChange={(e) => setOpt(e.currentTarget.value)}
+							value='TELEFONIA'>
+							TELEFONIA
+						</option>
+						<option
+							onChange={(e) => setOpt(e.currentTarget.value)}
+							value='SMART HOME'>
+							SMART HOME
+						</option>
 					</Select>
 				</FormControl>
 				<Button
